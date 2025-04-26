@@ -28,18 +28,17 @@ supervisors = []
 
 for index, row in df.iterrows():
     supervisor = {
-        'name': row.get('Name', '').strip(),
-        'group': row.get('Lab Name', '').strip(),
-        'pi': row.get('PI name', '').strip(),
-        'unit': row.get('Subject', '').strip(),
+        'name': (row.get('Name') or '').strip(),
+        'group': (row.get('Lab Name') or '').strip(),
+        'unit': (row.get('Subject') or '').strip(),
         'university': "Åbo Akademi University",
-        'expertise': row.get('Areas of Expertise', '').strip(),
-        'projects': row.get('Research projects', '').strip(),
-        'techniques': row.get('Special methodologies & techniques', '').strip(),
-        'publications': row.get('Five selected publications', '').strip(),
-        'lab_website': row.get('Lab Website', '').strip(),
-        'email': row.get('Email', '').strip(),
-        'photo_url': row.get('Upload a profile photo', '').strip()
+        'expertise': (row.get('Areas of Expertise') or '').strip(),
+        'projects': (row.get('Research projects') or '').strip(),
+        'techniques': (row.get('Special methodologies & techniques') or '').strip(),
+        'publications': (row.get('Five selected publications') or '').strip(),
+        'lab_website': (row.get('Lab Website') or '').strip(),
+        'email': (row.get('Email') or '').strip(),
+        'photo_url': (row.get('Upload a profile photo') or '').strip()
     }
 
     if not supervisor['name']:
