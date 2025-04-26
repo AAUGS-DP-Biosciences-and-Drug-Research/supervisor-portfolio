@@ -38,11 +38,15 @@
       margin: 0;
       font-size: 28px;
     }
-    .profile-info p, .profile-info a {
+    .profile-info p {
       margin: 4px 0;
       font-size: 16px;
-      color: #0077cc;
+      color: #333; /* Black text for p */
+    }
+    .profile-info a {
+      color: #0077cc; /* Only the link blue */
       text-decoration: none;
+      font-size: 16px;
     }
     .profile-info a:hover {
       text-decoration: underline;
@@ -79,6 +83,7 @@
       {% endif %}
       <div class="profile-info">
         <h1>{{ supervisor.name }}</h1>
+
         {% if supervisor.group %}
         <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
         {% endif %}
@@ -86,9 +91,11 @@
         <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
         {% endif %}
         <p><strong>University:</strong> {{ supervisor.university }}</p>
+
         {% if supervisor.lab_website %}
         <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
         {% endif %}    
+
       </div>
     </div>
 
