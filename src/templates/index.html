@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supervisors Portfolio</title>
+</head>
+<body style="font-family: sans-serif; max-width: 1000px; margin: auto; padding: 20px;">
+  <h1>Supervisor Portfolio</h1>
+  <p><a href="./Supervisor_Portfolio.pdf" target="_blank">Download Full Portfolio PDF</a></p>
+  <hr>
+
+  <ul>
+    {% for supervisor in supervisors %}
+    <li><a href="./supervisors/{{ supervisor.name.lower().replace(' ', '-') }}.html">{{ supervisor.name }}</a> - {{ supervisor.group }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

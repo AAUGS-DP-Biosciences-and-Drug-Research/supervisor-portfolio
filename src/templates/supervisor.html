@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ supervisor.name }}</title>
+</head>
+<body style="font-family: sans-serif; max-width: 700px; margin: auto; padding: 20px;">
+  <h1>{{ supervisor.name }}</h1>
+  <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
+  <p><strong>PI:</strong> {{ supervisor.pi }}</p>
+  <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
+  <p><strong>University:</strong> {{ supervisor.university }}</p>
+
+  {% if supervisor.photo_url %}
+  <img src="{{ supervisor.photo_url }}" alt="Profile Photo" style="width:150px;height:auto;">
+  {% endif %}
+
+  {% if supervisor.expertise %}
+  <h2>Areas of Expertise</h2>
+  <p>{{ supervisor.expertise|replace('•', '<br>•')|safe }}</p>
+  {% endif %}
+
+  {% if supervisor.projects %}
+  <h2>Research Projects</h2>
+  <p>{{ supervisor.projects|replace('•', '<br>•')|safe }}</p>
+  {% endif %}
+
+  {% if supervisor.techniques %}
+  <h2>Special Methodologies & Techniques</h2>
+  <p>{{ supervisor.techniques|replace('•', '<br>•')|safe }}</p>
+  {% endif %}
+
+  {% if supervisor.publications %}
+  <h2>Selected Publications</h2>
+  <p>{{ supervisor.publications }}</p>
+  {% endif %}
+
+  {% if supervisor.lab_website %}
+  <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
+  {% endif %}
+
+  <p><strong>Email:</strong> {{ supervisor.email }}</p>
+</body>
+</html>
