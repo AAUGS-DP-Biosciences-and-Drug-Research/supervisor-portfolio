@@ -59,14 +59,12 @@ with open('public/index.html', 'w', encoding='utf-8') as f:
 
 print("✅ Created index.html with all supervisors listed.")
 
-# Generate the master PDF
-try:
-    with open('public/pdf_version.html', 'w', encoding='utf-8') as f:
-        f.write(env.get_template('pdf.html').render(supervisors=supervisors))
+# Create a temporary PDF HTML file first
+with open('public/pdf_version.html', 'w', encoding='utf-8') as f:
+    f.write(env.get_template('pdf.html').render(supervisors=supervisors))
 
-    HTML('public/pdf_version.html').write_pdf('public/Supervisor_Portfolio.pdf')
-    print("✅ Created Supervisor_Portfolio.pdf.")
-except Exception as e:
-    print(f"❌ Failed to create PDF: {e}")
+# Then generate the PDF
+HTML('public/pdf_version.html').write_pdf('public/Supervisor_Portfolio.pdf')
+print("✅ Created Supervisor_Portfolio.pdf.")
 
 print("🏁 Build complete!")
