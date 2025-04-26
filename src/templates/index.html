@@ -6,62 +6,91 @@
   <style>
     body {
       font-family: sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      background: #fafafa;
+      padding: 40px;
+      border-radius: 12px;
+      border: 2px solid #ccc;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       max-width: 1000px;
-      margin: auto;
-      padding: 20px;
+      width: 100%;
     }
     h1 {
       font-size: 32px;
       text-align: center;
+      margin-bottom: 30px;
     }
     h2 {
       font-size: 24px;
       margin-top: 40px;
+      margin-bottom: 10px;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 6px;
+    }
+    .pdf-link {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .pdf-link a {
+      text-decoration: none;
+      color: #0077cc;
+      font-size: 16px;
+    }
+    .pdf-link a:hover {
+      text-decoration: underline;
     }
     ul {
       padding-left: 20px;
+      margin-top: 10px;
     }
     li {
       margin-bottom: 8px;
       font-size: 18px;
     }
-    a {
+    li a {
       text-decoration: none;
       color: #0077cc;
     }
-    a:hover {
+    li a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <h1>Supervisor Portfolio</h1>
+  <div class="container">
+    <h1>Supervisor Portfolio for the Doctoral Programme in Biosciences and Drug Research</h1>
 
-  <p style="text-align: center;">
-    <a href="./Supervisor_Portfolio.pdf" target="_blank">📄 Download Full Portfolio PDF</a>
-  </p>
+    <div class="pdf-link">
+      <a href="./Supervisor_Portfolio.pdf" target="_blank">📄 Download Full Portfolio PDF</a>
+    </div>
 
-  <hr>
+    {% set subjects = {} %}
+    {% for supervisor in supervisors %}
+      {% set _ = subjects.setdefault(supervisor.unit, []).append(supervisor) %}
+    {% endfor %}
 
-  {% set subjects = {} %}
-  {% for supervisor in supervisors %}
-    {% set _ = subjects.setdefault(supervisor.unit, []).append(supervisor) %}
-  {% endfor %}
-
-  {% for subject, supervisors_in_subject in subjects.items() %}
-    <h2>{{ subject }}</h2>
-    <ul>
-      {% for supervisor in supervisors_in_subject %}
-        <li>
-          <a href="./supervisors/{{ supervisor.name.lower().replace(' ', '-') }}.html">
-            {{ supervisor.name }}
-          </a> — {{ supervisor.group }}
-        </li>
-      {% endfor %}
-    </ul>
-    <hr>
-  {% endfor %}
+    {% for subject, supervisors_in_subject in subjects.items() %}
+      <h2>{{ subject }}</h2>
+      <ul>
+        {% for supervisor in supervisors_in_subject %}
+          <li>
+            <a href="./supervisors/{{ supervisor.name.lower().replace(' ', '-') }}.html">
+              {{ supervisor.name }}
+            </a> — {{ supervisor.group }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
 
 </body>
 </html>
