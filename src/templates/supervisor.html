@@ -8,7 +8,6 @@
   <h1>{{ supervisor.name }}</h1>
 
   <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
-  <p><strong>PI:</strong> {{ supervisor.pi }}</p>
   <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
   <p><strong>University:</strong> {{ supervisor.university }}</p>
 
@@ -18,22 +17,40 @@
 
   {% if supervisor.expertise %}
   <h2>Areas of Expertise</h2>
-  <p>{{ supervisor.expertise|replace('•', '<br>•')|safe }}</p>
+  <ul>
+    {% for item in supervisor.expertise.splitlines() %}
+      {% if item.strip() %}
+      <li>{{ item.strip() }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {% endif %}
 
   {% if supervisor.projects %}
   <h2>Research Projects</h2>
-  <p>{{ supervisor.projects|replace('•', '<br>•')|safe }}</p>
+  <ul>
+    {% for item in supervisor.projects.splitlines() %}
+      {% if item.strip() %}
+      <li>{{ item.strip() }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {% endif %}
 
   {% if supervisor.techniques %}
   <h2>Special Methodologies & Techniques</h2>
-  <p>{{ supervisor.techniques|replace('•', '<br>•')|safe }}</p>
+  <ul>
+    {% for item in supervisor.techniques.splitlines() %}
+      {% if item.strip() %}
+      <li>{{ item.strip() }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {% endif %}
 
   {% if supervisor.publications %}
   <h2>Selected Publications</h2>
-  <p>{{ supervisor.publications }}</p>
+  <p>{{ supervisor.publications|replace('\n', '<br>')|safe }}</p>
   {% endif %}
 
   {% if supervisor.lab_website %}
@@ -47,6 +64,5 @@
   {% if supervisor.keywords %}
   <p><strong>Keywords:</strong> {{ supervisor.keywords }}</p>
   {% endif %}
-
 </body>
 </html>
