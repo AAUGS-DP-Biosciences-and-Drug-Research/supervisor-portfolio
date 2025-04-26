@@ -7,14 +7,49 @@
     body {
       font-family: Arial, sans-serif;
       margin: 60px;
+      background: white;
       font-size: 15px;
       line-height: 1.6;
-      background: white;
       color: #222;
     }
+    .title-page {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+    .title-page h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .unit-section {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    .unit-section h2 {
+      font-size: 24px;
+      color: #000;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .unit-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .unit-section li {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .unit-section a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .unit-section a:hover {
+      text-decoration: underline;
+    }
     .supervisor {
-      margin-bottom: 80px;
-      page-break-after: always;
+      margin-top: 60px;
+      page-break-before: always;
     }
     h1 {
       font-size: 28px;
@@ -31,9 +66,6 @@
     .profile-info a {
       color: #0077cc;
       text-decoration: none;
-    }
-    .profile-info a:hover {
-      text-decoration: underline;
     }
     h2 {
       font-size: 22px;
@@ -54,8 +86,49 @@
 </head>
 <body>
 
+  <!-- Title page -->
+  <div class="title-page">
+    <h1>Supervisor Portfolio for the Doctoral Programme in Biosciences and Drug Research</h1>
+  </div>
+
+  <!-- Group supervisors by unit -->
   
-    <div class="supervisor">
+  
+    
+  
+    
+  
+    
+  
+
+  <div class="unit-section">
+    
+      <h2>Cell Biology and Biochemistry</h2>
+      <ul>
+        
+          <li><a href="#Guillaume_Jacquemet">Guillaume Jacquemet</a></li>
+        
+      </ul>
+    
+      <h2>Marine Biology</h2>
+      <ul>
+        
+          <li><a href="#Christian_Pansch-Hattich">Christian Pansch-Hattich</a></li>
+        
+      </ul>
+    
+      <h2>Pharmacy</h2>
+      <ul>
+        
+          <li><a href="#Jessica_Rosenholm">Jessica Rosenholm</a></li>
+        
+      </ul>
+    
+  </div>
+
+  <!-- Supervisor individual pages -->
+  
+    <div class="supervisor" id="Guillaume_Jacquemet">
 
       <div class="profile-info">
         <h1>Guillaume Jacquemet</h1>
@@ -181,7 +254,7 @@
 
     </div>
   
-    <div class="supervisor">
+    <div class="supervisor" id="Christian_Pansch-Hattich">
 
       <div class="profile-info">
         <h1>Christian Pansch-Hattich</h1>
@@ -207,7 +280,7 @@
 
     </div>
   
-    <div class="supervisor">
+    <div class="supervisor" id="Jessica_Rosenholm">
 
       <div class="profile-info">
         <h1>Jessica Rosenholm</h1>
