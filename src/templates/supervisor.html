@@ -11,6 +11,14 @@
       padding: 40px;
       display: flex;
       justify-content: center;
+      position: relative;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 120px;
+      height: auto;
     }
     .card {
       background: #fafafa;
@@ -20,6 +28,7 @@
       padding: 40px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
       border: 2px solid #ccc;
+      margin-top: 80px; /* extra space so the logo doesn't overlap */
     }
     .profile-header {
       display: flex;
@@ -41,10 +50,10 @@
     .profile-info p {
       margin: 4px 0;
       font-size: 16px;
-      color: #333; /* Black text for p */
+      color: #333;
     }
     .profile-info a {
-      color: #0077cc; /* Only the link blue */
+      color: #0077cc;
       text-decoration: none;
       font-size: 16px;
     }
@@ -74,6 +83,9 @@
   </style>
 </head>
 <body>
+
+  <!-- Logo at top right -->
+  <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="Åbo Akademi University Logo" class="logo">
 
   <div class="card">
 
