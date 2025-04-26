@@ -9,10 +9,19 @@
   <p><a href="./Supervisor_Portfolio.pdf" target="_blank">📄 Download Full Portfolio PDF</a></p>
   <hr>
 
-  <ul>
-    {% for supervisor in supervisors %}
-    <li><a href="./supervisors/{{ supervisor.name.lower().replace(' ', '-') }}.html">{{ supervisor.name }}</a> - {{ supervisor.group }}</li>
-    {% endfor %}
-  </ul>
+  {% set subjects = {} %}
+  {% for supervisor in supervisors %}
+    {% set _ = subjects.setdefault(supervisor.unit, []).append(supervisor) %}
+  {% endfor %}
+
+  {% for subject, supervisors_in_subject in subjects.items() %}
+    <h2>{{ subject }}</h2>
+    <ul>
+      {% for supervisor in supervisors_in_subject %}
+        <li><a href="./supervisors/{{ supervisor.name.lower().replace(' ', '-') }}.html">{{ supervisor.name }}</a> - {{ supervisor.group }}</li>
+      {% endfor %}
+    </ul>
+    <hr>
+  {% endfor %}
 </body>
 </html>
