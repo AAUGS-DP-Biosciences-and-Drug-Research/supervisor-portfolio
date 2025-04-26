@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supervisor Portfolio PDF</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .supervisor {
+      page-break-after: always;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  {% for supervisor in supervisors %}
+    <div class="supervisor">
+      <h1>{{ supervisor.name }}</h1>
+      {% if supervisor.group %}
+      <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
+      {% endif %}
+      {% if supervisor.unit %}
+      <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
+      {% endif %}
+      <p><strong>University:</strong> {{ supervisor.university }}</p>
+
+      {% if supervisor.expertise %}
+      <h2>Areas of Expertise</h2>
+      <ul>
+        {% for item in supervisor.expertise.splitlines() %}
+          {% if item.strip() %}
+          <li>{{ item.strip() }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if supervisor.projects %}
+      <h2>Research Projects</h2>
+      <ul>
+        {% for item in supervisor.projects.splitlines() %}
+          {% if item.strip() %}
+          <li>{{ item.strip() }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if supervisor.techniques %}
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        {% for item in supervisor.techniques.splitlines() %}
+          {% if item.strip() %}
+          <li>{{ item.strip() }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if supervisor.publications %}
+      <h2>Selected Publications</h2>
+      <ul>
+        {% for pub in supervisor.publications.splitlines() %}
+          {% if pub.strip() %}
+            <li>
+              {% set doi_index = pub.find('DOI: ') %}
+              {% if doi_index != -1 %}
+                {{ pub[:doi_index] }}
+                DOI: 
+                <a href="https://doi.org/{{ pub[doi_index+5:] }}">{{ pub[doi_index+5:] }}</a>
+              {% else %}
+                {{ pub }}
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if supervisor.lab_website %}
+      <p><strong>Lab Website:</strong> {{ supervisor.lab_website }}</p>
+      {% endif %}
+
+      {% if supervisor.keywords %}
+      <p><strong>Keywords:</strong> {{ supervisor.keywords }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</body>
+</html>
