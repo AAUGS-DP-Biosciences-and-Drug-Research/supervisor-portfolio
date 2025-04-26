@@ -79,9 +79,6 @@
       {% endif %}
       <div class="profile-info">
         <h1>{{ supervisor.name }}</h1>
-        {% if supervisor.lab_website %}
-        <p><a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
-        {% endif %}
         {% if supervisor.group %}
         <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
         {% endif %}
@@ -89,6 +86,9 @@
         <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
         {% endif %}
         <p><strong>University:</strong> {{ supervisor.university }}</p>
+        {% if supervisor.lab_website %}
+        <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
+        {% endif %}    
       </div>
     </div>
 
