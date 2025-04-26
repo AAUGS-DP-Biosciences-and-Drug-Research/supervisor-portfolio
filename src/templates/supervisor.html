@@ -50,7 +50,22 @@
 
   {% if supervisor.publications %}
   <h2>Selected Publications</h2>
-  <p>{{ supervisor.publications|replace('\n', '<br>')|safe }}</p>
+  <ul>
+    {% for pub in supervisor.publications.splitlines() %}
+      {% if pub.strip() %}
+        <li>
+          {% set doi_index = pub.find('DOI: ') %}
+          {% if doi_index != -1 %}
+            {{ pub[:doi_index] }}
+            DOI: 
+            <a href="https://doi.org/{{ pub[doi_index+5:] }}" target="_blank">{{ pub[doi_index+5:] }}</a>
+          {% else %}
+            {{ pub }}
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   {% endif %}
 
   {% if supervisor.lab_website %}
