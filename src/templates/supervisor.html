@@ -4,6 +4,22 @@
   <meta charset="UTF-8">
   <title>{{ supervisor.name }}</title>
   <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      max-width: 800px;
+      width: 100%;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
     .profile-header {
       display: flex;
       align-items: center;
@@ -23,12 +39,6 @@
       margin: 4px 0;
       font-size: 16px;
     }
-    body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
     h2 {
       margin-top: 30px;
       font-size: 22px;
@@ -36,88 +46,96 @@
     ul {
       padding-left: 20px;
     }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <div class="profile-header">
-    {% if supervisor.photo_url %}
-    <img src="{{ supervisor.photo_url }}" alt="Profile Photo">
-    {% endif %}
-    <div class="profile-info">
-      <h1>{{ supervisor.name }}</h1>
-      {% if supervisor.group %}
-      <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
+  <div class="card">
+    <div class="profile-header">
+      {% if supervisor.photo_url %}
+      <img src="{{ supervisor.photo_url }}" alt="Profile Photo">
       {% endif %}
-      {% if supervisor.unit %}
-      <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
-      {% endif %}
-      <p><strong>University:</strong> {{ supervisor.university }}</p>
+      <div class="profile-info">
+        <h1>{{ supervisor.name }}</h1>
+        {% if supervisor.group %}
+        <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
+        {% endif %}
+        {% if supervisor.unit %}
+        <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
+        {% endif %}
+        <p><strong>University:</strong> {{ supervisor.university }}</p>
+      </div>
     </div>
+
+    {% if supervisor.expertise %}
+    <h2>Areas of Expertise</h2>
+    <ul>
+      {% for item in supervisor.expertise.splitlines() %}
+        {% if item.strip() %}
+        <li>{{ item.strip() }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if supervisor.projects %}
+    <h2>Research Projects</h2>
+    <ul>
+      {% for item in supervisor.projects.splitlines() %}
+        {% if item.strip() %}
+        <li>{{ item.strip() }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if supervisor.techniques %}
+    <h2>Special Methodologies & Techniques</h2>
+    <ul>
+      {% for item in supervisor.techniques.splitlines() %}
+        {% if item.strip() %}
+        <li>{{ item.strip() }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if supervisor.publications %}
+    <h2>Selected Publications</h2>
+    <ul>
+      {% for pub in supervisor.publications.splitlines() %}
+        {% if pub.strip() %}
+          <li>
+            {% set doi_index = pub.find('DOI: ') %}
+            {% if doi_index != -1 %}
+              {{ pub[:doi_index] }}
+              DOI: 
+              <a href="https://doi.org/{{ pub[doi_index+5:] }}" target="_blank">{{ pub[doi_index+5:] }}</a>
+            {% else %}
+              {{ pub }}
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if supervisor.lab_website %}
+    <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
+    {% endif %}
+
+    {% if supervisor.keywords %}
+    <p><strong>Keywords:</strong> {{ supervisor.keywords }}</p>
+    {% endif %}
   </div>
-
-  {% if supervisor.expertise %}
-  <h2>Areas of Expertise</h2>
-  <ul>
-    {% for item in supervisor.expertise.splitlines() %}
-      {% if item.strip() %}
-      <li>{{ item.strip() }}</li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% if supervisor.projects %}
-  <h2>Research Projects</h2>
-  <ul>
-    {% for item in supervisor.projects.splitlines() %}
-      {% if item.strip() %}
-      <li>{{ item.strip() }}</li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% if supervisor.techniques %}
-  <h2>Special Methodologies & Techniques</h2>
-  <ul>
-    {% for item in supervisor.techniques.splitlines() %}
-      {% if item.strip() %}
-      <li>{{ item.strip() }}</li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% if supervisor.publications %}
-  <h2>Selected Publications</h2>
-  <ul>
-    {% for pub in supervisor.publications.splitlines() %}
-      {% if pub.strip() %}
-        <li>
-          {% set doi_index = pub.find('DOI: ') %}
-          {% if doi_index != -1 %}
-            {{ pub[:doi_index] }}
-            DOI: 
-            <a href="https://doi.org/{{ pub[doi_index+5:] }}" target="_blank">{{ pub[doi_index+5:] }}</a>
-          {% else %}
-            {{ pub }}
-          {% endif %}
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% if supervisor.lab_website %}
-  <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
-  {% endif %}
-
-  {% if supervisor.email %}
-  <p><strong>Email:</strong> {{ supervisor.email }}</p>
-  {% endif %}
-
-  {% if supervisor.keywords %}
-  <p><strong>Keywords:</strong> {{ supervisor.keywords }}</p>
-  {% endif %}
 </body>
 </html>
