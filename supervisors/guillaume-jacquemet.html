@@ -11,14 +11,6 @@
       padding: 40px;
       display: flex;
       justify-content: center;
-      position: relative;
-    }
-    .logo {
-      position: absolute;
-      top: 20px;
-      right: 40px;
-      width: 120px;
-      height: auto;
     }
     .card {
       background: #fafafa;
@@ -28,20 +20,29 @@
       padding: 40px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
       border: 2px solid #ccc;
-      margin-top: 80px; /* extra space so the logo doesn't overlap */
+      margin-top: 40px;
     }
     .profile-header {
       display: flex;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      justify-content: space-between;
       margin-bottom: 30px;
     }
-    .profile-header img {
+    .profile-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile-photo {
       width: 140px;
       height: auto;
       border-radius: 10px;
       border: 2px solid #ccc;
       background-color: #f9f9f9;
+      flex-shrink: 0;
+    }
+    .profile-info {
+      flex: 1;
     }
     .profile-info h1 {
       margin: 0;
@@ -59,6 +60,11 @@
     }
     .profile-info a:hover {
       text-decoration: underline;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+      flex-shrink: 0;
     }
     h2 {
       margin-top: 30px;
@@ -84,31 +90,32 @@
 </head>
 <body>
 
-  <!-- Logo at top right -->
-  <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="Åbo Akademi University Logo" class="logo">
-
   <div class="card">
 
     <div class="profile-header">
-      
-      <img src="https://abofi-my.sharepoint.com/personal/guillaume_jacquemet_abo_fi/Documents/Apps/Microsoft%20Forms/Supervisor%20of%20the%20Doctoral%20Programme%20in%20Bioscience/Question/Guillaume%20Jacquemet_Guillaume%20Jacquemet.jpg" alt="Profile Photo">
-      
-      <div class="profile-info">
-        <h1>Guillaume Jacquemet</h1>
+      <div class="profile-left">
+        
+        <img src="https://abofi-my.sharepoint.com/personal/guillaume_jacquemet_abo_fi/Documents/Apps/Microsoft%20Forms/Supervisor%20of%20the%20Doctoral%20Programme%20in%20Bioscience/Question/Guillaume%20Jacquemet_Guillaume%20Jacquemet.jpg" alt="Profile Photo" class="profile-photo">
+        
+        <div class="profile-info">
+          <h1>Guillaume Jacquemet</h1>
 
-        
-        <p><strong>Group Name:</strong> Cell Migration Lab</p>
-        
-        
-        <p><strong>Unit:</strong> Cell Biology and Biochemistry</p>
-        
-        <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Group Name:</strong> Cell Migration Lab</p>
+          
+          
+          <p><strong>Unit:</strong> Cell Biology and Biochemistry</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
 
-        
-        <p><strong>Lab Website:</strong> <a href="https://cellmig.org/" target="_blank">https://cellmig.org/</a></p>
-            
-
+          
+          <p><strong>Lab Website:</strong> <a href="https://cellmig.org/" target="_blank">https://cellmig.org/</a></p>
+              
+        </div>
       </div>
+
+      <!-- Logo on the right -->
+      <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="Åbo Akademi University Logo" class="logo">
     </div>
 
     
