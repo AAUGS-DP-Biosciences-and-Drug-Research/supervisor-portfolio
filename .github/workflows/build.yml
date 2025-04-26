@@ -1,0 +1,38 @@
+
+name: Build and Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'src/**'
+      - '.github/workflows/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas jinja2 weasyprint
+
+      - name: Build site and PDF
+        run: |
+          python src/build.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
