@@ -3,6 +3,14 @@ import os
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
+def safe_read(row, column_name):
+    value = row.get(column_name, "")
+    if pd.isna(value):
+        return ""
+    return str(value).strip()
+
+
+
 # Create necessary output folders
 os.makedirs('public/supervisors', exist_ok=True)
 
@@ -28,17 +36,17 @@ supervisors = []
 
 for index, row in df.iterrows():
     supervisor = {
-        'name': (row.get('Name') or '').strip(),
-        'group': (row.get('Lab Name') or '').strip(),
-        'unit': (row.get('Subject') or '').strip(),
+        'name': safe_read(row, 'Name'),
+        'group': safe_read(row, 'Lab Name'),
+        'unit': safe_read(row, 'Subject'),
         'university': "Åbo Akademi University",
-        'expertise': (row.get('Areas of Expertise') or '').strip(),
-        'projects': (row.get('Research projects') or '').strip(),
-        'techniques': (row.get('Special methodologies & techniques') or '').strip(),
-        'publications': (row.get('Five selected publications') or '').strip(),
-        'lab_website': (row.get('Lab Website') or '').strip(),
-        'email': (row.get('Email') or '').strip(),
-        'photo_url': (row.get('Upload a profile photo') or '').strip()
+        'expertise': safe_read(row, 'Areas of Expertise'),
+        'projects': safe_read(row, 'Research projects'),
+        'techniques': safe_read(row, 'Special methodologies & techniques'),
+        'publications': safe_read(row, 'Five selected publications'),
+        'lab_website': safe_read(row, 'Lab Website'),
+        'email': safe_read(row, 'Email'),
+        'photo_url': safe_read(row, 'Upload a profile photo')
     }
 
     if not supervisor['name']:
