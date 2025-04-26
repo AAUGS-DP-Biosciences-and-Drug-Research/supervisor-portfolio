@@ -7,14 +7,49 @@
     body {
       font-family: Arial, sans-serif;
       margin: 60px;
+      background: white;
       font-size: 15px;
       line-height: 1.6;
-      background: white;
       color: #222;
     }
+    .title-page {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+    .title-page h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .unit-section {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    .unit-section h2 {
+      font-size: 24px;
+      color: #000;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .unit-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .unit-section li {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .unit-section a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .unit-section a:hover {
+      text-decoration: underline;
+    }
     .supervisor {
-      margin-bottom: 80px;
-      page-break-after: always;
+      margin-top: 60px;
+      page-break-before: always;
     }
     h1 {
       font-size: 28px;
@@ -31,9 +66,6 @@
     .profile-info a {
       color: #0077cc;
       text-decoration: none;
-    }
-    .profile-info a:hover {
-      text-decoration: underline;
     }
     h2 {
       font-size: 22px;
@@ -54,8 +86,31 @@
 </head>
 <body>
 
+  <!-- Title page -->
+  <div class="title-page">
+    <h1>Supervisor Portfolio for the Doctoral Programme in Biosciences and Drug Research</h1>
+  </div>
+
+  <!-- Group supervisors by unit -->
+  {% set units = {} %}
   {% for supervisor in supervisors %}
-    <div class="supervisor">
+    {% set _ = units.setdefault(supervisor.unit, []).append(supervisor) %}
+  {% endfor %}
+
+  <div class="unit-section">
+    {% for unit, supervisors_in_unit in units.items() %}
+      <h2>{{ unit }}</h2>
+      <ul>
+        {% for supervisor in supervisors_in_unit %}
+          <li><a href="#{{ supervisor.name | replace(' ', '_') }}">{{ supervisor.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+
+  <!-- Supervisor individual pages -->
+  {% for supervisor in supervisors %}
+    <div class="supervisor" id="{{ supervisor.name | replace(' ', '_') }}">
 
       <div class="profile-info">
         <h1>{{ supervisor.name }}</h1>
