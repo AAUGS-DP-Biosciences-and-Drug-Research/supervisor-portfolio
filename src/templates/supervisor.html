@@ -12,6 +12,16 @@
     display: flex;
     justify-content: center;
   }
+  .back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0077cc;
+    font-size: 16px;
+  }
+  .back-button:hover {
+    text-decoration: underline;
+  }
   .card {
     background: #fafafa; /* softer light grey instead of pure white */
     max-width: 800px;
@@ -64,6 +74,8 @@
 
 </head>
 <body>
+  <p><a href="../index.html" class="back-button">← Back to Portfolio</a></p>
+
   <div class="card">
     <div class="profile-header">
       {% if supervisor.photo_url %}
@@ -142,5 +154,7 @@
     <p><strong>Keywords:</strong> {{ supervisor.keywords }}</p>
     {% endif %}
   </div>
+  <p><a href="../index.html" class="back-button">← Back to Portfolio</a></p>
+
 </body>
 </html>
