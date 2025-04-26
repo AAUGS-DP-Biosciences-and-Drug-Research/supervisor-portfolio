@@ -1,193 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Supervisor Portfolio PDF</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 60px;
-      background: white;
-      font-size: 15px;
-      line-height: 1.6;
-      color: #222;
-    }
-    .title-page {
-      text-align: center;
-      margin-top: 100px;
-      margin-bottom: 60px;
-    }
-    .title-page h1 {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-    .unit-section {
-      margin-bottom: 40px;
-      text-align: left;
-    }
-    .unit-section h2 {
-      font-size: 24px;
-      color: #000;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-    .unit-section ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .unit-section li {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-    .unit-section a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    .unit-section a:hover {
-      text-decoration: underline;
-    }
-    .supervisor {
-      margin-top: 60px;
-      page-break-before: always;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #000;
-    }
-    .profile-info p {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-    .profile-info strong {
-      color: #000;
-    }
-    .profile-info a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    h2 {
-      font-size: 22px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      color: #000;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-    }
-    ul {
-      padding-left: 20px;
-      margin-top: 10px;
-    }
-    li {
-      margin-bottom: 5px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Title page -->
-  <div class="title-page">
-    <h1>Supervisor Portfolio for the Doctoral Programme in Biosciences and Drug Research</h1>
-  </div>
-
-  <!-- Group supervisors by unit -->
-  {% set units = {} %}
-  {% for supervisor in supervisors %}
-    {% set _ = units.setdefault(supervisor.unit, []).append(supervisor) %}
-  {% endfor %}
-
-  <div class="unit-section">
-    {% for unit, supervisors_in_unit in units.items() %}
-      <h2>{{ unit }}</h2>
-      <ul>
-        {% for supervisor in supervisors_in_unit %}
-          <li><a href="#{{ supervisor.name | replace(' ', '_') }}">{{ supervisor.name }}</a></li>
-        {% endfor %}
-      </ul>
-    {% endfor %}
-  </div>
-
-  <!-- Supervisor individual pages -->
-  {% for supervisor in supervisors %}
-    <div class="supervisor" id="{{ supervisor.name | replace(' ', '_') }}">
-
-      <div class="profile-info">
-        <h1>{{ supervisor.name }}</h1>
-
-        {% if supervisor.lab_website %}
-        <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
-        {% endif %}
-
-        {% if supervisor.group %}
-        <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
-        {% endif %}
-        {% if supervisor.unit %}
-        <p><strong>Unit:</strong> {{ supervisor.unit }}</p>
-        {% endif %}
-        <p><strong>University:</strong> {{ supervisor.university }}</p>
-      </div>
-
-      {% if supervisor.expertise %}
-      <h2>Areas of Expertise</h2>
-      <ul>
-        {% for item in supervisor.expertise.splitlines() %}
-          {% if item.strip() %}
-          <li>{{ item.strip() }}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      {% endif %}
-
-      {% if supervisor.projects %}
-      <h2>Research Projects</h2>
-      <ul>
-        {% for item in supervisor.projects.splitlines() %}
-          {% if item.strip() %}
-          <li>{{ item.strip() }}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      {% endif %}
-
-      {% if supervisor.techniques %}
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        {% for item in supervisor.techniques.splitlines() %}
-          {% if item.strip() %}
-          <li>{{ item.strip() }}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      {% endif %}
-
-      {% if supervisor.publications %}
-      <h2>Selected Publications</h2>
-      <ul>
-        {% for pub in supervisor.publications.splitlines() %}
-          {% if pub.strip() %}
-            <li>
-              {% set doi_index = pub.find('DOI: ') %}
-              {% if doi_index != -1 %}
-                {{ pub[:doi_index] }}
-                DOI: 
-                <a href="https://doi.org/{{ pub[doi_index+5:] }}">{{ pub[doi_index+5:] }}</a>
-              {% else %}
-                {{ pub }}
-              {% endif %}
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      {% endif %}
-
-      {% if supervisor.keywords %}
-      <h2>Keywords</h2>
-      <p>{{ supervisor.keywords }}</p>
-      {% endif %}
-
-    </div>
-  {% endfor %}
-
-</body>
-</html>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: white;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #222;
+  }
+  .title-page {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .title-page h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .unit-section {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .unit-section h2 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+  }
+  .unit-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+  .unit-section li {
+    margin-bottom: 4px;
+    font-size: 15px;
+  }
+  .unit-section a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  .unit-section a:hover {
+    text-decoration: underline;
+  }
+  .supervisor {
+    margin-top: 40px;
+    page-break-before: always;
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #000;
+  }
+  .profile-info p {
+    margin: 3px 0;
+    font-size: 15px;
+  }
+  .profile-info strong {
+    color: #000;
+  }
+  .profile-info a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+  }
+  ul {
+    padding-left: 18px;
+    margin-top: 5px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+</style>
