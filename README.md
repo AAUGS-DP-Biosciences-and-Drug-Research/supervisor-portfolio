@@ -8,7 +8,7 @@ This project collects supervisor profiles using a Microsoft Form and automatical
 
 The website and PDF are continuously updated and hosted via **GitHub Pages**.
 
-👉 **Live Website:** [https://guijacquemet.github.io/supervisor-portfolio/](https://guijacquemet.github.io/supervisor-portfolio/)
+👉 **Live Website:** 🔗 [Supervisor Portfolio](https://aaugs-dp-biosciences-and-drug-research.github.io/supervisor-portfolio/)
 
 ---
 
