@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install pandas jinja2 weasyprint requests
+          pip install pandas jinja2 weasyprint requests pyyaml
 
       - name: Build site and PDF
         run: |
