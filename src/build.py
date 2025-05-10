@@ -8,25 +8,25 @@ from jinja2 import Environment, FileSystemLoader
 INPUT_CSV = "data/responses.csv"
 PUBLIC_FOLDER = "public"
 IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
-DEFAULT_LOGO = "images/AboAkademiUniversity.png"  # relative to public
+SOURCE_IMAGES = "static/images"
+DEFAULT_LOGO = "images/AboAkademiUniversity.png"
 
 # ---------- Helpers ----------
 def slugify(name):
     return re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
 
-# ---------- Copy all images into public/images ----------
+# ---------- Prepare image folder ----------
 os.makedirs(IMAGES_FOLDER, exist_ok=True)
-source_dir = IMAGES_FOLDER  # already checked out in main branch
 
-if os.path.isdir(source_dir):
-    for filename in os.listdir(source_dir):
-        src = os.path.join(source_dir, filename)
+if os.path.isdir(SOURCE_IMAGES):
+    for filename in os.listdir(SOURCE_IMAGES):
+        src = os.path.join(SOURCE_IMAGES, filename)
         dst = os.path.join(IMAGES_FOLDER, filename)
         if os.path.isfile(src):
             shutil.copyfile(src, dst)
-            print(f"✅ Copied image to deploy: {filename}")
+            print(f"✅ Copied image: {filename}")
 else:
-    print("⚠️ No images directory found to copy.")
+    print("⚠️ static/images folder not found.")
 
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
@@ -49,13 +49,11 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
         photo_filename = os.path.basename(photo_url_raw)
         photo_local_path = os.path.join(IMAGES_FOLDER, photo_filename)
 
-        # Check if image file exists
         if os.path.isfile(photo_local_path):
             final_photo_url = f"./images/{photo_filename}"
-            print(f"✅ Using image for {name}: {photo_filename}")
         else:
             final_photo_url = f"./{DEFAULT_LOGO}"
-            print(f"⚠️ No photo found for {name}, using default logo.")
+            print(f"⚠️ No photo for {name}, using logo.")
 
         supervisor = {
             "name": name,
@@ -76,25 +74,24 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
 
         supervisors.append(supervisor)
 
-print(f"\n✅ Loaded CSV with {len(supervisors)} rows.")
+print(f"\n✅ Loaded {len(supervisors)} supervisors.")
 
-# ---------- Create output folders ----------
+# ---------- Write supervisor pages ----------
 os.makedirs(os.path.join(PUBLIC_FOLDER, "supervisors"), exist_ok=True)
 
-# ---------- Write individual supervisor pages ----------
 for supervisor in supervisors:
     html = page_template.render(supervisor=supervisor)
     out_path = os.path.join(PUBLIC_FOLDER, "supervisors", f"{supervisor['slug']}.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"✅ Created page for {supervisor['name']}")
+    print(f"✅ Page for {supervisor['name']}")
 
 # ---------- Write index.html ----------
 with open(os.path.join(PUBLIC_FOLDER, "index.html"), "w", encoding="utf-8") as f:
     f.write(index_template.render(supervisors=supervisors))
 print("✅ Created index.html")
 
-# ---------- Write PDF HTML base ----------
+# ---------- Write PDF template base ----------
 with open(os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.html"), "w", encoding="utf-8") as f:
     f.write(pdf_template.render(supervisors=supervisors))
 print("✅ Created Supervisor_Portfolio.html")
