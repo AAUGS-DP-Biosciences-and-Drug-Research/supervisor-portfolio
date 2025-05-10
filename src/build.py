@@ -28,7 +28,7 @@ pdf_template = env.get_template("pdf.html")
 # ---------- Load and process CSV ----------
 supervisors = []
 
-with open(INPUT_CSV, newline='', encoding='latin1') as csvfile:
+with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         name = row.get("Name", "").strip()
