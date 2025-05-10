@@ -8,7 +8,7 @@
       font-family: Arial, sans-serif;
       margin: 40px;
       background: white;
-      font-size: 14px;
+      font-size: 13.5px;
       line-height: 1.4;
       color: #222;
     }
@@ -42,24 +42,37 @@
       margin-top: 40px;
       page-break-before: always;
     }
-    h1 {
-      font-size: 26px;
-      margin-bottom: 8px;
+    .profile-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+    .profile-header img {
+      width: 100px;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      background: #f4f4f4;
+      flex-shrink: 0;
+    }
+    .profile-info h1 {
+      font-size: 22px;
+      margin: 0;
     }
     .profile-info p {
-      margin: 3px 0;
-      font-size: 15px;
+      margin: 2px 0;
     }
     .profile-info a {
       color: #0077cc;
       text-decoration: none;
     }
     h2 {
-      font-size: 20px;
-      margin-top: 20px;
+      font-size: 18px;
+      margin-top: 14px;
       margin-bottom: 6px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 4px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
     }
     ul {
       padding-left: 18px;
@@ -72,7 +85,6 @@
 </head>
 <body>
 
-  <!-- Title page -->
   <div class="title-page">
     <h1>Supervisor Portfolio for the Doctoral Programme in Biosciences and Drug Research</h1>
   </div>
@@ -95,22 +107,25 @@
 
   
     <div class="supervisor">
-      <div class="profile-info">
-        <h1>Guillaume Jacquemet</h1>
 
-        
-        <p><strong>Group Name:</strong> Cell Migration Lab</p>
-        
-        
-        <p><strong>Unit:</strong> Cell Biology</p>
-        
-        <p><strong>University:</strong> Åbo Akademi University</p>
-        
-        <p><strong>Lab Website:</strong> <a href="https://cellmig.org/">https://cellmig.org/</a></p>
-        
-        
-        <p><strong>Link to AboCRIS profile:</strong> <a href="https://research.abo.fi/en/persons/guillaume-jacquemet">https://research.abo.fi/en/persons/guillaume-jacquemet</a></p>
-        
+      <div class="profile-header">
+        <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Guillaume Jacquemet</h1>
+          
+          <p><strong>Group Name:</strong> Cell Migration Lab</p>
+          
+          
+          <p><strong>Unit:</strong> Cell Biology</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://cellmig.org/">https://cellmig.org/</a></p>
+          
+          
+          <p><strong>Link to AboCRIS profile:</strong> <a href="https://research.abo.fi/en/persons/guillaume-jacquemet">https://research.abo.fi/en/persons/guillaume-jacquemet</a></p>
+          
+        </div>
       </div>
 
       
@@ -233,6 +248,7 @@
       
 
       
+
     </div>
   
 
