@@ -107,11 +107,15 @@
           <p><strong>University:</strong> {{ supervisor.university }}</p>
 
           {% if supervisor.lab_website %}
-          <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">{{ supervisor.lab_website }}</a></p>
+          <p><strong>Lab Website:</strong>
+            <a href="{{ supervisor.lab_website }}" target="_blank">Visit lab site</a>
+          </p>
           {% endif %}
 
           {% if supervisor.cris_profile %}
-          <p><strong>Link to AboCRIS profile:</strong> <a href="{{ supervisor.cris_profile }}" target="_blank">{{ supervisor.cris_profile }}</a></p>
+          <p><strong>AboCRIS Profile:</strong>
+            <a href="{{ supervisor.cris_profile }}" target="_blank">View profile</a>
+          </p>
           {% endif %}
         </div>
       </div>
@@ -154,7 +158,13 @@
 
     {% if supervisor.funding %}
     <h2>Major Funding & International Networks</h2>
-    <p>{{ supervisor.funding }}</p>
+    <ul>
+      {% for item in supervisor.funding.splitlines() %}
+        {% if item.strip() %}
+        <li>{{ item.strip() }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
     {% endif %}
 
     {% if supervisor.publications %}
@@ -166,8 +176,7 @@
             {% set doi_index = pub.find('DOI: ') %}
             {% if doi_index != -1 %}
               {{ pub[:doi_index] }}
-              DOI: 
-              <a href="https://doi.org/{{ pub[doi_index+5:] }}" target="_blank">{{ pub[doi_index+5:] }}</a>
+              <a href="https://doi.org/{{ pub[doi_index+5:] }}" target="_blank">[DOI]</a>
             {% else %}
               {{ pub }}
             {% endif %}
@@ -175,6 +184,11 @@
         {% endif %}
       {% endfor %}
     </ul>
+    {% endif %}
+
+    {% if supervisor.keywords %}
+    <h2>Keywords</h2>
+    <p>{{ supervisor.keywords }}</p>
     {% endif %}
 
     <p style="text-align: center;">
