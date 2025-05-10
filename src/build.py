@@ -1,77 +1,97 @@
-import pandas as pd
 import os
+import csv
+import re
+import requests
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import HTML
 
-def safe_read(row, column_name):
-    value = row.get(column_name, "")
-    if pd.isna(value):
-        return ""
-    return str(value).strip()
+# ---------- Config ----------
+INPUT_CSV = "data/responses.csv"
+PUBLIC_FOLDER = "public"
+IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
+DEFAULT_LOGO = "images/default-logo.png"
 
+# ---------- Helpers ----------
+def slugify(name):
+    return re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
 
+def fetch_and_save_image(url, filename):
+    try:
+        os.makedirs(IMAGES_FOLDER, exist_ok=True)
+        r = requests.get(url, timeout=10)
+        r.raise_for_status()
+        with open(filename, "wb") as f:
+            f.write(r.content)
+        print(f"✅ Saved photo: {filename}")
+    except Exception as e:
+        print(f"⚠️ Failed to fetch image {url}: {e}")
 
-# Create necessary output folders
-os.makedirs('public/supervisors', exist_ok=True)
+# ---------- Load templates ----------
+env = Environment(loader=FileSystemLoader("src/templates"))
+page_template = env.get_template("supervisor.html")
+index_template = env.get_template("index.html")
+pdf_template = env.get_template("pdf.html")
 
-print("✅ Folders created.")
-
-# Load the CSV
-try:
-    df = pd.read_csv('data/responses.csv', encoding='latin1')
-    print(f"✅ Loaded CSV with {len(df)} rows.")
-except Exception as e:
-    print(f"❌ Failed to load CSV: {e}")
-    exit(1)
-
-# Clean up weird column names
-df.columns = [col.strip().replace(' ', ' ').replace('\n', '').replace('\r', '') for col in df.columns]
-
-# Prepare Jinja2 environment
-env = Environment(loader=FileSystemLoader('src/templates'))
-supervisor_template = env.get_template('supervisor.html')
-index_template = env.get_template('index.html')
-
+# ---------- Load and process CSV ----------
 supervisors = []
 
-for index, row in df.iterrows():
-    supervisor = {
-        'name': safe_read(row, 'Name'),
-        'group': safe_read(row, 'Lab Name'),
-        'unit': safe_read(row, 'Subject'),
-        'university': "Åbo Akademi University",
-        'expertise': safe_read(row, 'Areas of Expertise'),
-        'projects': safe_read(row, 'Research projects'),
-        'techniques': safe_read(row, 'Special methodologies & techniques'),
-        'publications': safe_read(row, 'Five selected publications'),
-        'lab_website': safe_read(row, 'Lab Website'),
-        'email': safe_read(row, 'Email'),
-        'photo_url': safe_read(row, 'Upload a profile photo')
-    }
+with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        name = row.get("Name", "").strip()
+        if not name:
+            continue
 
-    if not supervisor['name']:
-        continue
+        slug = slugify(name)
+        permission = row.get("I give the permission to post my picture online", "").strip().lower() == "yes"
+        photo_url_raw = row.get("Upload a profile photo", "").strip()
+        photo_local_path = os.path.join(IMAGES_FOLDER, f"{slug}.jpg")
 
-    supervisors.append(supervisor)
+        # Download photo if permitted
+        if permission and photo_url_raw:
+            fetch_and_save_image(photo_url_raw, photo_local_path)
+            final_photo_url = f"./images/{slug}.jpg"
+        else:
+            final_photo_url = f"./{DEFAULT_LOGO}"
 
-    filename = f"public/supervisors/{supervisor['name'].lower().replace(' ', '-')}.html"
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write(supervisor_template.render(supervisor=supervisor))
+        supervisor = {
+            "name": name,
+            "group": row.get("Research group name", "").strip(),
+            "unit": row.get("Subject", "").strip(),
+            "university": "Åbo Akademi University",
+            "lab_website": row.get("Research group website", "").strip(),
+            "cris_profile": row.get("Link to AboCRIS profile", "").strip(),
+            "expertise": row.get("Areas of Expertise", "").strip(),
+            "projects": row.get("Research projects", "").strip(),
+            "techniques": row.get("Special methodologies & techniques", "").strip(),
+            "funding": row.get("Major funding source(s) and international network(s)", "").strip(),
+            "publications": row.get("Five selected publications", "").strip(),
+            "keywords": row.get("Key words", "").strip(),
+            "photo_url": final_photo_url,
+            "photo_permission": permission,
+            "slug": slug,
+        }
 
+        supervisors.append(supervisor)
+
+print(f"✅ Loaded CSV with {len(supervisors)} rows.")
+
+# ---------- Create output folders ----------
+os.makedirs(os.path.join(PUBLIC_FOLDER, "supervisors"), exist_ok=True)
+
+# ---------- Write individual supervisor pages ----------
+for supervisor in supervisors:
+    html = page_template.render(supervisor=supervisor)
+    out_path = os.path.join(PUBLIC_FOLDER, "supervisors", f"{supervisor['slug']}.html")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
     print(f"✅ Created page for {supervisor['name']}")
 
-# Create main index.html
-with open('public/index.html', 'w', encoding='utf-8') as f:
+# ---------- Write index.html ----------
+with open(os.path.join(PUBLIC_FOLDER, "index.html"), "w", encoding="utf-8") as f:
     f.write(index_template.render(supervisors=supervisors))
+print("✅ Created index.html")
 
-print("✅ Created index.html with all supervisors listed.")
-
-# Create a temporary PDF HTML file first
-with open('public/pdf_version.html', 'w', encoding='utf-8') as f:
-    f.write(env.get_template('pdf.html').render(supervisors=supervisors))
-
-# Then generate the PDF
-HTML('public/pdf_version.html').write_pdf('public/Supervisor_Portfolio.pdf')
-print("✅ Created Supervisor_Portfolio.pdf.")
-
-print("🏁 Build complete!")
+# ---------- Write PDF template base ----------
+with open(os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.html"), "w", encoding="utf-8") as f:
+    f.write(pdf_template.render(supervisors=supervisors))
+print("✅ Created Supervisor_Portfolio.html")
