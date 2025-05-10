@@ -1,6 +1,7 @@
 import os
 import yaml
 import shutil
+import unicodedata
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
@@ -31,15 +32,28 @@ page_template = env.get_template("supervisor.html")
 index_template = env.get_template("index.html")
 pdf_template = env.get_template("pdf.html")
 
-# ---------- Load supervisors.yaml ----------
+# ---------- Load YAML ----------
 with open(YAML_INPUT, "r", encoding="utf-8") as f:
     supervisors = yaml.safe_load(f)
 
+# ---------- Normalize and match images ----------
+def normalize_filename(name):
+    name = unicodedata.normalize("NFKD", name)
+    name = name.encode("ascii", "ignore").decode("ascii")
+    return name.lower().replace(" ", "").replace("%20", "").replace("_", "").strip()
+
+image_map = {}
+for filename in os.listdir(IMAGES_FOLDER):
+    key = normalize_filename(filename)
+    image_map[key] = filename
+
 for supervisor in supervisors:
-    image_name = supervisor.get("photo", "")
-    image_path = os.path.join(IMAGES_FOLDER, image_name)
-    if os.path.isfile(image_path):
-        supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{image_name}"
+    raw_photo_name = supervisor.get("photo", "")
+    normalized_photo = normalize_filename(raw_photo_name)
+    matched_file = image_map.get(normalized_photo)
+
+    if matched_file:
+        supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{matched_file}"
     else:
         supervisor["photo_url"] = DEFAULT_LOGO
         print(f"⚠️ Missing image for {supervisor['name']}, using logo.")
@@ -61,7 +75,7 @@ with open(os.path.join(PUBLIC_FOLDER, "index.html"), "w", encoding="utf-8") as f
     f.write(index_template.render(supervisors=supervisors))
 print("✅ Created index.html")
 
-# ---------- Write Supervisor_Portfolio.html ----------
+# ---------- Write PDF HTML ----------
 pdf_html_path = os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.html")
 with open(pdf_html_path, "w", encoding="utf-8") as f:
     f.write(pdf_template.render(supervisors=supervisors))
