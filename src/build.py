@@ -2,6 +2,7 @@ import os
 import csv
 import re
 import shutil
+import urllib.parse
 from jinja2 import Environment, FileSystemLoader
 
 # ---------- Config ----------
@@ -9,7 +10,7 @@ INPUT_CSV = "data/responses.csv"
 PUBLIC_FOLDER = "public"
 IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
 SOURCE_IMAGES = "static/images"
-SITE_BASE_PATH = "/supervisor-portfolio"  # used for site-root-relative paths
+SITE_BASE_PATH = "/supervisor-portfolio"
 DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/AboAkademiUniversity.png"
 
 # ---------- Helpers ----------
@@ -49,9 +50,10 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
         photo_url_raw = row.get("Upload a profile photo", "").strip()
         photo_filename = os.path.basename(photo_url_raw)
         photo_local_path = os.path.join(IMAGES_FOLDER, photo_filename)
+        photo_url_encoded = urllib.parse.quote(photo_filename)
 
         if os.path.isfile(photo_local_path):
-            final_photo_url = f"{SITE_BASE_PATH}/images/{photo_filename}"
+            final_photo_url = f"{SITE_BASE_PATH}/images/{photo_url_encoded}"
         else:
             final_photo_url = DEFAULT_LOGO
             print(f"⚠️ No photo for {name}, using logo.")
