@@ -79,7 +79,7 @@ os.makedirs(os.path.join(PUBLIC_FOLDER, "supervisors"), exist_ok=True)
 for supervisor in supervisors:
     html = page_template.render(supervisor=supervisor)
     out_path = os.path.join(PUBLIC_FOLDER, "supervisors", f"{supervisor['slug']}.html")
-    with open(out_path, "w", encoding="utf-8") as f:
+    with open(out_path, "w", encoding="latin1") as f:
         f.write(html)
     print(f"✅ Page for {supervisor['name']}")
 
