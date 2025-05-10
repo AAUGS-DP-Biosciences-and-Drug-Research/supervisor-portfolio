@@ -94,11 +94,7 @@
 
     <div class="profile-header">
       <div class="profile-left">
-        {% if supervisor.photo_url and supervisor.photo_permission %}
         <img src="{{ supervisor.photo_url }}" alt="Profile Photo" class="profile-photo">
-        {% else %}
-        <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="Åbo Akademi Logo" class="profile-photo">
-        {% endif %}
         <div class="profile-info">
           <h1>{{ supervisor.name }}</h1>
 
