@@ -1,8 +1,8 @@
-Id,Start time,Completion time,Name,Lab Name,PI  name,Subject,Lab Website,"Areas of Expertise 
+Name,Research group name,PI  name,Subject,Research group website,Link to AboCRIS profile,"Areas of Expertise 
 ",Research projects,"Special methodologies & techniques
-","Five selected publications
-",Upload a profile photo
-2,4/26/2025 18:49,4/26/2025 18:51,Guillaume Jacquemet,Cell Migration Lab,Guillaume Jacquemet,Cell Biology and Biochemistry,https://cellmig.org/,"Cancer cell biology
+",Major funding source(s) and international network(s),"Five selected publications
+",Upload a profile photo,I give the permission to post my picture online
+Guillaume Jacquemet,Cell Migration Lab,Guillaume Jacquemet,Cell Biology,https://cellmig.org/,https://research.abo.fi/en/persons/guillaume-jacquemet,"Cancer cell biology
 Cell adhesion and migration
 Microscopy and live imaging
 Image analysis","The role of filopodia during breast cancer progression 
@@ -15,9 +15,21 @@ Image analysis, deep learning and computer vision
 Cell and molecular biology
 Mass spectrometry (identification of protein-protein interactions using pull-downs and biotinylation-based strategy)
 Zebrafish embryo to study cancer biology
-Flow and perfusion chambers","MYO10-filopodia support basement membranes at preinvasive tumor boundaries. Dev Cell. 2022; 57 (20), 2350-2364. E7. DOI: 10.1016/j.devcel.2022.09.016
-TrackMate 7: Integrating state-of-the-art segmentation algorithms into tracking pipelines. Nat. Methods. 2022; 19,829832. DOI: 10.1038/s41592-022-01507-1
-Democratising Deep Learning for Microscopy with ZeroCostDL4Mic. Nat Commun. 2021; 4:15;12(1):2276. DOI: 10.1038/s41467-021-22518-0
-",https://abofi-my.sharepoint.com/personal/guillaume_jacquemet_abo_fi/Documents/Apps/Microsoft%20Forms/Supervisor%20of%20the%20Doctoral%20Programme%20in%20Bioscience/Question/Guillaume%20Jacquemet_Guillaume%20Jacquemet.jpg
-,,,Christian Pansch-Hattich,,Christian Pansch-Hattich,Marine Biology,,,,,,
-,,,Jessica Rosenholm,,Jessica Rosenholm,Pharmacy,,,,,,
+Flow and perfusion chambers","Sigrid Juselius Foundation
+Wellcome Trust
+Academy of Finland
+Finnish Cancer Foundation
+Inflames
+Turku Bioscience
+","TLNRD1 is a CCM complex component and regulates endothelial barrier integrity. J Cell Biol. 2024 Sep 2; 223(9): e202310030. DOI: 10.1083/jcb.202310030
+
+CellTracksColab is a platform that enables compilation, analysis, and exploration of cell tracking data. PLOS Biol. August 8, 2024. DOI: 10.1371/journal.pbio.3002740
+
+MYO10-filopodia support basement membranes at preinvasive tumor boundaries. Dev Cell. 2022; 57 (20), 2350-
+2364. E7. DOI: 10.1016/j.devcel.2022.09.016
+
+TrackMate 7: Integrating state-of-the-art segmentation algorithms into tracking pipelines. Nat. Methods. 2022; 19,
+829832. DOI: 10.1038/s41592-022-01507-1
+
+Democratising Deep Learning for Microscopy with ZeroCostDL4Mic. Nat Commun. 2021; 4:15;12(1):2276. DOI:
+10.1038/s41467-021-22518-0",https://abofi-my.sharepoint.com/personal/guillaume_jacquemet_abo_fi/Documents/Apps/Microsoft%20Forms/Supervisor%20of%20the%20Doctoral%20Programme%20in%20Bioscience/Question/Guillaume%20Jacquemet_Guillaume%20Jacquemet.jpg,Yes
