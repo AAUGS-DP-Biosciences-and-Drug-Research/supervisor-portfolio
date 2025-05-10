@@ -119,7 +119,7 @@
     <div class="supervisor" id="{{ supervisor.slug }}">
 
       <div class="profile-header">
-        <img src="{{ supervisor.photo_url }}" alt="Profile Photo">
+        <img src="file://{{ supervisor.photo_pdf_path }}" alt="Profile Photo">
         <div class="profile-info">
           <h1>{{ supervisor.name }}</h1>
           {% if supervisor.group %}
