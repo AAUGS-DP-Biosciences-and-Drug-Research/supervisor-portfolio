@@ -9,7 +9,8 @@ INPUT_CSV = "data/responses.csv"
 PUBLIC_FOLDER = "public"
 IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
 SOURCE_IMAGES = "static/images"
-DEFAULT_LOGO = "images/AboAkademiUniversity.png"
+SITE_BASE_PATH = "/supervisor-portfolio"  # used for site-root-relative paths
+DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/AboAkademiUniversity.png"
 
 # ---------- Helpers ----------
 def slugify(name):
@@ -50,9 +51,9 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
         photo_local_path = os.path.join(IMAGES_FOLDER, photo_filename)
 
         if os.path.isfile(photo_local_path):
-            final_photo_url = f"./images/{photo_filename}"
+            final_photo_url = f"{SITE_BASE_PATH}/images/{photo_filename}"
         else:
-            final_photo_url = f"./{DEFAULT_LOGO}"
+            final_photo_url = DEFAULT_LOGO
             print(f"⚠️ No photo for {name}, using logo.")
 
         supervisor = {
