@@ -33,6 +33,16 @@ The website and PDF are continuously updated and hosted via **GitHub Pages**.
 
 ---
 
+## 📊 Convert Excel Form Data to YAML
+
+To generate the `supervisors.yaml` file from your Microsoft Form Excel export, use the following Colab notebook:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AAUGS-DP-Biosciences-and-Drug-Research/supervisor-portfolio/blob/main/Convert_Excel_Supervisor_Data_to_YAML.ipynb)
+
+> This will generate a clean, editable YAML file compatible with the portfolio builder.
+
+---
+
 ## 📦 Dependencies
 
 - Python 3.11+
