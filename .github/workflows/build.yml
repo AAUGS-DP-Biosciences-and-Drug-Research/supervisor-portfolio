@@ -10,7 +10,7 @@ on:
       - '.github/workflows/**'
 
 permissions:
-  contents: write   # <-- THIS IS IMPORTANT
+  contents: write
 
 jobs:
   build:
@@ -25,9 +25,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
-          pip install pandas jinja2 weasyprint
+          pip install pandas jinja2 weasyprint requests
 
       - name: Build site and PDF
         run: |
