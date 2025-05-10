@@ -39,6 +39,13 @@
       margin-bottom: 2px;
       font-size: 13px;
     }
+    .unit-section a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .unit-section a:hover {
+      text-decoration: underline;
+    }
     .supervisor {
       margin-top: 20px;
       page-break-before: always;
@@ -102,14 +109,14 @@
       <h2>{{ unit }}</h2>
       <ul>
         {% for supervisor in supervisors_in_unit %}
-          <li>{{ supervisor.name }}</li>
+          <li><a href="#{{ supervisor.slug }}">{{ supervisor.name }}</a></li>
         {% endfor %}
       </ul>
     {% endfor %}
   </div>
 
   {% for supervisor in supervisors %}
-    <div class="supervisor">
+    <div class="supervisor" id="{{ supervisor.slug }}">
 
       <div class="profile-header">
         <img src="{{ supervisor.photo_url }}" alt="Profile Photo">
