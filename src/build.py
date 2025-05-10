@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader
 INPUT_CSV = "data/responses.csv"
 PUBLIC_FOLDER = "public"
 IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
-DEFAULT_LOGO = "AboAkademiUniversity.png"
+DEFAULT_LOGO = "images/AboAkademiUniversity.png"  # relative to public
 
 # ---------- Helpers ----------
 def slugify(name):
@@ -30,16 +30,17 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
             continue
 
         slug = slugify(name)
-        permission = row.get("I give the permission to post my picture online", "").strip().lower() == "yes"
         photo_url_raw = row.get("Upload a profile photo", "").strip()
         photo_filename = os.path.basename(photo_url_raw)
         photo_local_path = os.path.join(IMAGES_FOLDER, photo_filename)
 
-        # If permission given and image file exists locally, use it
-        if permission and os.path.isfile(photo_local_path):
+        # Just check if file exists
+        if os.path.isfile(photo_local_path):
             final_photo_url = f"./images/{photo_filename}"
+            print(f"✅ Found image for {name}: {photo_filename}")
         else:
             final_photo_url = f"./{DEFAULT_LOGO}"
+            print(f"⚠️ Image missing for {name}, using logo")
 
         supervisor = {
             "name": name,
@@ -47,7 +48,7 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
             "unit": row.get("Subject", "").strip(),
             "university": "Åbo Akademi University",
             "lab_website": row.get("Research group website", "").strip(),
-            "cris_profile": row.get("Link to AboCRIS profile", "").strip(),
+            "cris_profile": row.get("Link to AboCRIS profile", "").strip() or row.get("Link to AboCRIS profile", "").strip(),
             "expertise": row.get("Areas of Expertise", "").strip(),
             "projects": row.get("Research projects", "").strip(),
             "techniques": row.get("Special methodologies & techniques", "").strip(),
@@ -55,7 +56,6 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
             "publications": row.get("Five selected publications", "").strip(),
             "keywords": row.get("Key words", "").strip(),
             "photo_url": final_photo_url,
-            "photo_permission": permission,
             "slug": slug,
         }
 
