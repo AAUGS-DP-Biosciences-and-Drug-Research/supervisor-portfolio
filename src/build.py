@@ -20,13 +20,18 @@ def slugify(name):
 # ---------- Prepare image folder ----------
 os.makedirs(IMAGES_FOLDER, exist_ok=True)
 
+# Copy and rename images using URL-safe names
+filename_map = {}
+
 if os.path.isdir(SOURCE_IMAGES):
     for filename in os.listdir(SOURCE_IMAGES):
+        safe_filename = urllib.parse.quote(filename)
         src = os.path.join(SOURCE_IMAGES, filename)
-        dst = os.path.join(IMAGES_FOLDER, filename)
+        dst = os.path.join(IMAGES_FOLDER, safe_filename)
         if os.path.isfile(src):
             shutil.copyfile(src, dst)
-            print(f"✅ Copied image: {filename}")
+            filename_map[filename] = safe_filename
+            print(f"✅ Copied and encoded: {filename} → {safe_filename}")
 else:
     print("⚠️ static/images folder not found.")
 
@@ -49,11 +54,10 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
         slug = slugify(name)
         photo_url_raw = row.get("Upload a profile photo", "").strip()
         photo_filename = os.path.basename(photo_url_raw)
-        photo_local_path = os.path.join(IMAGES_FOLDER, photo_filename)
-        photo_url_encoded = urllib.parse.quote(photo_filename)
+        safe_photo_filename = filename_map.get(photo_filename)
 
-        if os.path.isfile(photo_local_path):
-            final_photo_url = f"{SITE_BASE_PATH}/images/{photo_url_encoded}"
+        if safe_photo_filename:
+            final_photo_url = f"{SITE_BASE_PATH}/images/{safe_photo_filename}"
         else:
             final_photo_url = DEFAULT_LOGO
             print(f"⚠️ No photo for {name}, using logo.")
