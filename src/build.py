@@ -11,8 +11,9 @@ PUBLIC_FOLDER = "public"
 IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
 SOURCE_IMAGES = "static/images"
 SITE_BASE_PATH = "/supervisor-portfolio"
-DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/AboAkademiUniversity.png"
-DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, "AboAkademiUniversity.png"))  # ← PDF fallback
+DEFAULT_LOGO_FILENAME = "AboAkademiUniversity.png"
+DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/{DEFAULT_LOGO_FILENAME}"
+DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, DEFAULT_LOGO_FILENAME))
 
 # ---------- Prepare image folder ----------
 os.makedirs(IMAGES_FOLDER, exist_ok=True)
@@ -37,25 +38,31 @@ pdf_template = env.get_template("pdf.html")
 with open(YAML_INPUT, "r", encoding="utf-8") as f:
     supervisors = yaml.safe_load(f)
 
-# ---------- Normalize and match images ----------
+# ---------- Helpers ----------
 def normalize_filename(name):
     name = unicodedata.normalize("NFKD", name)
     name = name.encode("ascii", "ignore").decode("ascii")
     return name.lower().replace(" ", "").replace("%20", "").replace("_", "").strip()
 
-image_map = {}
-for filename in os.listdir(IMAGES_FOLDER):
-    key = normalize_filename(filename)
-    image_map[key] = filename
+# ---------- Build lookup for all source images ----------
+source_images = {normalize_filename(f): f for f in os.listdir(SOURCE_IMAGES)}
 
+# ---------- Match and rename images to slug ----------
 for supervisor in supervisors:
+    slug = supervisor["slug"]
     raw_photo_name = supervisor.get("photo", "")
-    normalized_photo = normalize_filename(raw_photo_name)
-    matched_file = image_map.get(normalized_photo)
+    norm_key = normalize_filename(raw_photo_name)
 
-    if matched_file:
-        supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{matched_file}"
-        supervisor["photo_pdf_path"] = os.path.abspath(os.path.join(IMAGES_FOLDER, matched_file))  # ← for PDF
+    matched = source_images.get(norm_key)
+    if matched:
+        ext = os.path.splitext(matched)[-1]
+        clean_filename = f"{slug}{ext}"
+        src_path = os.path.join(SOURCE_IMAGES, matched)
+        dst_path = os.path.join(IMAGES_FOLDER, clean_filename)
+        shutil.copyfile(src_path, dst_path)
+
+        supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{clean_filename}"
+        supervisor["photo_pdf_path"] = os.path.abspath(dst_path)
     else:
         supervisor["photo_url"] = DEFAULT_LOGO
         supervisor["photo_pdf_path"] = DEFAULT_LOGO_PDF
