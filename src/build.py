@@ -1,7 +1,5 @@
 import os
 import yaml
-import shutil
-import unicodedata
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
@@ -15,19 +13,6 @@ DEFAULT_LOGO_FILENAME = "AboAkademiUniversity.png"
 DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/{DEFAULT_LOGO_FILENAME}"
 DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, DEFAULT_LOGO_FILENAME))
 
-# ---------- Prepare image folder ----------
-os.makedirs(IMAGES_FOLDER, exist_ok=True)
-
-if os.path.isdir(SOURCE_IMAGES):
-    for filename in os.listdir(SOURCE_IMAGES):
-        src = os.path.join(SOURCE_IMAGES, filename)
-        dst = os.path.join(IMAGES_FOLDER, filename)
-        if os.path.isfile(src):
-            shutil.copyfile(src, dst)
-            print(f"✅ Copied image: {filename}")
-else:
-    print("⚠️ static/images folder not found.")
-
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
 page_template = env.get_template("supervisor.html")
@@ -38,39 +23,29 @@ pdf_template = env.get_template("pdf.html")
 with open(YAML_INPUT, "r", encoding="utf-8") as f:
     supervisors = yaml.safe_load(f)
 
-# ---------- Helpers ----------
-def normalize_filename(name):
-    name = unicodedata.normalize("NFKD", name)
-    name = name.encode("ascii", "ignore").decode("ascii")
-    return name.lower().replace(" ", "").replace("%20", "").replace("_", "").strip()
-
-# ---------- Build lookup for all source images ----------
-source_images = {normalize_filename(f): f for f in os.listdir(SOURCE_IMAGES)}
-
-# ---------- Match and rename images to slug ----------
+# ---------- Match images by slug ----------
 for supervisor in supervisors:
     slug = supervisor["slug"]
-    raw_photo_name = supervisor.get("photo", "")
-    norm_key = normalize_filename(raw_photo_name)
 
-    matched = source_images.get(norm_key)
-    if matched:
-        ext = os.path.splitext(matched)[-1]
-        clean_filename = f"{slug}{ext}"
-        src_path = os.path.join(SOURCE_IMAGES, matched)
-        dst_path = os.path.join(IMAGES_FOLDER, clean_filename)
-        shutil.copyfile(src_path, dst_path)
+    # Try to find an image with any common extension
+    found = False
+    for ext in [".jpg", ".jpeg", ".png", ".webp"]:
+        candidate = slug + ext
+        full_path = os.path.join(IMAGES_FOLDER, candidate)
+        if os.path.isfile(full_path):
+            supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{candidate}"
+            supervisor["photo_pdf_path"] = os.path.abspath(full_path)
+            found = True
+            break
 
-        supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{clean_filename}"
-        supervisor["photo_pdf_path"] = os.path.abspath(dst_path)
-    else:
+    if not found:
         supervisor["photo_url"] = DEFAULT_LOGO
         supervisor["photo_pdf_path"] = DEFAULT_LOGO_PDF
-        print(f"⚠️ Missing image for {supervisor['name']}, using logo.")
+        print(f"⚠️ Missing image for {supervisor['name']} → using logo.")
 
-print(f"✅ Loaded {len(supervisors)} supervisors from YAML.")
+print(f"✅ Loaded {len(supervisors)} supervisors.")
 
-# ---------- Write supervisor pages ----------
+# ---------- Generate supervisor pages ----------
 os.makedirs(os.path.join(PUBLIC_FOLDER, "supervisors"), exist_ok=True)
 
 for supervisor in supervisors:
@@ -80,12 +55,12 @@ for supervisor in supervisors:
         f.write(html)
     print(f"✅ Page for {supervisor['name']}")
 
-# ---------- Write index.html ----------
+# ---------- Generate index ----------
 with open(os.path.join(PUBLIC_FOLDER, "index.html"), "w", encoding="utf-8") as f:
     f.write(index_template.render(supervisors=supervisors))
 print("✅ Created index.html")
 
-# ---------- Write Supervisor_Portfolio.html ----------
+# ---------- Generate Supervisor_Portfolio.html ----------
 pdf_html_path = os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.html")
 with open(pdf_html_path, "w", encoding="utf-8") as f:
     f.write(pdf_template.render(supervisors=supervisors))
