@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader
 INPUT_CSV = "data/responses.csv"
 PUBLIC_FOLDER = "public"
 IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
-DEFAULT_LOGO = "images/default-logo.png"
+DEFAULT_LOGO = "https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png"
 
 # ---------- Helpers ----------
 def slugify(name):
