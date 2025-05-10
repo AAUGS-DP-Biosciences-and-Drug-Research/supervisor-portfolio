@@ -89,99 +89,56 @@
   </style>
 </head>
 <body>
-
   <div class="card">
-
     <div class="profile-header">
       <div class="profile-left">
         <img src="{{ supervisor.photo_url }}" alt="Profile Photo" class="profile-photo">
         <div class="profile-info">
           <h1>{{ supervisor.name }}</h1>
-
-          {% if supervisor.group %}
-          <p><strong>Group Name:</strong> {{ supervisor.group }}</p>
-          {% endif %}
-          {% if supervisor.unit %}
-          <p><strong>Subject:</strong> {{ supervisor.unit }}</p>
-          {% endif %}
+          {% if supervisor.group %}<p><strong>Group Name:</strong> {{ supervisor.group }}</p>{% endif %}
+          {% if supervisor.unit %}<p><strong>Subject:</strong> {{ supervisor.unit }}</p>{% endif %}
           <p><strong>University:</strong> {{ supervisor.university }}</p>
-
           {% if supervisor.lab_website %}
-          <p><strong>Lab Website:</strong>
-            <a href="{{ supervisor.lab_website }}" target="_blank">Visit lab site</a>
-          </p>
+            <p><strong>Lab Website:</strong> <a href="{{ supervisor.lab_website }}" target="_blank">link</a></p>
           {% endif %}
-
           {% if supervisor.cris_profile %}
-          <p><strong>AboCRIS Profile:</strong>
-            <a href="{{ supervisor.cris_profile }}" target="_blank">View profile</a>
-          </p>
+            <p><strong>AboCRIS Profile:</strong> <a href="{{ supervisor.cris_profile }}" target="_blank">link</a></p>
           {% endif %}
         </div>
       </div>
-
-      <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="Åbo Akademi University Logo" class="logo">
+      <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="ÅAU Logo" class="logo">
     </div>
 
     {% if supervisor.expertise %}
     <h2>Areas of Expertise</h2>
-    <ul>
-      {% for item in supervisor.expertise.splitlines() %}
-        {% if item.strip() %}
-        <li>{{ item.strip() }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <ul>{% for item in supervisor.expertise %}<li>{{ item }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.projects %}
     <h2>Research Projects</h2>
-    <ul>
-      {% for item in supervisor.projects.splitlines() %}
-        {% if item.strip() %}
-        <li>{{ item.strip() }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <ul>{% for item in supervisor.projects %}<li>{{ item }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.techniques %}
     <h2>Special Methodologies & Techniques</h2>
-    <ul>
-      {% for item in supervisor.techniques.splitlines() %}
-        {% if item.strip() %}
-        <li>{{ item.strip() }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <ul>{% for item in supervisor.techniques %}<li>{{ item }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.funding %}
     <h2>Major Funding & International Networks</h2>
-    <ul>
-      {% for item in supervisor.funding.splitlines() %}
-        {% if item.strip() %}
-        <li>{{ item.strip() }}</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <ul>{% for item in supervisor.funding %}<li>{{ item }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.publications %}
     <h2>Selected Publications</h2>
     <ul>
-      {% for pub in supervisor.publications.splitlines() %}
-        {% if pub.strip() %}
-          <li>
-            {% set doi_index = pub.find('DOI: ') %}
-            {% if doi_index != -1 %}
-              {{ pub[:doi_index] }}
-              <a href="https://doi.org/{{ pub[doi_index+5:] }}" target="_blank">[DOI]</a>
-            {% else %}
-              {{ pub }}
-            {% endif %}
-          </li>
-        {% endif %}
+      {% for pub in supervisor.publications %}
+        {% set doi_index = pub.find('DOI: ') %}
+        <li>
+          {% if doi_index != -1 %}
+            {{ pub[:doi_index] }} DOI: <a href="https://doi.org/{{ pub[doi_index+5:] }}" target="_blank">{{ pub[doi_index+5:] }}</a>
+          {% else %}{{ pub }}{% endif %}
+        </li>
       {% endfor %}
     </ul>
     {% endif %}
@@ -194,8 +151,6 @@
     <p style="text-align: center;">
       <a href="../index.html" class="back-button">← Back to Portfolio</a>
     </p>
-
   </div>
-
 </body>
 </html>
