@@ -1,7 +1,6 @@
 import os
 import csv
 import re
-import requests
 from jinja2 import Environment, FileSystemLoader
 
 # ---------- Config ----------
@@ -13,17 +12,6 @@ DEFAULT_LOGO = "images/default-logo.png"
 # ---------- Helpers ----------
 def slugify(name):
     return re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')
-
-def fetch_and_save_image(url, filename):
-    try:
-        os.makedirs(IMAGES_FOLDER, exist_ok=True)
-        r = requests.get(url, timeout=10)
-        r.raise_for_status()
-        with open(filename, "wb") as f:
-            f.write(r.content)
-        print(f"✅ Saved photo: {filename}")
-    except Exception as e:
-        print(f"⚠️ Failed to fetch image {url}: {e}")
 
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
@@ -44,12 +32,12 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
         slug = slugify(name)
         permission = row.get("I give the permission to post my picture online", "").strip().lower() == "yes"
         photo_url_raw = row.get("Upload a profile photo", "").strip()
-        photo_local_path = os.path.join(IMAGES_FOLDER, f"{slug}.jpg")
+        photo_filename = os.path.basename(photo_url_raw)
+        photo_local_path = os.path.join(IMAGES_FOLDER, photo_filename)
 
-        # Download photo if permitted
-        if permission and photo_url_raw:
-            fetch_and_save_image(photo_url_raw, photo_local_path)
-            final_photo_url = f"./images/{slug}.jpg"
+        # If permission given and image file exists locally, use it
+        if permission and os.path.isfile(photo_local_path):
+            final_photo_url = f"./images/{photo_filename}"
         else:
             final_photo_url = f"./{DEFAULT_LOGO}"
 
