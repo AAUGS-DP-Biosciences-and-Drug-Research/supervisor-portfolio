@@ -2,6 +2,7 @@ import os
 import yaml
 import shutil
 from jinja2 import Environment, FileSystemLoader
+from weasyprint import HTML
 
 # ---------- Config ----------
 YAML_INPUT = "data/supervisors.yaml"
@@ -60,7 +61,15 @@ with open(os.path.join(PUBLIC_FOLDER, "index.html"), "w", encoding="utf-8") as f
     f.write(index_template.render(supervisors=supervisors))
 print("✅ Created index.html")
 
-# ---------- Write Supervisor_Portfolio.html for PDF ----------
-with open(os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.html"), "w", encoding="utf-8") as f:
+# ---------- Write Supervisor_Portfolio.html ----------
+pdf_html_path = os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.html")
+with open(pdf_html_path, "w", encoding="utf-8") as f:
     f.write(pdf_template.render(supervisors=supervisors))
 print("✅ Created Supervisor_Portfolio.html")
+
+# ---------- Generate PDF ----------
+try:
+    HTML(pdf_html_path).write_pdf(os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.pdf"))
+    print("✅ Created Supervisor_Portfolio.pdf")
+except Exception as e:
+    print(f"❌ Failed to create PDF: {e}")
