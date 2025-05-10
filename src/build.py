@@ -12,6 +12,7 @@ IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
 SOURCE_IMAGES = "static/images"
 SITE_BASE_PATH = "/supervisor-portfolio"
 DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/AboAkademiUniversity.png"
+DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, "AboAkademiUniversity.png"))  # ← PDF fallback
 
 # ---------- Prepare image folder ----------
 os.makedirs(IMAGES_FOLDER, exist_ok=True)
@@ -54,8 +55,10 @@ for supervisor in supervisors:
 
     if matched_file:
         supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{matched_file}"
+        supervisor["photo_pdf_path"] = os.path.abspath(os.path.join(IMAGES_FOLDER, matched_file))  # ← for PDF
     else:
         supervisor["photo_url"] = DEFAULT_LOGO
+        supervisor["photo_pdf_path"] = DEFAULT_LOGO_PDF
         print(f"⚠️ Missing image for {supervisor['name']}, using logo.")
 
 print(f"✅ Loaded {len(supervisors)} supervisors from YAML.")
@@ -75,7 +78,7 @@ with open(os.path.join(PUBLIC_FOLDER, "index.html"), "w", encoding="utf-8") as f
     f.write(index_template.render(supervisors=supervisors))
 print("✅ Created index.html")
 
-# ---------- Write PDF HTML ----------
+# ---------- Write Supervisor_Portfolio.html ----------
 pdf_html_path = os.path.join(PUBLIC_FOLDER, "Supervisor_Portfolio.html")
 with open(pdf_html_path, "w", encoding="utf-8") as f:
     f.write(pdf_template.render(supervisors=supervisors))
