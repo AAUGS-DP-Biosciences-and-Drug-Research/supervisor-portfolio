@@ -2,7 +2,6 @@ import os
 import csv
 import re
 import shutil
-import urllib.parse
 from jinja2 import Environment, FileSystemLoader
 
 # ---------- Config ----------
@@ -19,16 +18,6 @@ def slugify(name):
 
 # ---------- Prepare image folder ----------
 os.makedirs(IMAGES_FOLDER, exist_ok=True)
-
-if os.path.isdir(SOURCE_IMAGES):
-    for filename in os.listdir(SOURCE_IMAGES):
-        src = os.path.join(SOURCE_IMAGES, filename)
-        dst = os.path.join(IMAGES_FOLDER, filename)
-        if os.path.isfile(src):
-            shutil.copyfile(src, dst)
-            print(f"✅ Copied image: {filename}")
-else:
-    print("⚠️ static/images folder not found.")
 
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
@@ -47,19 +36,21 @@ with open(INPUT_CSV, newline='', encoding='utf-8') as csvfile:
             continue
 
         slug = slugify(name)
-
-        # Get filename from CSV and encode it for safe URL use
         photo_url_raw = row.get("Upload a profile photo", "").strip()
-        photo_filename = os.path.basename(photo_url_raw)
-        photo_local_path = os.path.join(IMAGES_FOLDER, photo_filename)
-        photo_url_encoded = urllib.parse.quote(photo_filename)
+        original_filename = os.path.basename(photo_url_raw)
+        source_path = os.path.join(SOURCE_IMAGES, original_filename)
 
-        # Check if image file exists
-        if os.path.isfile(photo_local_path):
-            final_photo_url = f"{SITE_BASE_PATH}/images/{photo_url_encoded}"
+        # Determine new filename (slug + extension)
+        if os.path.isfile(source_path):
+            ext = os.path.splitext(original_filename)[1].lower()
+            new_filename = f"{slug}{ext}"
+            dest_path = os.path.join(IMAGES_FOLDER, new_filename)
+            shutil.copyfile(source_path, dest_path)
+            final_photo_url = f"{SITE_BASE_PATH}/images/{new_filename}"
+            print(f"✅ Copied {original_filename} → {new_filename}")
         else:
             final_photo_url = DEFAULT_LOGO
-            print(f"⚠️ No photo found for {name}, using logo.")
+            print(f"⚠️ Image not found for {name}: {original_filename} → using logo.")
 
         supervisor = {
             "name": name,
