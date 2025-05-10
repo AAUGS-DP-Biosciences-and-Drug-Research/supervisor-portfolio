@@ -156,6 +156,11 @@
     </ul>
     {% endif %}
 
+    {% if supervisor.funding %}
+    <h2>Major Funding & International Networks</h2>
+    <p>{{ supervisor.funding }}</p>
+    {% endif %}
+
     {% if supervisor.publications %}
     <h2>Selected Publications</h2>
     <ul>
@@ -184,11 +189,6 @@
     <p style="text-align: center;">
       <a href="../index.html" class="back-button">← Back to Portfolio</a>
     </p>
-
-  </div>
-
-</body>
-</html>
 
   </div>
 
