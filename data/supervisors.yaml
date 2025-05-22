@@ -45,3 +45,392 @@
   - 'Democratising Deep Learning for Microscopy with ZeroCostDL4Mic. Nat Commun. 2021;
     4:15;12(1):2276. DOI: 10.1038/s41467-021-22518-0'
   keywords: ''
+
+- name: Outi Salo-Ahen
+  slug: outi-salo-ahen
+  group: Computer-aided drug design (CADD) group
+  unit: Pharmacy
+  university: Åbo Akademi University
+  lab_website: https://www.pharmscilab.fi/computer-aided-drug-design
+  cris_profile: https://research.abo.fi/sv/persons/outi-salo-ahen
+  photo: outi-salo-ahen.jpg
+  expertise:
+  - computer-aided drug design
+  - molecular modeling
+  - biomolecular simulations
+  - computational chemistry/biology and computational pharmaceutics
+  - structural bioinformatics
+  - immunoinformatics
+  projects:
+  - Discovery and design of novel antivirulence agents / antimicrobial compounds /
+    anticancer drugs
+  - Computational analysis of pharmaceutical materials (e.g. nanoparticles, polymers)
+  techniques:
+  - comparative protein modeling
+  - molecular docking
+  - molecular dynamics simulations
+  - molecular interaction analysis
+  - materials science modeling
+  funding:
+  - Tor, Joe & Pentti Memorial Fund
+  - Svenska Kulturfonden
+  - Research Council of Finland
+  - EU-OPENSCREEN
+  publications:
+  - 'Microfluidics-Enabled Core/Shell Nanostructure Assembly: Understanding
+    Encapsulation Processes via Particle Characterization and Molecular Dynamics.
+    Adv Colloid Interface Sci 338, 103400, 2025. doi: 10.1016/j.cis.2025.103400'
+  - 'Insights Into Molecular Interactions and Biological Effect of
+    Natural Stilbenoids at the TRPA1 ion channel. ChemMedChem, e202400501, 2024. doi:
+    10.1002/cmdc.202400501'
+  - 'Development of Aptamer-DNAzyme based metal-nucleic acid frameworks
+    for gastric cancer therapy. Nat Commun 15(1):3684, 2024. doi: 10.1038/s41467-024-48149-9.'
+  - 'Isolation and functional analysis of phage-displayed antibody fragments
+    targeting the staphylococcal superantigen-like proteins. MicrobiologyOpen, 12,
+    e1371, 2023. doi.org/10.1002/mbo3.1371'
+  - 'The discovery of Zika virus NS2B-NS3 inhibitors with antiviral activity
+    via an integrated virtual screening approach. Eur J Pharm Sci 2022, 106220. doi:
+    10.1016/j.ejps.2022.106220'
+  keywords: ''
+- name: Riikka Puntila-Dodd
+  slug: riikka-puntila-dodd
+  group: Marine ecosystem ecology
+  unit: Marine Biology
+  university: Åbo Akademi University
+  cris_profile: https://research.abo.fi/en/persons/riikka-puntila-dodd
+  photo: riikka-puntila-dodd.jpg
+  expertise:
+  - Ecosystem modelling
+  - Ecopath with Ecosim
+  - species distribution modelling
+  - future scenarios
+  - Baltic Sea
+  - cumulative pressures
+  projects:
+  - GES4SEAS
+  - MIMOSA
+  - Identifying changes in coastal ecosystems – implications to
+  - recovery trajectories (RCoF)
+  - SEADITO
+  techniques:
+  - Ecopath with Ecosim
+  - Bayesian networks
+  - species distribution modelling
+  - integrated
+  - trend analysis
+  - multivariate analyses
+  funding:
+  - RCoF
+  - Horizon Europe ICES WGIAB
+  - Marine modelling network
+  - Ecopath Consortium
+  - Beyond shifting baselines-consortium
+  publications:
+  - 'Novelty, variability, and resilience:exploring adaptive cycles in a marine ecosystem under pressure. Ambio doi.org/10.1007/s13280-025-02181-1'
+  - 'Food web robustness depends
+    on the network type and threshold for extinction Oikos doi.org/10.1111/oik.11139.'
+  - 'Modelling Framework to Evaluate Societal
+    Effects of Ecosystem Management STOTEN  doi.org/10.1016/j.scitotenv.2023.165508'
+  - 'Integrating diverse model
+    results into decision support for good environmental status and blue growth STOTEN
+    doi.org/10.1016/j.scitotenv.2021.150450.'
+  - 'Food-web modeling in the Maritime
+    Spatial Planning Challenge Simulation Platform: Results from the Baltic Sea. Proc
+    Int Simulation and Gaming Ass Conf doi.org/10.1007/978-3-030-72132-9_25'
+  keywords: ''
+- name: Peter Mattjus
+  slug: peter-mattjus
+  group: Lipid Transfer Protein Research
+  unit: Biochemistry
+  university: Åbo Akademi University
+  lab_website: https://users.abo.fi/pmattjus/
+  cris_profile: https://research.abo.fi/sv/persons/peter-mattjus
+  photo: peter-mattjus.jpeg
+  expertise:
+  - The role of glycolipid transfer proteins in cells
+  - Glycosphingolipid biosynthesis
+  - Intracellular glycosphingolipid transport events
+  projects:
+  - Glycolipid transfer protein, GLTP interaction with VAP-proteins in the ER exit
+    sites
+  - The role GLTP in demyelination
+  - Intracellular localization of GLTP
+  - Inhibitors for glycolipid binding proteins
+  techniques:
+  - Lipid biochemistry
+  - Quantitative and qualitative glycosphingo- and phospholipid analysis by high performace
+    TLC
+  - Cell and molecular biology
+  - Fluorescence spectroscopy, steady-state and life-time
+  - Radioisotope labeling and lipid metabolism techniques
+  funding:
+  - Medicinska understödsföreningen Liv och hälsa
+  - Borgs stiftelse
+  - COST action SPHINX member
+  publications:
+  - 'Glycolipid transfer protein knockout disrupts vesicle trafficking to the plasma
+    membrane. Journal of Biological Chemistry 2023. DOI: 10.1016/j.jbc.2023.104607'
+  - 'Who moves the sphinx? An overview of intracellular sphingolipid transport. BBA
+    Molecular and Cell Biology of Lipids. DOI: 10.1016/j.bbalip.2021.159021'
+  - 'Glucosylceramide acyl chain length is sensed by the glycolipid transfer protein.
+    PLoS ONE. DOI: 10.1371/journal.pone.0209230'
+  - 'Alternation in the Glycolipid Transfer Protein Expression Causes Changes in the
+    Cellular Lipidome. PLoS ONE. DOI: 10.1371/journal.pone.0097263'
+  - 'Vesicular and non-vesicular transport feed distinct glycosylation pathways in
+    the Golgi. Nature. DOI: 10.1038/nature12423'
+  keywords: ''
+- name: Conny Sjöqvist
+  slug: conny-sj-qvist
+  group: Molecular Ecology Lab
+  unit: Marine Biology
+  university: Åbo Akademi University
+  lab_website: www.connysjoqvist.com
+  cris_profile: https://research.abo.fi/en/persons/conny-sj%C3%B6qvist
+  photo: conny-sj-qvist.jpg
+  expertise:
+  - Plankton ecology and evolution
+  - Experimental and molecular ecology
+  - Paleo- and resurrection biology
+  projects:
+  - Temperature adaptation in European diatom populations - AWARE
+  - Hotspots for biodiversity shifts in the Archipelago Sea - BIOSHIFT
+  - Modeling advanced primary production scenarios in coastal seas - MIMOSA
+  - Geochemical Dynamics of Seawater-submarine Aquifer Interactions: Impacts on Coastal
+    Sediments and Ecosystem
+  - Switching functional roles: gene expression of feeding trait plasticity in a
+    marine key species - GeneMac
+  techniques:
+  - Cell cultivation
+  - Microscopical analyses
+  - DNA and RNA sequencing
+  - Population genomics
+  - Transcriptomics
+  - Bioinformatics
+  funding:
+  - Centre for Sustainable Ocean Science
+  - Swedish Cultural Foundation
+  - European Molecular Biology Laboratory (EMBL)
+  - Traversing European Coastlines (TREC)
+  - Estonian Research Council
+  publications:
+  - 'Biodiversity of microorganisms in the Baltic Sea: The power of novel methods
+    in the identification of marine microbes. FEMS Microbiology Reviews (2024). 48,
+    5, fuae024. DOI: 10.1093/femsre/fuae024'
+  - Temperature optima of a natural diatom population increases as global warming
+    proceeds. Nature Climate Change (2024). 14, 5, p. 518-525. DOI: 10.1038/s41558-024-01981-9
+  - Toward phytoplankton parasite detection using autoencoders. Machine Vision and
+    Applications (2023). 34, 6, p. 101 6. DOI: 10.1007/s00138-023-01450-x
+  - Strain-specific transcriptional responses overshadow salinity effects in a marine
+    diatom sampled along the Baltic Sea salinity cline. ISME Journal (2022). 16, 7,
+    p. 1776-1787. DOI: 10.1038/s41396-022-01230-x
+  - Ecologically coherent population structure of uncultivated bacterioplankton. ISME
+    Journal (2021). 15, pages 3034–3049. DOI: 10.1038/s41396-021-00985-z
+  keywords: ''
+- name: Silvia Gramolelli
+  slug: silvia-gramolelli
+  group: Viral Oncogenesis
+  unit: Cell Biology
+  university: Åbo Akademi University
+  lab_website: https://viraloncor.wordpress.com/
+  cris_profile: https://research.abo.fi/sv/persons/silvia-gramolelli/publications/
+  photo: silvia-gramolelli.jpg
+  expertise:
+  - Gene expression
+  - Chromatin remodelling
+  - Viral reactivation from latency
+  - Cellular transformation
+  projects:
+  - Role of somatic mutations in Epstein-Barr virus induced oncogenesis and drug
+    resistance
+  - Role of stress-related trasncription factors in oncogenic herpesvirus persistence
+    and gene expression
+  - New diagnostic tools based on DNA nanotechnology to detect viral genomic sequences
+  techniques:
+  - Patient-derived organoids
+  - Lentiviral production and transduction
+  - Chromatin IP
+  - Proteomics
+  funding:
+  - Research Council of Finland
+  - Sigrid Juselius
+  - Finnish CUltural Foundation
+  - Mary & George Ehrnrooth Foundation
+  - Suomen Tiedenseura
+  - InFLAMES
+  publications:
+  - 'Heat shock factor 2 regulates oncogenic gamma-herpesvirus gene expression by
+    remodeling the chromatin at the ORF50 and BZLF1 promoter. PLoS Pathog. 2025'
+  - 'DLL4/Notch3/WNT5B axis mediates bidirectional prometastatic crosstalk between
+    melanoma and lymphatic endothelial cells. JCI Insight. 2024'
+  - 'Oncogenic Herpesvirus Engages Endothelial Transcription Factors SOX18 and PROX1
+    to Increase Viral Genome Copies and Virus Production. Cancer Res. 2020'
+  - 'Kaposi's Sarcoma-Associated Herpesvirus Lytic Replication Is Independent of
+    Anaphase-Promoting Complex Activity. Journal of Virology 2020'
+  - 'High tissue MMP14 expression predicts worse survival in gastric cancer, particularly
+    with a low PROX1. Cancer Medicine 2019'
+  keywords: ''
+- name: Christian Pansch-Hattich
+  slug: christian-pansch-hattich
+  group: Experimental Ecology - Stress Ecology & Ecophysiology
+  unit: Marine Biology
+  university: Åbo Akademi University
+  lab_website: https://pansch-research.com
+  cris_profile: https://research.abo.fi/en/persons/christian-pansch-hattich
+  photo: christian-pansch-hattich.JPG
+  expertise:
+  - Climate change impacts on marine systems: environmental variability
+     & extreme climatic events, heatwaves, climate change refugia, thermal microclimates
+  - Area: Ecophysiology, thermal ecology, acclimation & adaptation, species interactions
+    e.g. facilitation, mesocosm food webs, invasion ecology, macrophyte-grazer interactions
+  - Systems: Bivalves, macrophytes (seagrass, Fucus), associated epi- and infauna,
+    crustaceans (Gammarus, Idotea, mudcrabs), phytoplankton
+  projects:
+  - PhD S. Rühmkorff: Resilience of Seagrass Ecosystems through Habitat Heterogeneity
+     & Genetic Diversity
+  - ÅA Stiftelse: SOS - Centre for Sustainable Ocean Science
+  - Horizon: SEA-Quester - Blue Carbon production, export, & sequestration in emerging polar ecosystems
+  - Res. Counc. Norway: NORSE - Biodiversity in Northern European Seagrass meadows – drivers, responses, & resilience
+  - PhD L. Kraufvelin: Impacts of Heatwaves on the Functioning of Temperate Coastal Ecosystems
+  techniques:
+  - Combine ecophysiology, acclimation and adaptation experimental studies with simplified community assessments in mostly experimental approaches
+  - Using high-throughput incubation units and mesocosms
+  - Simulating multiple and fluctuating climate change drivers
+  - High-resolution coastal environmental monitoring
+  funding:
+  - Funders: EU, Research Council Fi, Svenska Kulturfonden, Stiftelse Åbo Akademi, City of Turku
+  - Collaborations: Tvärminne Zoological Station at Helsinki University, Turku, University of Applied Sciences – TUAS, Tjärnö Marine Laboratory at Gothenburg University, GEOMAR – Helmholtz Centre for Ocean Research Kiel, Alfred Wegener Institute for polar and marine research (AWI) – Wadden Sea Station Sylt, Leibniz
+    Institute for Baltic Sea Research Warnemünde – IOW
+  publications:
+  - 'Small-scale thermal habitat variability may not determine seagrass resilience to climate change. Limnology and Oceanography'
+  - 'The interplay of co-occurring ecosystem engineers shapes the structure of benthic communities – a mesocosm experiment. Frontiers in Marine Science 11:1304442'
+  - 'Marine heatwaves and hypoxic upwelling shape stress responses in a keystone predator. Proceedings of the Royal Society Biological Sciences 290:20222262'
+  - 'Environmental variability in aquatic ecosystems: avenues for future multifactorial experiments. Limnology and Oceanography – Letters 8:247-266'
+  - 'Editorial: Influence of environmental variability on climate change impacts in marine ecosystems. Frontiers in Marine Science 9:994756'
+  keywords: ''
+- name: Christoffer Boström
+  slug: christoffer-bostr-m
+  group: No specific name
+  unit: Marine Biology
+  university: Åbo Akademi University
+  cris_profile: https://research.abo.fi/sv/persons/christoffer-bostr%C3%B6m/projects/
+  photo: christoffer-bostr-m.jpg
+  expertise:
+  - Marine ecology
+  projects:
+  - Digital Waters
+  techniques:
+  - Marine field sampling, mesocosm experiments, field experiments
+  funding:
+  - Doctoral Pilot
+  - Svenska Kulturfonden
+  - networks Zostera Experimental Network
+  - Nordic collaboration
+  publications:
+  - 'Marine biodiversity loss in coastal waters: evidence and implications for management in Finnish sea areas, northern Baltic Sea, AMBIO
+    2025. in press.'
+  - 'Shallow coastal bays as sediment carbon and nutrient reservoirs in the Baltic Sea. Estuaries and Coasts 2024 in press'
+  - 'Assessing the success of marine ecosystem restoration using meta-analysis. 2025. Nature Communications.'
+  - 'The methylome of clonal seagrass shoots shows age-associated variation and differentiation of roots from other tissues. Biochimica et Biophysica Acta. 2025.
+   Vol. 1869, Issue 2.  DOI: 10.1016/j.bbagen.2024.130748.'
+  - 'Global effects of ecosystem and climate on long-term belowground decomposition in wetlands. Environmental Science  & Technology  DOI: 10.1021/acs.est.4c02116'
+  keywords: ''
+- name: Tapani Viitala
+  slug: tapani-viitala
+  group: Pharmaceutical Biophysics
+  unit: Pharmacy
+  university: Åbo Akademi University
+  cris_profile: https://research.abo.fi/fi/persons/tapani-viitala
+  photo: tapani-viitala.jpg
+  expertise:
+  - pharmaceutical nanotechnology
+  - surface and colloid chemistry
+  - physico-chemical characterization
+  - drug delivery and targeting
+  - biomolecular interactions
+  - real-time label-free living cell sensing
+  - 3D printing
+  projects:
+  - NAP4DIVE: Non-Animal Platform for Nanoparticle-Based Delivery Across the Blood-Brain
+    Barrier Interface with Vehicle Evolution - EU Horizon RIA
+  - Nordic Pharmaceutical Translation and Innovation - Nordforsk
+  - MADNESS: Centre of Excellence in Materials-driven solutions for combatting
+    antimicrobial resistance - Åbo Akademi Foundation
+  - Data integrated platforms for the design, production, and testing of therapeutics
+    (project in Helsinki) - Business Finland
+  techniques:
+  - Multi-Parametric Surface plasmon resonance
+  - Impedance-based Quartz Crystal Micorbalance
+  - LigandTracer
+  - Waveguide scattering microscopy
+  funding:
+  - EU Horizon RIA
+  - NordForsk
+  - Åbo Akademi Foundation
+  - Business Finland
+  publications:
+  - 'M. Bahman, N. Sandler Topelius, Tapani Viitala*. European Journal of Pharmaceutical
+    Sciences (2025) 107122. DOI: 10.1016/j.ejps.2025.107122'
+  - 'R.A. Mustafa, P. Parkkila, J.M. Rosenholm, H. Zhang, Tapani Viitala*. Smart
+    Medicine 2 (2023) e20230012. DOI: 10.1002/SMMD.20230012'
+  - 'E. Scurti, J. Pedro Martins, C. Celia, P. Palumbo, F. Lombardi, D. Iannotta,
+    L. Di Marzio*, H. A. Santos*, T. Viitala*. Langmuir 39 (2023) 8255–8266. DOI: 10.1021/acs.langmuir.3c00728
+  - 'P. Parkkila*, K. Härkönen, P. Ilvonen, S. Laitinen, T. Viitala*. Colloids'
+    and Surfaces A: Physicochemical and Engineering Aspects 654 (2022), 130015. DOI: 10.1016/j.colsurfa.2022.130015'
+  - 'O.K. Kari*, J. Ndika, P. Parkkila, A. Louna, T. Lajunen, A. Puustinen, T. Viitala*,
+    H. Alenius and A. Urtti. Nanoscale 12 (2020) 1728-1741. DOI: 10.1039/C9NR08186K'
+  keywords: ''
+- name: Kuldeep Bansal
+  slug: kuldeep-bansal
+  group: Pharmaceutical Sciences Laboratory
+  unit: Pharmacy
+  university: Åbo Akademi University
+  lab_website: https://www.pharmscilab.fi/
+  cris_profile: https://research.abo.fi/fi/persons/kuldeep-bansal
+  photo: kuldeep-bansal.png
+  expertise:
+  - Functional Polymers
+  - Stimuli-Sensitive Polymers
+  - Targeted and Controlled Drug Delivery
+  - Polymeric Micelles
+  - Polymer-Drug Conjugates
+  - Microparticles
+  - Amorphous Solid Dispersions
+  - Polymeric Nanoemulsion
+  projects:
+  - Centre of Excellence in Materials-driven Solutions for Combatting Antimicrobial
+    Resistance (MADNESS)
+  - Jasmine PRO: A versatile platform for drug delivery
+  - Non-Animal Platform for Nanoparticle-Based Delivery across the blood-brain barrier
+    Interface with Vehicle Evolution
+  techniques:
+  - Polymer Synthesis and Characterization (NMR, FTIR, GPC, DSC),
+  - Nanoparticle Synthesis and Characterization (nanoprecipitation, microfluidics,
+    DLS, HPLC, TEM),
+  - Cell Culture,
+  - Design of Stimuli-Sensitive Drug Delivery Platforms
+  funding:
+  - 'Funding Sources:'
+  - Stiftelsen för Åbo Akademi
+  - Business Finland
+  - Academy of Finland
+  - 'International Networks:'
+  - Copenhagen University
+  - NIPER, India
+  - UiT The Arctic University of Norway
+  - University College London
+  publications:
+  - 'Reactive Oxygen Species-Regulated Conjugates Based on Poly (jasmine) Lactone for
+    Simultaneous Delivery of Doxorubicin and Docetaxel, Pharmaceutics, 16(9), 1164,
+    2024.'
+  - 'Poly-δ-decalactone (PDL) based nanoemulgel for topical delivery of ketoconazole
+    and eugenol against Candida albicans, Nanoscale Advances, 6, 5322-5336, 2024.'
+  - 'Utilizing the allyl-terminated copolymer methoxy (poly(ethylene glycol))-block-poly
+    (jasmine lactone) in the development of amorphous solid dispersions: A comparative study of functionalized and nonfunctionalized
+    polymer, International Journal of Pharmaceutics, 657, 124175, 2024.'
+  - 'Functional block copolymer micelles based on poly (jasmine lactone) for improving
+    the loading efficiency of weakly basic drugs, RSC advances, 12(41), 26763-26775,
+    2022.'
+  - 'Synthesis and evaluation of novel functional polymers derived from renewable jasmine
+    lactone for stimuli‐responsive drug delivery, Advanced Functional Materials, 31(33),
+    2101998, 2021.'
+  keywords: ''
