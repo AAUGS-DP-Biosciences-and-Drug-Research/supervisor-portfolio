@@ -128,7 +128,7 @@
       <ul>
         {% for supervisor in supervisors_in_subject %}
           <li>
-            <a href="./supervisors/{{ supervisor.name.lower().replace(' ', '-') }}.html">
+            <a href="./supervisors/{{ supervisor.slug }}.html">
               {{ supervisor.name }}
             </a> — {{ supervisor.group }}
           </li>
