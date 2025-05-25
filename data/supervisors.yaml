@@ -48,6 +48,7 @@
   keywords: ''
 
 - name: Outi Salo-Ahen
+  manual_edit: true
   slug: outi-salo-ahen
   group: Computer-aided drug design (CADD) group
   unit: Pharmacy
@@ -80,19 +81,20 @@
   publications:
   - 'Microfluidics-Enabled Core/Shell Nanostructure Assembly: Understanding
     Encapsulation Processes via Particle Characterization and Molecular Dynamics.
-    Adv Colloid Interface Sci 338, 103400, 2025. doi: 10.1016/j.cis.2025.103400'
+    Adv Colloid Interface Sci 338, 103400, 2025. DOI: 10.1016/j.cis.2025.103400'
   - 'Insights Into Molecular Interactions and Biological Effect of
-    Natural Stilbenoids at the TRPA1 ion channel. ChemMedChem, e202400501, 2024. doi:
+    Natural Stilbenoids at the TRPA1 ion channel. ChemMedChem, e202400501, 2024. DOI:
     10.1002/cmdc.202400501'
   - 'Development of Aptamer-DNAzyme based metal-nucleic acid frameworks
-    for gastric cancer therapy. Nat Commun 15(1):3684, 2024. doi: 10.1038/s41467-024-48149-9.'
+    for gastric cancer therapy. Nat Commun 15(1):3684, 2024. DOI: 10.1038/s41467-024-48149-9.'
   - 'Isolation and functional analysis of phage-displayed antibody fragments
     targeting the staphylococcal superantigen-like proteins. MicrobiologyOpen, 12,
-    e1371, 2023. doi.org/10.1002/mbo3.1371'
+    e1371, 2023. DOI: doi.org/10.1002/mbo3.1371'
   - 'The discovery of Zika virus NS2B-NS3 inhibitors with antiviral activity
-    via an integrated virtual screening approach. Eur J Pharm Sci 2022, 106220. doi:
+    via an integrated virtual screening approach. Eur J Pharm Sci 2022, 106220. DOI:
     10.1016/j.ejps.2022.106220'
   keywords: ''
+  
 - name: Riikka Puntila-Dodd
   slug: riikka-puntila-dodd
   group: Marine ecosystem ecology
@@ -103,23 +105,22 @@
   expertise:
   - Ecosystem modelling
   - Ecopath with Ecosim
-  - species distribution modelling
-  - future scenarios
+  - Species distribution modelling
+  - Future scenarios
   - Baltic Sea
-  - cumulative pressures
+  - Cumulative pressures
   projects:
   - GES4SEAS
   - MIMOSA
   - Identifying changes in coastal ecosystems – implications to
-  - recovery trajectories (RCoF)
+  - Recovery trajectories (RCoF)
   - SEADITO
   techniques:
   - Ecopath with Ecosim
   - Bayesian networks
-  - species distribution modelling
-  - integrated
-  - trend analysis
-  - multivariate analyses
+  - Species distribution modelling
+  - Integrated trend analysis
+  - Multivariate analyses
   funding:
   - RCoF
   - Horizon Europe ICES WGIAB
@@ -181,6 +182,7 @@
   - 'Vesicular and non-vesicular transport feed distinct glycosylation pathways in
     the Golgi. Nature. DOI: 10.1038/nature12423'
   keywords: ''
+  
 - name: Conny Sjöqvist
   slug: conny-sj-qvist
   group: Molecular Ecology Lab
@@ -197,8 +199,7 @@
   - Temperature adaptation in European diatom populations - AWARE
   - Hotspots for biodiversity shifts in the Archipelago Sea - BIOSHIFT
   - Modeling advanced primary production scenarios in coastal seas - MIMOSA
-  - Geochemical Dynamics of Seawater-submarine Aquifer Interactions Impacts on Coastal
-    Sediments and Ecosystem
+  - 'Geochemical Dynamics of Seawater-Submarine Aquifer Interactions: Impacts on Coastal Sediments and Ecosystems'
   - Switching functional roles gene expression of feeding trait plasticity in a
     marine key species - GeneMac
   techniques:
@@ -243,9 +244,9 @@
   - Viral reactivation from latency
   - Cellular transformation
   projects:
-  - Role of somatic mutations in Epstein-Barr virus induced oncogenesis and drug
+  - Role of somatic mutations in Epstein-Barr virus-induced oncogenesis and drug
     resistance
-  - Role of stress-related trasncription factors in oncogenic herpesvirus persistence
+  - Role of stress-related transcription factors in oncogenic herpesvirus persistence
     and gene expression
   - New diagnostic tools based on DNA nanotechnology to detect viral genomic sequences
   techniques:
@@ -256,9 +257,9 @@
   funding:
   - Research Council of Finland
   - Sigrid Juselius
-  - Finnish CUltural Foundation
+  - Finnish Cultural Foundation
   - Mary & George Ehrnrooth Foundation
-  - Suomen Tiedenseura
+  - Suomen Tiedeseura
   - InFLAMES
   publications:
   - 'Heat shock factor 2 regulates oncogenic gamma-herpesvirus gene expression by remodeling the chromatin at the ORF50 and BZLF1 promoter. PLoS Pathog. 2025'
@@ -267,6 +268,7 @@
   - 'Kaposis Sarcoma-Associated Herpesvirus Lytic Replication Is Independent of Anaphase-Promoting Complex Activity. Journal of Virology 2020'
   - 'High tissue MMP14 expression predicts worse survival in gastric cancer, particularly with a low PROX1. Cancer Medicine 2019'
   keywords: ''
+  
 - name: Christian Pansch-Hattich
   slug: christian-pansch-hattich
   group: Experimental Ecology - Stress Ecology & Ecophysiology
