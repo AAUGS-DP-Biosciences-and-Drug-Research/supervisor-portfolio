@@ -1,4 +1,5 @@
 - name: Guillaume Jacquemet
+  manual_edit: true
   slug: guillaume-jacquemet
   group: Cell Migration Lab
   unit: Cell Biology
