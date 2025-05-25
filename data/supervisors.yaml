@@ -444,7 +444,7 @@
     doctors involved, and initially, from a real-life clinical question. Our group is
     multidisciplinary,  which involves  interplay between physics, materials science, synthetic
     organic chemistry, engineering, biology, and medicine. We aim that many of our
-    designs could be clinically applicable in the future, and to have a great social impact
+    designs could be clinically applicable in the future, and have a great social impact
     in treating diseases.
   funding:
   - 'I am coordinating many projects from the Research Council of Finland, Business Finland,
@@ -475,7 +475,7 @@
     JNK and LRRK2. We have uncovered novel insights into how these kinases influence
     anxiety-like behaviors and neuronal death in Parkinson’s disease. By integrating
     animal and cellular models with clinical proteomics, we aim to deepen our understanding
-    of the biology behind these conditions'.
+    of the biology behind these conditions.'
   projects:
   - 'We focus on Parkinson’s disease, using deep proteomic profiling of blood cells
     to detect pre-symptomatic changes. This includes developing new informatics to
@@ -493,6 +493,6 @@
   - 'PhosPiR: an automated phosphoproteomic pipeline in R. Briefings in Bioinformatics. 2022. DOI: 10.1093/bib/bbab510'
   - 'Protein synthesis is suppressed in sporadic and familial Parkinson's disease by LRRK2. FASEB Journal. 2020. DOI: 10.1096/fj.202001046R'
   - 'JNK1 controls adult hippocampal neurogenesis and imposes cell-autonomous control of anxiety behaviour from the neurogenic niche. Molecular Psychiatry. 2018. DOI: 10.1038/mp.2016.203.'
-  - 'Nuclear and cytosolic JNK signalling in neurons. Nature reviews Neuroscience. 2014. DOI: 10.1038/nrn3729' 
+  - 'Nuclear and cytosolic JNK signalling in neurons. Nature Reviews Neuroscience. 2014. DOI: 10.1038/nrn3729' 
   - 'Phosphorylation of SCG10/stathmin-2 determines multipolar stage exit and neuronal migration rate. Nature Neuroscience. 2011. DOI: 10.1038/nn.2755'
   keywords: ''
