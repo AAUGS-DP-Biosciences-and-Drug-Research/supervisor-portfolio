@@ -127,18 +127,19 @@
   - Ecopath Consortium
   - Beyond shifting baselines-consortium
   publications:
-  - 'Novelty, variability, and resilience:exploring adaptive cycles in a marine ecosystem under pressure. Ambio doi.org/10.1007/s13280-025-02181-1'
+  - 'Novelty, variability, and resilience:exploring adaptive cycles in a marine ecosystem under pressure. Ambio. DOI: doi.org/10.1007/s13280-025-02181-1'
   - 'Food web robustness depends
-    on the network type and threshold for extinction Oikos doi.org/10.1111/oik.11139.'
+    on the network type and threshold for extinction. Oikos. DOI: doi.org/10.1111/oik.11139.'
   - 'Modelling Framework to Evaluate Societal
-    Effects of Ecosystem Management STOTEN  doi.org/10.1016/j.scitotenv.2023.165508'
+    Effects of Ecosystem Management STOTEN. DOI:  doi.org/10.1016/j.scitotenv.2023.165508'
   - 'Integrating diverse model
-    results into decision support for good environmental status and blue growth STOTEN
-    doi.org/10.1016/j.scitotenv.2021.150450.'
+    results into decision support for good environmental status and blue growth. STOTEN.
+    DOI: doi.org/10.1016/j.scitotenv.2021.150450.'
   - 'Food-web modeling in the Maritime
     Spatial Planning Challenge Simulation Platform: Results from the Baltic Sea. Proc
-    Int Simulation and Gaming Ass Conf doi.org/10.1007/978-3-030-72132-9_25'
+    Int Simulation and Gaming Ass Conf. DOI: doi.org/10.1007/978-3-030-72132-9_25'
   keywords: ''
+  
 - name: Peter Mattjus
   slug: peter-mattjus
   group: Lipid Transfer Protein Research
@@ -227,6 +228,7 @@
   - 'Ecologically coherent population structure of uncultivated bacterioplankton. ISME
     Journal (2021). 15, pages 3034–3049. DOI: 10.1038/s41396-021-00985-z'
   keywords: ''
+  
 - name: Silvia Gramolelli
   slug: silvia-gramolelli
   group: Viral Oncogenesis
