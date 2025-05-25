@@ -420,3 +420,79 @@
   - 'Synthesis and evaluation of novel functional polymers derived from renewable jasmine
     lactone for stimuli‐responsive drug delivery, Advanced Functional Materials. 2021. DOI: 10.1002/adfm.202101998'
   keywords: ''
+
+- name: Zhang Hongbo
+  slug: zhang-hongbo
+  group: Functional Materials for Medicine
+  unit: Pharmacy
+  university: Åbo Akademi University
+  lab_website: https://www.pharmscilab.fi/nanoprecisionmed
+  cris_profile: https://research.abo.fi/en/persons/hongbo-zhang
+  photo: zhang-hongbo.jpg
+  expertise:
+  - Nanomedicine
+  - Biomedical Engineering
+  - Drug Delivery
+  - Gene Therapy
+  projects:
+  - Functional Materials have played a more and more critical role in developing
+    novel treatment methods for different diseases. Our group focuses on designing all
+    kinds of functional materials, at different scales, to solve clinical and biological
+    problems.
+  techniques:
+  - We have broad collaborations with hospitals, and most of our projects have clinical
+    doctors involved, and initially, from a real-life clinical question. Our group is
+    multidisciplinary,  which involves  interplay between physics, materials science, synthetic
+    organic chemistry, engineering, biology, and medicine. We aim that many of our
+    designs could be clinically applicable in the future, and to have a great social impact
+    in treating diseases.
+  funding:
+  - 'I am coordinating many projects from the Research Council of Finland, Business Finland,
+    and from different foundations. I am also part of many consortium projects, including
+    the InFlame flagship, NAP4DIVE (EU Horizon), Nordic POP, NordicPharmTrain, PII:
+    Printed Intelligence Infrastructure, MADNESS (ÅAU Center of Excellence). As well
+    as the collaboration project with companies, e.g., the joint project with Bayer
+    Oy. I collaborate broadly with Harvard University, USA, and Chinese hospitals.'
+  publications:
+  - 'Development of Aptamer-DNAzyme Based Metal-Nucleic Acid Frameworks for Gastric Cancer therapy. Nature Communications. 2024. DOI: 10.1038/s41467-024-48149-9'
+  - 'An autocatalytic multicomponent DNAzyme nanomachine for tumor-specific photothermal therapy sensitization in pancreatic cancer. Nature Communications. 2023. DOI: 10.1038/s41467-023-42740-2'
+  - 'Therapeutic DNAzymes: From Structure Design to Clinical Applications. Advanced Materials. 2023. DOI: 10.1002/adma.202300374'
+  - 'Photothermal Responsive Nanosized Hybrid Polymersome as Versatile Therapeutics Co-Delivery Nanovehicle for Effective Tumor Suppression. Proc. Natl. Acad. Sci. U.S.A. 2019. DOI: 10.1073/pnas.1817251116'
+  - 'Programmable and Multifunctional DNA-Based Materials for Biomedical Applications. Advanced Materials. 2018. DOI: 10.1002/adma.201703658'
+  keywords: ''
+  
+- name: Eleanor Coffey
+  slug: eleanor-coffey
+  group: Protein Kinase Function in Brain
+  unit: Cell Biology
+  university: Åbo Akademi University
+  lab_website: https://bioscience.fi/research/kinase-function-in-brain/
+  cris_profile: https://research.abo.fi/en/persons/eleanor-coffey
+  photo: eleanor-coffey.jpg
+  expertise:
+  - 'Our lab investigates the molecular mechanisms underlying brain disorders, with
+    specialized expertise in the signaling pathways regulated by the protein kinases
+    JNK and LRRK2. We have uncovered novel insights into how these kinases influence
+    anxiety-like behaviors and neuronal death in Parkinson's disease. By integrating
+    animal and cellular models with clinical proteomics, we aim to deepen our understanding
+    of the biology behind these conditions.'
+  projects:
+  - 'We focus on Parkinson’s disease, using deep proteomic profiling of blood cells
+    to detect pre-symptomatic changes. This includes developing new informatics to
+    decode the “dark proteome” of cohorts like PPMI to identify early biomarkers.
+    We also study depression cohorts to find markers predicting treatment response.
+    Together, this work offers insight into immune cell roles in brain disorders.'
+  techniques:
+  - Our lab combines fluorescence imaging and proteomics methods with neurobiology,
+    biochemistry, and data science to reach our goals.
+  funding:
+  - These projects are funded by the Michael J Fox Foundation, the Research Council
+    of Finland, EU ERANET, Immudocs, and Inflames. We participate in international networks
+    in the field of neuroscience, including informatics for neuroscience.
+  publications:
+  - 'PhosPiR: an automated phosphoproteomic pipeline in R. Briefings in Bioinformatics. 2022. DOI: 10.1093/bib/bbab510'
+  - 'Protein synthesis is suppressed in sporadic and familial Parkinson's disease by LRRK2. FASEB Journal. 2020. DOI: 10.1096/fj.202001046R'
+  - 'JNK1 controls adult hippocampal neurogenesis and imposes cell-autonomous control of anxiety behaviour from the neurogenic niche. Molecular Psychiatry. 2018. DOI: 10.1038/mp.2016.203.'
+  - 'Nuclear and cytosolic JNK signalling in neurons. Nature reviews Neuroscience. 2014. DOI: 10.1038/nrn3729' 
+  - 'Phosphorylation of SCG10/stathmin-2 determines multipolar stage exit and neuronal migration rate. Nature Neuroscience. 2011. DOI: 10.1038/nn.2755'
+  keywords: ''
