@@ -567,19 +567,13 @@
   funding:
   - FIRI, EMBRC
   publications:
-  - 'Maarse, FM; Salovius-Laurén, S; Snickars, M; Physical drivers of epi-and infauna
-    communities related to dominating macrophytes in shallow bays in the Northern
-    Baltic Sea, Estuar, Coast  Shelf Sci,262,2021'
-  - 'Eriksson, BK; Ljunggren, L; Sandström, A; Johansson, G; Mattila, J; Rubach, A;
-    Råberg, S; Snickars, M; ,Declines in predatory fish promote bloom-forming macroalgae,Ecol
-    Appl,191975-1988,2009'
-  - 'Snickars, M; Weigel, B; Bonsdorff, E; ,Impact of eutrophication and climate change
-    on fish and zoobenthos in coastal waters of the Baltic Sea,Mar Biol,162,1,141-151,2015'
-  - 'Kraufvelin, P; Pekcan-Hekim, Z; Bergström, U; Florin, AB; et. al; Essential coastal
-    habitats for fish in the Baltic Sea,Estuar, Coast Shelf Sci,204,14-30,2018'
-  - 'Henseler, Christina; et. al. Coastal habitats and their importance for the diversity
-    of benthic communities: a species-and trait-based approach, Estuari, Coast Shelf
-    Sci,226,106272,2019'
+  - 'Physical drivers of epi-and infauna communities related to dominating macrophytes in shallow bays in the Northern
+    Baltic Sea. Estuar, Coast  Shelf Sci. 2021. DOI: 10.1016/j.ecss.2021.107600'
+  - 'Declines in predatory fish promote bloom-forming macroalgae. Ecol Appl. 2009. DOI: 10.1890/08-0964.1'
+  - 'Impact of eutrophication and climate change on fish and zoobenthos in coastal waters of the Baltic Sea. Mar Biol. 2015. DOI: 10.1007/s00227-014-2579-3'
+  - 'Essential coastal habitats for fish in the Baltic Sea. Estuar, Coast Shelf Sci. 2018. DOI: 10.1016/j.ecss.2018.02.014'
+  - 'Coastal habitats and their importance for the diversity of benthic communities: a species-and trait-based approach, Estuari, Coast Shelf
+    Sci. 2019. DOI: 10.1016/j.ecss.2019.106272'
   keywords: ''
   
 - name: Annika Meinander
@@ -588,44 +582,37 @@
   unit: Cell Biology
   university: Åbo Akademi University
   lab_website: https://www.abo.fi/en/inflammatory-signalling-lab/
-  cris_profile: ''
+  cris_profile: https://research.abo.fi/sv/persons/annika-meinander
   photo: annika-meinander.jpg
   expertise:
-  - • Post-translational modifications, ubiquitination in particular
-  - • NF-κB signalling pathways
-  - • Apoptotic and non-apoptotic roles of caspases
-  - • Drosophila melanogaster as a model system
+  - Post-translational modifications, ubiquitination in particular
+  - NF-κB signalling pathways
+  - Apoptotic and non-apoptotic roles of caspases
+  - Drosophila melanogaster as a model system
   projects:
-  - • Ubiquitination-mediated regulation of inflammation during cell stress and infection
-  - • Targeting ubiquitin signalling in chronic inflammation and inflammation-induced
+  - Ubiquitination-mediated regulation of inflammation during cell stress and infection
+  - Targeting ubiquitin signalling in chronic inflammation and inflammation-induced
     cancer
-  - • Ubiquitin-mediated control of starvation-induced intestinal inflammatory responses
-  - • Caspase-mediated regulation of autophagy in inflammatory signalling
-  - • Modulating caspase activation and immune signalling in intestinal inflammation
+  - Ubiquitin-mediated control of starvation-induced intestinal inflammatory responses
+  - Caspase-mediated regulation of autophagy in inflammatory signalling
+  - Modulating caspase activation and immune signalling in intestinal inflammation
   techniques:
-  - • Analysis of ubiquitin modifications in vitro and in vivo
-  - • Drosophila melanogaster as a model system to study cell signalling and immune
+  - Analysis of ubiquitin modifications in vitro and in vivo
+  - Drosophila melanogaster as a model system to study cell signalling and immune
     responses
-  - • Imaging caspase activation in vivo
+  - Imaging caspase activation in vivo
   funding:
-  - • InFLAMES Flagship
-  - • Sigrid Jusélius Foundation
-  - • Swedish Cultural Foundation
-  - • COST Action CA20113/ProteoCure
-  - • International Society of Protein Termini
+  - InFLAMES Flagship
+  - Sigrid Jusélius Foundation
+  - Swedish Cultural Foundation
+  - COST Action CA20113/ProteoCure
+  - International Society of Protein Termini
   publications:
-  - 'Aalto AL, Luukkonen V, Meinander A. Ubiquitin signalling in Drosophila innate
-    immune responses. FEBS J. 2024. doi: 10.1111/febs.17028.'
-  - 'Kietz C, Meinander A. Drosophila caspases as guardians of host-microbe interactions.
-    Cell Death Differ. 2023. doi: 10.1038/s41418-022-01038-4.'
-  - 'Şen Karaman D, Kietz C, Govardhanam P, Slita A, Manea A, Pamukçu A, Meinander
-    A, Rosenholm J. Core@shell structured ceria@mesoporous silica nanoantibiotics
-    restrain bacterial growth in vitro and in vivo. Biomater. Adv. 2022. doi: 10.1016/j.msec.2021.112607.'
-  - 'Aalto A, Martínez-Chacón G, Kietz C, Tsuganova N, Sundén M, Broemer M, Meinander
-    A M1-ubiquitination facilitates NF-kappaB activation and survival during sterile
-    inflammation. FEBS J. 2022. doi: 10.1111/febs.16425.'
-  - 'Kietz C, Mohan AK, Pollari V, Tuominen I-E, Ribeiro PS, Meier P, Meinander A.
-    Drice restrains Diap2-mediated inflammatory signalling and intestinal inflammation.
+  - 'Ubiquitin signalling in Drosophila innate immune responses. FEBS J. 2024. doi: 10.1111/febs.17028.'
+  - 'Drosophila caspases as guardians of host-microbe interactions. Cell Death Differ. 2023. doi: 10.1038/s41418-022-01038-4.'
+  - 'Core@shell structured ceria@mesoporous silica nanoantibiotics restrain bacterial growth in vitro and in vivo. Biomater. Adv. 2022. doi: 10.1016/j.msec.2021.112607.'
+  - 'A M1-ubiquitination facilitates NF-kappaB activation and survival during sterile inflammation. FEBS J. 2022. doi: 10.1111/febs.16425.'
+  - 'Kietz C, Mohan AK, Pollari V, Tuominen I-E, Ribeiro PS, Meier P, Meinander A. Drice restrains Diap2-mediated inflammatory signalling and intestinal inflammation.
     Cell Death Differ. 2022. doi: 10.1038/s41418-021-00832-w.'
   keywords: ''
   
@@ -635,42 +622,42 @@
   unit: Marine Biology
   university: Åbo Akademi University
   lab_website: https://www.abo.fi/en/emb-research/
-  cris_profile: ''
+  cris_profile: https://research.abo.fi/sv/persons/sonja-salovius-lauren
   photo: sonja-salovius-lauren.jpg
   expertise:
-  - Marine biodiversity, marine inventories, spatial ecology, conservation planning,
-    marine restoration, sediment-biological interactions, genetic (molecular markers)
-    studies including connectivity, macroalgal-invertebrate interactions, marine indicator
-    development, macroalgal production related to eutrophication.
+  - Marine biodiversity and marine inventories
+  - Spatial ecology
+  - Conservation planning
+  - Marine restoration
+  - Sediment-biological interactions
+  - Genetic (molecular markers)
+  - Studies including connectivity
+  - Macroalgal-invertebrate interactions
+  - Marine indicator development
+  - Macroalgal production related to eutrophication.
   projects:
-  - 1. Biodiversea-project, funded by EU LIFE IP (https://www.metsa.fi/en/project/biodiversea-eng/)
-  - 2. Center for Sustainable Ocean Sciences (SOS), Center of Excellence funded through
-    ÅAU Endowment (https://sites.abo.fi/centre-for-sustainable-ocean-science/)
-  - 3. RIKI- project ("Nutrient turnover in the Archipealago Sea") in cooperation
+  - Biodiversea-project, funded by EU LIFE IP 
+  - Center for Sustainable Ocean Sciences (SOS), Center of Excellence funded through
+    ÅAU Endowment
+  - RIKI- project ("Nutrient turnover in the Archipealago Sea") in cooperation
     with ELY Center- funded by the Ministry of the Environment
-  - 4. The Finnish Inventory Programme for Underwater Marine Diversity, VELMU
+  - The Finnish Inventory Programme for Underwater Marine Diversity, VELMU
   techniques:
-  - Marine mapping methods including uw video camera and photography, aquarium experiments,
-    sediment analysis, molecular markers of selected species (charophytes, blue mussels),
-    spatial modeling
+  - Marine mapping methods including uw video camera and photography
+  - Aquarium experiments  
+  - Sediment analysis
+  - Molecular markers of selected species (charophytes, blue mussels)
+  - Spatial modeling
   funding:
   - 'The present funding comes through EU Life, ÅAU endowment, and the Ministry of
     Environment/ELY-center. Recent funding: Baltic Sea Conservation Foundation, Government
     of Åland, European Maritime and Fisheries Fund, and the Ministry of Environment'
   publications:
-  - '1. Sumelius H, Korpinen S, Norkko A, Salovius-Laurén S, Viitasalo M & Boström
-    C 2025. Marine biodiversity loss in Finnish coastal waters: evidence and implications
-    for management. AMBIO. https://doi.org/10.1007/s13280-025-02185-x'
-  - 2. Forsblom et. al 2024. Finnish inventory data of underwater marine biodiversity.
-    Scientific Data 11:1297 https://doi.org/10.1038/s41597-024-04092-4
-  - 3. Eveleens Maarse F, Gagnon K, Snickars M, Salovius-Laurén S 2024. Invertebrate
-    Responses to Large- and Small-Scale Drivers in Coastal Phragmites australis Beds
-    in the Northern Baltic Sea. Estuaries and Coasts. https://doi.org/10.1007/s12237-024-01360-9
-  - 4. Salo, T and Salovius-Laurén S 2022. Green algae as bioindicators for long-term
-    nutrient pollution along a coastal eutrophication gradient. Ecological Indicators
-    140. https://doi.org/10.1016/j.ecolind.2022.109034
-  - 5. Rinne H et al. 2022. Variation in Fucus vesiculosus associated fauna along
-    a eutrophication gradient. Estuarine Coastal and Shelf Science.
+  - 'Marine biodiversity loss in Finnish coastal waters: evidence and implications for management. AMBIO. 2025. DOI: 10.1007/s13280-025-02185-x'
+  - 'Finnish inventory data of underwater marine biodiversity. Scientific Data. 2024. DOI: 10.1038/s41597-024-04092-4'
+  - 'Invertebrate Responses to Large- and Small-Scale Drivers in Coastal Phragmites australis Beds in the Northern Baltic Sea. Estuaries and Coasts. 2024. DOI: 10.1007/s12237-024-01360-9'
+  - 'Green algae as bioindicators for long-term nutrient pollution along a coastal eutrophication gradient. Ecological Indicators. 2022. DOI: 10.1016/j.ecolind.2022.109034'
+  - 'Variation in Fucus vesiculosus associated fauna along a eutrophication gradient. Estuarine Coastal and Shelf Science. 2022. DOI: 10.1016/j.ecss.2022.107976'
   keywords: ''
   
 - name: Lea Sistonen
