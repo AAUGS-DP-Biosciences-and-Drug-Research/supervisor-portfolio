@@ -21,7 +21,7 @@
   - Democratising deep learning for microscopy with ZeroCostDL4Mic
   techniques:
   - Microscopy (super-resolution microscopy, live imaging, traction force microscopy)
-  - Image analysis, deep learning and computer vision
+  - Image analysis, deep learning, and computer vision
   - Cell and molecular biology
   - Mass spectrometry (identification of protein-protein interactions using pull-downs
     and biotinylation-based strategy)
@@ -154,15 +154,15 @@
   projects:
   - Glycolipid transfer protein, GLTP interaction with VAP-proteins in the ER exit
     sites
-  - The role GLTP in demyelination
+  - The role of GLTP in demyelination
   - Intracellular localization of GLTP
   - Inhibitors for glycolipid binding proteins
   techniques:
   - Lipid biochemistry
-  - Quantitative and qualitative glycosphingo- and phospholipid analysis by high performace
+  - Quantitative and qualitative glycosphingo- and phospholipid analysis by high-performance
     TLC
   - Cell and molecular biology
-  - Fluorescence spectroscopy, steady-state and life-time
+  - Fluorescence spectroscopy, steady-state and lifetime
   - Radioisotope labeling and lipid metabolism techniques
   funding:
   - Medicinska understödsföreningen Liv och hälsa
@@ -198,7 +198,7 @@
   - Hotspots for biodiversity shifts in the Archipelago Sea - BIOSHIFT
   - Modeling advanced primary production scenarios in coastal seas - MIMOSA
   - 'Geochemical Dynamics of Seawater-Submarine Aquifer Interactions: Impacts on Coastal Sediments and Ecosystems'
-  - Switching functional roles gene expression of feeding trait plasticity in a
+  - Switching functional roles of gene expression of feeding trait plasticity in a
     marine key species - GeneMac
   techniques:
   - Cell cultivation
@@ -442,13 +442,13 @@
   techniques:
   - We have broad collaborations with hospitals, and most of our projects have clinical
     doctors involved, and initially, from a real-life clinical question. Our group is
-    multidisciplinary,  which involves  interplay between physics, materials science, synthetic
+    multidisciplinary,  which involves an  interplay between physics, materials science, synthetic
     organic chemistry, engineering, biology, and medicine. We aim that many of our
-    designs could be clinically applicable in the future, and have a great social impact
+    designs could be clinically applicable in the future, and have a tremendous social impact
     in treating diseases.
   funding:
   - 'I am coordinating many projects from the Research Council of Finland, Business Finland,
-    and from different foundations. I am also part of many consortium projects, including
+    and different foundations. I am also part of many consortium projects, including
     the InFlame flagship, NAP4DIVE (EU Horizon), Nordic POP, NordicPharmTrain, PII:
     Printed Intelligence Infrastructure, MADNESS (ÅAU Center of Excellence). As well
     as the collaboration project with companies, e.g., the joint project with Bayer
@@ -508,8 +508,8 @@
   expertise:
   - Population- and individual-level responses to increasing predation
   - Fitness consequences of behavioural and physiological variation under predation and climate forcing
-  - Genetic connectivity, gene flow and diversity during population decline
-  - Causes and consequences of breeding dispersal, choice of overwintering area and migration
+  - Genetic connectivity, gene flow, and diversity during population decline
+  - Causes and consequences of breeding dispersal, choice of overwintering area, and migration
   - Strategies, evolution of animal personality
   - Life-history evolution
   - Social evolution
@@ -560,7 +560,7 @@
   projects:
   - Marine Waterways -Together with local communities, the Åland Government, Åland
     Fisheries Center (Guttorp), SLU
-  - Currently involved in large national Biodiversea focusing on restoration of key
+  - Currently involved in a large national Biodiversea focusing on the restoration of key
     coastal habitats.
   techniques:
   - Ordinary coastal monitoring methods and advanced echosounders and autonomous sonars
@@ -608,12 +608,11 @@
   - COST Action CA20113/ProteoCure
   - International Society of Protein Termini
   publications:
-  - 'Ubiquitin signalling in Drosophila innate immune responses. FEBS J. 2024. doi: 10.1111/febs.17028.'
-  - 'Drosophila caspases as guardians of host-microbe interactions. Cell Death Differ. 2023. doi: 10.1038/s41418-022-01038-4.'
-  - 'Core@shell structured ceria@mesoporous silica nanoantibiotics restrain bacterial growth in vitro and in vivo. Biomater. Adv. 2022. doi: 10.1016/j.msec.2021.112607.'
-  - 'A M1-ubiquitination facilitates NF-kappaB activation and survival during sterile inflammation. FEBS J. 2022. doi: 10.1111/febs.16425.'
-  - 'Kietz C, Mohan AK, Pollari V, Tuominen I-E, Ribeiro PS, Meier P, Meinander A. Drice restrains Diap2-mediated inflammatory signalling and intestinal inflammation.
-    Cell Death Differ. 2022. doi: 10.1038/s41418-021-00832-w.'
+  - 'Ubiquitin signalling in Drosophila innate immune responses. FEBS J. 2024. DOI: 10.1111/febs.17028.'
+  - 'Drosophila caspases as guardians of host-microbe interactions. Cell Death Differ. 2023. DOI: 10.1038/s41418-022-01038-4.'
+  - 'Core@shell structured ceria@mesoporous silica nanoantibiotics restrain bacterial growth in vitro and in vivo. Biomater. Adv. 2022. DOI: 10.1016/j.msec.2021.112607.'
+  - 'A M1-ubiquitination facilitates NF-kappaB activation and survival during sterile inflammation. FEBS J. 2022. DOI: 10.1111/febs.16425.'
+  - 'Drice restrains Diap2-mediated inflammatory signalling and intestinal inflammation. Cell Death Differ. 2022. DOI: 10.1038/s41418-021-00832-w.'
   keywords: ''
   
 - name: Sonja Salovius-Lauren
@@ -637,13 +636,13 @@
   - Macroalgal production related to eutrophication.
   projects:
   - Biodiversea-project, funded by EU LIFE IP 
-  - Center for Sustainable Ocean Sciences (SOS), Center of Excellence funded through
+  - Center for Sustainable Ocean Sciences (SOS), Center of Excellence, funded through
     ÅAU Endowment
   - RIKI- project ("Nutrient turnover in the Archipealago Sea") in cooperation
-    with ELY Center- funded by the Ministry of the Environment
+    with the ELY Center, funded by the Ministry of the Environment
   - The Finnish Inventory Programme for Underwater Marine Diversity, VELMU
   techniques:
-  - Marine mapping methods including uw video camera and photography
+  - Marine mapping methods including UW video camera and photography
   - Aquarium experiments  
   - Sediment analysis
   - Molecular markers of selected species (charophytes, blue mussels)
@@ -666,13 +665,15 @@
   unit: Cell Biology
   university: Åbo Akademi University
   lab_website: https://sistonenlab.com/
-  cris_profile: ''
+  cris_profile: https://research.abo.fi/sv/persons/lea-sistonen
   photo: lea-sistonen.jpg
   expertise:
-  - Cell Differentiation, Cell Stress, Post-translational Modifications, Proteostasis,
-    Transcriptional Gene Regulation
-  - https://research.abo.fi/admin/workspace/personal/overview/
-  - https://sistonenlab.com/
+  - Cell Differentiation
+  - Cell Stress
+  - Post-translational Modifications
+  - Proteostasis
+  - Transcriptional Gene Regulation
+  
   projects:
   - 'HSF-NET: Functional networks regulated by heat shock factors in cell plasticity,
     Research Council of Finland 2023-27'
@@ -684,9 +685,12 @@
     of HPV-driven cancers, Cancer Foundation Finland 2024-26, together with John E.
     Eriksson
   techniques:
-  - ChIP-seq, DNA-protein interaction in vivo and in vitro, Proteomics, PRO-seq, RNA-seq,
-    including data analysis
-  - https://sistonenlab.com/
+  - ChIP-seq
+  - DNA-protein interaction in vivo and in vitro
+  - Proteomics
+  - PRO-seq
+  - RNA-seq, including data analysis
+
   funding:
   - 'HSF-NET: Functional networks regulated by heat shock factors in cell plasticity,
     Research Council of Finland 2023-27'
@@ -697,21 +701,14 @@
   - Pharmacologic strategy for targeting the main oncoproteins and defense systems
     of HPV-driven cancers, Cancer Foundation Finland 2024-26, together with John E.
     Eriksson
+    
   publications:
-  - Da Silva AJ, Hästbacka HSE,..., Henriksson E, SISTONEN L. Nuclear talin-1 provides
-    a bridge between cell adhesion and gene expression. iScience 28:111745, 2025.
-    10.1016/j.isci.2025.111745
-  - de Thonel A, Ahlskog JK,..., SISTONEN L, Mezger V. CBP-HSF2 structural and functional
-    interplay in Rubinstein-Taybi neurodevelopmental disorder. NCOMMS 13(1):7002,
-    2022. 10.1038/s41467-022-34476-2
-  - Himanen SV, Puustinen MC,..., Vihervaara A, SISTONEN L. HSFs drive transcription
-    of distinct genes and enhancers during oxidative stress and heat shock. NAR 50:6102-15,
-    2022. 10.1093/nar/gkac493
-  - Vihervaara A, Mahat DB,..., Lis JT, SISTONEN L. Stress-induced transcriptional
-    memory accelerates promoter-proximal pause release and decelerates termination
-    over mitotic divisions. Mol Cell 81:1715-31, 2021. 10.1016/j.molcel.2021.03.007
-  - Joutsen J, Da Silva AJ,..., SISTONEN L. Heat shock factor 2 protects against proteotoxicity
-    by maintaining cell-cell adhesion. Cell Rep 30:583-97, 2020. 10.1016/j.celrep.2019.12.037
+  - 'Nuclear talin-1 provides a bridge between cell adhesion and gene expression. iScience. 2025. DOI: 10.1016/j.isci.2025.111745'
+  - 'CBP-HSF2 structural and functional interplay in Rubinstein-Taybi neurodevelopmental disorder. Nat Commun.  2022. DOI: 10.1038/s41467-022-34476-2'
+  - 'HSFs drive transcription of distinct genes and enhancers during oxidative stress and heat shock. Nucleic Acids Res. 2022. DOI: 10.1093/nar/gkac493'
+  - 'Stress-induced transcriptional memory accelerates promoter-proximal pause release and decelerates termination
+    over mitotic divisions. Mol Cell. 2021. DOI: 10.1016/j.molcel.2021.03.007'
+  - 'Heat shock factor 2 protects against proteotoxicity by maintaining cell-cell adhesion. Cell Rep. 2020. DOI: 10.1016/j.celrep.2019.12.037'
   keywords: ''
   
 - name: Mikael von Numers
@@ -719,12 +716,14 @@
   group: Mikael von Numers
   unit: Marine Biology
   university: Åbo Akademi University
-  lab_website: nan
-  cris_profile: ''
+  lab_website:
+  cris_profile: https://research.abo.fi/sv/persons/mikael-von-numers
   photo: mikael-von-numers.jpg
   expertise:
-  - Island biogeography, long term changes, distribution patterns among plants and
-    birds, species - environment interactions
+  - Island biogeography
+  - Long-term changes
+  - Distribution patterns among plants and birds
+  - Species-environment interactions
   projects:
   - My main research interests include long-term changes (among both plants and birds)
     and biogeographical questions concerning species distribution patterns in relation
@@ -734,21 +733,15 @@
   funding:
   - mainly domestic sources such as SKF
   publications:
-  - Hermansson von Numers Jaatinen & Öst. 2023. Predation risk and landscape context
+  - 'Predation risk and landscape context
     shape reproductive output of an endangered sea duck from two subpopulations with
-    contrasting predation risk. J. of Ornithology 164.
-  - Aikio S., Ramula S., Muola A & von Numers M. 2020. Island properties dominate
-    species traits in determining plant colonizations in an archipelago system. Ecography
-    43(7)
-  - von Numers, S., Öst, M. & von Numers, M. 2020. Population changes in the declining
-    Turnstone (Arenaria interpres) and other waders in the northern Baltic Sea based
-    on past and current breeding observations. Ornis Fenn. 97.
-  - Øystein H. Opedal, Mikael von Numers, Gleb Tikhonov & Otso Ovaskainen 2020. Refining
-    predictions of metacommunity dynamics by modelling species non-independence. Ecology
-    101(8)
-  - 'von Numers M.  2019. Distribution patterns and long-term changes in vascular
-    plants of non-littoral areas in the SW archipelago of Finland. Part VII. Poaceae
-    and synthesis. Ann Bot Fenn 56: 317--346.'
+    contrasting predation risk. J. of Ornithology. 2023. DOI: 10.1007/s10336-022-02036-6'
+  - 'Island properties dominate species traits in determining plant colonizations in an archipelago system. Ecography. 2020. DOI: 10.1111/ecog.05013'
+  - 'Population changes in the declining Turnstone (Arenaria interpres) and other waders in the northern Baltic Sea based
+    on past and current breeding observations. Ornis Fenn. 2020. DOI: 10.51812/of.133973'
+  - 'Refining predictions of metacommunity dynamics by modelling species non-independence. Ecology. 2020. DOI: 10.1002/ecy.3067'
+  - 'Distribution patterns and long-term changes in vascular plants of non-littoral areas in the SW archipelago of Finland. Part VII. Poaceae
+    and synthesis. 2017. DOI: 10.5735/085.054.0607'
   keywords: ''
   
 - name: Xiaoju Wang
@@ -757,41 +750,36 @@
   unit: Pharmacy
   university: Åbo Akademi University
   lab_website: https://www.pharmscilab.fi/biomaterials-and-drug-fabrication
-  cris_profile: ''
+  cris_profile: https://research.abo.fi/sv/persons/xiaoju-wang
   photo: xiaoju-wang.png
   expertise:
   - My research focuses on harnessing the benign properties of bio-enabled plant biopolymers
-    to design sustainable and functional biomaterials, for better interfacing with
+    to design sustainable and functional biomaterials for better interfacing with
     living cells or microbes. To create effective bionanomaterials and soft-matter
-    biomaterials, my research applies core methodologies such as biopolymer chemical
+    Biomaterials, my research applies core methodologies such as biopolymer chemical
     modifications, nanostructured biopolymer synthesis, and self-assembled biocolloidal
     networks from nano- to macro-scale.
   projects:
-  - "•\tMADNESS CoE-Center of Excellence in Materials-driven solutions for combatting\
-    \ antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028,\
-    \ (Co-PI; Center director: Prof. Jessica Rosenholm)"
-  - "•\tSusCellInk-Sustainable nanocellulose-based bioinks towards diverse material\
-    \ functionalities and therapeutic delivery of bioactive cues, Research Council\
-    \ of Finland (333158),  01.09.2020-31.08.2025, (PI)"
+  - 'MADNESS CoE-Center of Excellence in Materials-driven solutions for combatting antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028 (Co-PI; Center director: Prof. Jessica Rosenholm)'
+  - 'SusCellInk-Sustainable nanocellulose-based bioinks towards diverse material functionalities and therapeutic delivery of bioactive cues, Research Council of Finland (333158),  01.09.2020-31.08.2025, (PI)'
   techniques:
-  - Chemical synthesis of nanostructured polysaccharides and polyphenols, Rheology,
-    Various additive manufacturing techniques,  Cell-laden 3D bioprinting for fabrication
-    of in vitro models
+  - Chemical synthesis of nanostructured polysaccharides and polyphenols
+  - Rheology  
+  - Various additive manufacturing techniques
+  - Cell-laden 3D bioprinting for fabrication of in vitro models
   funding:
-  - "•\t Independent PI at CoE-MADNESS, Åbo Akademi University Foundation, 01.01.2024-31.12.2028"
-  - "•\t Academy Research Fellow, Research Council of Finland (333158),  01.09.2020-31.08.2025"
+  - Independent PI at CoE-MADNESS, Åbo Akademi University Foundation, 01.01.2024-31.12.2028
+  - Academy Research Fellow, Research Council of Finland (333158),  01.09.2020-31.08.2025
   publications:
-  - '1. S. Liang, Q. Wang, C. Xu, J. M. Rosenholm and X. Wang*, Nanoscale, 2025, DOI:
+  - 'Photocurable cellulose nanofibers and their copolymers with polyacrylamide as microgels to support 3D cell cultivation. Nanoscale. 2025, DOI:
     10.1039/D5NR00583C'
-  - 2. Q. Wang, Ö. Karadas, J. M. Rosenholm, C. Xu, T. Näreoja*, X. Wang*, Adv. Funct.
-    Mater. 2024, 34, 2400431. https://doi.org/10.1002/adfm.202400431
-  - 3. Q. Wang, Ö. Karadas, O. Backman, L. Wang, T. Näreoja, J. M. Rosenholm, C. Xu,
-    X. Wang*, Adv. Healthcare Mater. 2023, 12, 2203243. https://doi.org/10.1002/adhm.202203243
-  - 4. L. Wang, R. Wu, Q. Wang, O. Backman, P. Eklund, X. Wang*, C. Xu*, Adv. Funct.
-    Mater. 2024, 34, 2315679. https://doi.org/10.1002/adfm.202315679
-  - 5. L. Wang, Q. Wang, A. Slita, O. Backman, Z. Gounani, E. Rosqvist, J. Peltonen,
-    S. Willför, C. Xu, J. M. Rosenholm, X. Wang*, Green Chemistry 2022, 24, 2129-2145.
-    https://doi.org/10.1039/D1GC03841A
+  - 'Bioprinting Macroporous Hydrogel with Aqueous Two-Phase Emulsion-Based Bioink: In Vitro Mineralization and Differentiation Empowered by Phosphorylated Cellulose Nanofibrils. Adv. Funct.
+    Mater. 2024. DOI: 10.1002/adfm.202400431'
+  - 'Aqueous Two-Phase Emulsion Bioresin for Facile One-Step 3D Microgel-Based Bioprinting. Adv. Healthcare Mater. 2023. DOI: 10.1002/adhm.202203243'
+  - 'Evolution of Self-Assembled Lignin Nanostructure into Dendritic Fiber in Aqueous Biphasic Photocurable Resin for DLP-Printing. Adv. Funct.
+    Mater. 2024. DOI: 10.1002/adfm.202315679'
+  - 'Digital light processing (DLP) 3D-fabricated antimicrobial hydrogel with a sustainable resin of methacrylated woody polysaccharides and hybrid silver-lignin nanospheres. Green Chemistry. 2022.
+    DOI: 10.1039/D1GC03841A'
   keywords: ''
 
 
