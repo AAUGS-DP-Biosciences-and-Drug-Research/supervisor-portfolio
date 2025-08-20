@@ -786,7 +786,7 @@
   group: Environmental and Marine Biology
   unit: Marine Biology
   university: Åbo Akademi University
-  lab_website: www.abo.fi/sos
+  lab_website: https://sites.abo.fi/centre-for-sustainable-ocean-science/
   cris_profile: https://research.abo.fi/sv/persons/anna-törnroos-remes
   photo: anna-t-rnroos-remes.png
   expertise:
@@ -839,8 +839,7 @@
   cris_profile: https://research.abo.fi/en/persons/tiina-a-salminen
   photo: tiina-salminen.png
   expertise:
-  - Protein biochemistry and bioinformatics
-  - Structural biology
+  - Protein biochemistry, bioinformatics and Structural biology
   - Protein-ligand interactions
   - Molecular interaction mechanisms in inflammation, infection and cancer
   - Disease-causing genetic variation
