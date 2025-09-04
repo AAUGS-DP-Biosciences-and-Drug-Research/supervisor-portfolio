@@ -852,14 +852,12 @@
   - Intercepting Siglec-9 interactions in cancer and inflammation
   - Molecular mechanism of collagen-binding integrin activation
   techniques:
-  - https://www.abo.fi/en/structural-bioinformatics-laboratory/
   - Modern facilities for protein purification and sample quality control
   - State-of-the-arts infrastructure for protein crystallization
   - Automated imaging of protein crystallization trials
   - In-situ diffraction testing
   - Infrastructure for Cryo-electron microscopy sample preparation
-  - Up-to-date infrastructure for computational biology
-  - Scientific IT Support
+  - Up-to-date infrastructure for computational biology and Scientific IT Support
   funding:
   - Research Council Finland
   - InFLAMES Flagship
@@ -882,4 +880,124 @@
     10.1128/IAI.00962-19'
   keywords: ''
 
+- name: Anne Filppula
+  slug: anne-filppula
+  group: Translational Drug Research
+  unit: Pharmacy
+  university: Åbo Akademi University
+  lab_website: https://www.pharmscilab.fi/translationaladmeandpharmacodynamics
+  cris_profile: 'https://research.abo.fi/en/persons/anne-filppula'
+  photo: anne-filppula.jpg
+  expertise:
+  - Pharmacokinetics, ADMET, drug interactions, pharmacogenetics, PBPK modelling
+  projects:
+  - Projects mainly related to drug interactions and pharmacokinetic modelling
+  techniques:
+  - PBPK modelling
+  funding:
+  - Borgs fond, Liv & Hälsa
+  publications:
+  - 'Candesartan Has No Clinically Meaningful Effect on the Plasma
+    Concentrations of Cytochrome P450 2C8 Substrate Repaglinide in Humans. Drug. Metab.
+    Dispos. 2024. DOI: 10.1124/dmd.124.001798'
+  - 'Hydroxychloroquine is Metabolized by Cytochrome P450 2D6, 3A4, and 2C8, and Inhibits Cytochrome P450
+    2D6, while its Metabolites also Inhibit Cytochrome P450 3A in vitro. Drug Metab Dispos. 2023. DOI: 10.1124/dmd.122.001018' 
+  - 'Translational aspects of cytochrome P450-mediated drug-drug interactions: A case study with clopidogrel. Basic Clin Pharmacol Toxicol
+    2022. DOI: 10.1111/bcpt.13647'
+  - 'Comparative Hepatic and Intestinal Metabolism and Pharmacodynamics of Statins. Drug Metab Dispos. 2021. DOI: 10.1124/dmd.121.000406'
+  - 'Improved predictions of time-dependent drug-drug interactions by determination of cytosolic drug concentrations. Sci Rep. 2019. DOI: 10.1038/s41598-019-42051-x'
+  keywords: ''
+  
+- name: Jessica Rosenholm
+  slug: jessica-rosenholm
+  group: BioNanoMaterials group
+  unit: Pharmacy
+  university: Åbo Akademi University
+  lab_website: www.pharmscilab.fi
+  cris_profile: 'https://research.abo.fi/en/persons/jessica-rosenholm'
+  photo: jessica-rosenholm.jpg
+  expertise:
+  - 'Development of novel drug delivery systems (DDS) based on new carrier materials
+    e.g. naturally derived & synthetic polymers, inorganic materials, hydrogels, nanoparticulate
+    systems​'
+  - 'Formulation of nanomedicines based on small and large bioactive molecules (small
+    molecule drugs, peptides, proteins, nucleic acids)'
+  - 'Rational DDS design through physico-chemical characterization linking material
+    attributes to processing and performance (including cellular & bacterial evaluation)'
+  projects:
+  - https://research.abo.fi/en/persons/jessica-rosenholm/projects/
+  techniques:
+  - 'Nanotechnologies for drug delivery and imaging'
+  - '2D and 3D printing technologies'
+  - 'Physico-chemical characterization of nanomaterials'
+  funding:
+  - 'Nordic POP (Patient-Oriented Products) University Hub [https://nordicpop.ku.dk/]'
+  - 'Nordic Pharmaceutical Innovation and Translational (NordicPharmaTrain) network
+    [https://www.uu.se/en/department/medicinal-chemistry/faculty-of-pharmacy/nordicpharmatrain]'
+  - 'Finnish Platform for Pharmaceutical Research (FinPharma) [https://www.helsinki.fi/fi/verkostot/finpharma]'
+  publications:
+  - 'Functional enzyme delivery via surface-modified mesoporous
+    silica nanoparticles in 3D printed nanocomposite hydrogels. European Journal of
+    Pharmaceutical Sciences. 2025. DOI: 10.1016/j.ejps.2025.107132'
+  - 'Surface Modification of Mesoporous Silica Nanoparticles
+    as a Means to Introduce Inherent Cancer-Targeting Ability in a 3D Tumor Microenvironment.
+    Small Science. 2024. DOI: 10.1002/smsc.202400084'
+  - 'Evolving technologies and strategies for combating antibacterial
+    resistance in the advent of the post-antibiotic era. Advanced Functional Materials
+    2020. DOI: 10.1002/adfm.201908783'
+  - 'Nanodiamonds for advanced optical bioimaging
+    and beyond. Curr. Op. Coll. & Interf. Sci. 2019. DOI: 10.1016/j.cocis.2019.02.014'
+  - 'Multimodality Imaging of Silica and Silicon Materials in Vivo. Advanced Materials. 2018. DOI: 10.1002/adma.201703651'
+  keywords: ''
+  
+- name: Diana Toivola
+  slug: diana-toivola
+  group: Epithelial Biology Lab
+  unit: Cell Biology
+  university: Åbo Akademi University
+  lab_website: https://toivola-lab.org/
+  cris_profile: 'https://research.abo.fi/sv/persons/diana-toivola'
+  photo: diana-toivola.png
+  expertise:
+  - 'Epithelial cell biology of gastrointestinal organs and related glands including the endocrine pancreas'
+  - 'Cytoskeletal intermediate filaments protein regulation and function and molecular roles in health and disease, especially simple epithelial keratins and nuclear lamins'
+  - 'Auto-immune diseases, Inflammatory bowel diseases, type I diabetes) and colorectal cancer'
+  - 'Mouse disease modelling'
+  - 'Non-invasive diagnostics development of intestinal diseases'
+  projects:
+  - 'Dysregulation of keratins in intestinal inflammation with biomarker potential'
+  - 'Noninvasive in vitro assays to detect and monitor inflammatory bowel diseases'
+  - 'A colon-specific mouse model for colorectal cancer'
+  - 'Keratins as tumor suppressors and guardians of intestinal health'
+  - 'Beta-cell cytoskeletal keratin 18 and its putative type 1 diabetes-associated variant in beta-cell function'
+  techniques:
+  - 'Mouse disease modelling, especially models of colitis, colorectal cancer and diabetes'
+  - 'Intestinal crypt isolation and organoid culture (mini-gut)'
+  - 'Isolation of islets of Langerhans and 3D culture'
+  - 'Beta-cell and colon cancer cell lines'
+  - 'Microscopy, digital histopathology and fluorescence based imaging methods'
+  - 'Cell, molecular, biochemical methods'
+  - 'Immunoassay and non-invasive imaging methods development'
+  funding:
+  - 'Current funding: InFLAMES flagship, Business Finland, Novo Nordisk Fonden,
+    Medicinska understödsföreningen Liv och Hälsa, Diabetes Research Foundation Finland'
+  - 'Networks: Intermediate filament community, American Society for Cell biology,
+    Gut Research-community in Finland, Gastroenterology organizations in Finland and
+    USA'
+  publications:
+  - 'Defining a timeline of colon pathologies after keratin 8 loss: rapid crypt elongation
+    and diarrhea are followed by epithelial erosion and cell exfoliation. Am. J. Physiol.,
+    Gastro. Liver Physiol. 2024. DOI: 10.1152/ajpgi.00140.2023'
+  - 'β-cell keratin 8 maintains islet mechanical integrity, mitochondrial ultrastructure
+    and β-cell glucose transporter 2 plasma membrane targeting. 2024. Am. J. Physiol.-Cell
+    Physiol. DOI: 10.1152/ajpcell.00123.2024'
+  - 'Colonocyte keratins stabilize mitochondria and contribute to mitochondrial energy
+    metabolism. 2024. Am. J. Physiol.- Gastrointestinal Liver Physiol. DOI: 10.1152/ajpgi.00220.2023'
+  - 'Colonocyte keratin 7 expression is expressed  de novo in inflammatory bowel diseases
+    and associated with pathological changes and drug-resistance. Sci. Rep. 2022.
+   DOI: 10.1038/s41598-022-26603-2'
+  - 'Targeted deletion of keratin 8 in intestinal epithelial cells disrupts tissue
+    integrity and predisposes to tumorigenesis in the colon. Cell. Mol. Life. Sci.
+    2022. DOI: 10.1007/s00018-021-04081-5'
+  keywords: ''
 
