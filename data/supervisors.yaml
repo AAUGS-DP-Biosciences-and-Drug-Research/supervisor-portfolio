@@ -198,7 +198,7 @@
   - Hotspots for biodiversity shifts in the Archipelago Sea - BIOSHIFT
   - Modeling advanced primary production scenarios in coastal seas - MIMOSA
   - 'Geochemical Dynamics of Seawater-Submarine Aquifer Interactions: Impacts on Coastal Sediments and Ecosystems'
-  - Switching functional roles of gene expression of feeding trait plasticity in a
+  - Switching the functional roles of gene expression of feeding trait plasticity in a
     marine key species - GeneMac
   techniques:
   - Cell cultivation
@@ -351,7 +351,7 @@
   - 'NAP4DIVE: Non-Animal Platform for Nanoparticle-Based Delivery Across the Blood-Brain
     Barrier Interface with Vehicle Evolution - EU Horizon RIA'
   - Nordic Pharmaceutical Translation and Innovation - Nordforsk
-  - 'MADNESS: Centre of Excellence in Materials-driven solutions for combatting
+  - 'MADNESS: Centre of Excellence in Materials-driven solutions for combating
     antimicrobial resistance - Åbo Akademi Foundation'
   - Data integrated platforms for the design, production, and testing of therapeutics
     (project in Helsinki) - Business Finland
@@ -463,7 +463,7 @@
   
 - name: Eleanor Coffey
   slug: eleanor-coffey
-  group: Protein Kinase Function in Brain
+  group: Protein Kinase Function in the Brain
   unit: Cell Biology
   university: Åbo Akademi University
   lab_website: https://bioscience.fi/research/kinase-function-in-brain/
@@ -560,7 +560,7 @@
   projects:
   - Marine Waterways -Together with local communities, the Åland Government, Åland
     Fisheries Center (Guttorp), SLU
-  - Currently involved in a large national Biodiversea focusing on the restoration of key
+  - Currently involved in a large national biodiversity project focusing on the restoration of key
     coastal habitats.
   techniques:
   - Ordinary coastal monitoring methods and advanced echosounders and autonomous sonars
@@ -638,11 +638,11 @@
   - Biodiversea-project, funded by EU LIFE IP 
   - Center for Sustainable Ocean Sciences (SOS), Center of Excellence, funded through
     ÅAU Endowment
-  - RIKI- project ("Nutrient turnover in the Archipealago Sea") in cooperation
+  - RIKI- project ("Nutrient turnover in the Archipelago Sea") in cooperation
     with the ELY Center, funded by the Ministry of the Environment
   - The Finnish Inventory Programme for Underwater Marine Diversity, VELMU
   techniques:
-  - Marine mapping methods including UW video camera and photography
+  - Marine mapping methods, including UW video camera and photography
   - Aquarium experiments  
   - Sediment analysis
   - Molecular markers of selected species (charophytes, blue mussels)
@@ -672,8 +672,7 @@
   - Cell Stress
   - Post-translational Modifications
   - Proteostasis
-  - Transcriptional Gene Regulation
-  
+  - Transcriptional Gene Regulation  
   projects:
   - 'HSF-NET: Functional networks regulated by heat shock factors in cell plasticity,
     Research Council of Finland 2023-27'
@@ -689,7 +688,6 @@
   - DNA-protein interaction in vivo and in vitro
   - Proteomics
   - PRO-seq and RNA-seq, including data analysis
-
   funding:
   - 'HSF-NET: Functional networks regulated by heat shock factors in cell plasticity,
     Research Council of Finland 2023-27'
@@ -699,8 +697,7 @@
     Liv och Hälsa 2023-26
   - Pharmacologic strategy for targeting the main oncoproteins and defense systems
     of HPV-driven cancers, Cancer Foundation Finland 2024-26, together with John E.
-    Eriksson
-    
+    Eriksson    
   publications:
   - 'Nuclear talin-1 provides a bridge between cell adhesion and gene expression. iScience. 2025. DOI: 10.1016/j.isci.2025.111745'
   - 'CBP-HSF2 structural and functional interplay in Rubinstein-Taybi neurodevelopmental disorder. Nat Commun.  2022. DOI: 10.1038/s41467-022-34476-2'
@@ -754,12 +751,12 @@
   expertise:
   - My research focuses on harnessing the benign properties of bio-enabled plant biopolymers
     to design sustainable and functional biomaterials for better interfacing with
-    living cells or microbes. To create effective bionanomaterials and soft-matter
-    Biomaterials, my research applies core methodologies such as biopolymer chemical
+    living cells or microbes. To create effective bionanomaterials and soft matter
+    biomaterials, my research applies core methodologies such as biopolymer chemical
     modifications, nanostructured biopolymer synthesis, and self-assembled biocolloidal
     networks from nano- to macro-scale.
   projects:
-  - 'MADNESS CoE-Center of Excellence in Materials-driven solutions for combatting antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028 (Co-PI; Center director: Prof. Jessica Rosenholm)'
+  - 'MADNESS CoE-Center of Excellence in Materials-driven solutions for combating antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028 (Co-PI; Center director: Prof. Jessica Rosenholm)'
   - 'SusCellInk-Sustainable nanocellulose-based bioinks towards diverse material functionalities and therapeutic delivery of bioactive cues, Research Council of Finland (333158),  01.09.2020-31.08.2025, (PI)'
   techniques:
   - Chemical synthesis of nanostructured polysaccharides and polyphenols
@@ -817,7 +814,7 @@
   publications:
   - 'Diverging benthic trait diversity and drivers across fjord
     to slope habitats of the high Arctic, Est., Coast. Shelf. Sci., DOI: 10.1016/j.ecss.2024.109086'
-  - 'Introduction: towards holistic knowlede of marine environmental
+  - 'Introduction: towards holistic knowledge of marine environmental
     changes. in Understanding Marine Changes: Environmental knowledge and methods
     of research, Edward Elgar, Cheltenham'
   - 'The Anatomy of Complex Marine Problems: A Case Study of
@@ -825,7 +822,7 @@
     Environmental knowledge and methods of research, Edward Elgar, Cheltenham'
   - 'Biological traits approaches in benthic marine ecology: Dead
     ends and new paths. Ecology and Evolution, e9001'
-  - 'Four decades of functional community change reveals gradual
+  - 'Four decades of functional community change reveal gradual
     trends and low interlinkage across trophic groups in a large marine ecosystem.
     Global Change Biology, DOI: 10.1111/gcb.14532'
   keywords: ''
@@ -839,21 +836,21 @@
   cris_profile: https://research.abo.fi/en/persons/tiina-a-salminen
   photo: tiina-salminen.png
   expertise:
-  - Protein biochemistry, bioinformatics and Structural biology
+  - Protein biochemistry, bioinformatics, and Structural biology
   - Protein-ligand interactions
-  - Molecular interaction mechanisms in inflammation, infection and cancer
+  - Molecular interaction mechanisms in inflammation, infection, and cancer
   - Disease-causing genetic variation
   - Structure-based drug design
   - Targeted diagnostics
   projects:
   - Selective treatments against Borrelia infections
-  - Immunosuppressive SEFIR protein as target against Klebsiella infections
+  - Immunosuppressive SEFIR protein asa  target against Klebsiella infections
   - Expanding toolbox for Clever-1-targeted oncotherapy
   - Intercepting Siglec-9 interactions in cancer and inflammation
   - Molecular mechanism of collagen-binding integrin activation
   techniques:
   - Modern facilities for protein purification and sample quality control
-  - State-of-the-arts infrastructure for protein crystallization
+  - State-of-the-art infrastructure for protein crystallization
   - Automated imaging of protein crystallization trials
   - In-situ diffraction testing
   - Infrastructure for Cryo-electron microscopy sample preparation
@@ -918,7 +915,7 @@
   photo: jessica-rosenholm.jpg
   expertise:
   - 'Development of novel drug delivery systems (DDS) based on new carrier materials
-    e.g. naturally derived & synthetic polymers, inorganic materials, hydrogels, nanoparticulate
+    e.g., naturally derived & synthetic polymers, inorganic materials, hydrogels, nanoparticulate
     systems​'
   - 'Formulation of nanomedicines based on small and large bioactive molecules (small
     molecule drugs, peptides, proteins, nucleic acids)'
@@ -961,7 +958,7 @@
   expertise:
   - 'Epithelial cell biology of gastrointestinal organs and related glands including the endocrine pancreas'
   - 'Cytoskeletal intermediate filaments protein regulation and function and molecular roles in health and disease, especially simple epithelial keratins and nuclear lamins'
-  - 'Auto-immune diseases, Inflammatory bowel diseases, type I diabetes) and colorectal cancer'
+  - 'Auto-immune diseases, Inflammatory bowel diseases, type I diabetes, and colorectal cancer'
   - 'Mouse disease modelling'
   - 'Non-invasive diagnostics development of intestinal diseases'
   projects:
@@ -975,14 +972,14 @@
   - 'Intestinal crypt isolation and organoid culture (mini-gut)'
   - 'Isolation of islets of Langerhans and 3D culture'
   - 'Beta-cell and colon cancer cell lines'
-  - 'Microscopy, digital histopathology and fluorescence based imaging methods'
+  - 'Microscopy, digital histopathology and fluorescence-based imaging methods'
   - 'Cell, molecular, biochemical methods'
   - 'Immunoassay and non-invasive imaging methods development'
   funding:
   - 'Current funding: InFLAMES flagship, Business Finland, Novo Nordisk Fonden,
     Medicinska understödsföreningen Liv och Hälsa, Diabetes Research Foundation Finland'
-  - 'Networks: Intermediate filament community, American Society for Cell biology,
-    Gut Research-community in Finland, Gastroenterology organizations in Finland and
+  - 'Networks: Intermediate filament community, American Society for Cell Biology,
+    Gut Research Community in Finland, Gastroenterology organizations in Finland, and
     USA'
   publications:
   - 'Defining a timeline of colon pathologies after keratin 8 loss: rapid crypt elongation
@@ -1011,10 +1008,10 @@
   photo: cecilia-sahlgren.jpg
   expertise:
   - Cell biology of soft tissue (muscle, cardiovascular)
-  - Cell signaling and Mechanobiology
+  - Cell Signaling and Mechanobiology
   - Microtissue engineering
   projects:
-  - Hemotopoietic stem cell engineering (Making blood)
+  - Hematopoietic stem cell engineering (Making blood)
   - Mechanobiology of hematopoietic stem cell niches and the endothelium
   - Deciphering mechanisms of soft tissue development and regeneration
   - Nanoparticle interactions with biological barriers
@@ -1027,19 +1024,19 @@
   - Mass spectrometry (identification of protein-protein interactions)
   - Optogenetic tools and synthetic biology tools
   - Zebrafish to study soft tissue development (muscle, cardiovascular)
-  - Computational simulations of mechanochemical regluation of tissue architecture
+  - Computational simulations of mechanochemical regulation of tissue architecture
   funding:
   - Sigrid Juselius Foundation
-  - European Research Council and European commission (H2024, Marie Curie Training Network)
+  - European Research Council and European Commission (H2024, Marie Curie Training Network)
   - Academy of Finland and Inflames
   - Turku Bioscience
-  - Materials driven regeneration (https://mdrresearch.nl)
+  - Materials-driven regeneration (https://mdrresearch.nl)
   - Institute for complex molecular systems (https://www.tue.nl/en/research/institutes/institute-for-complexmolecular-systems)
   publications:
   - 'Receptor stoichiometry predicts artery-typical vulnerability to altered Notch signaling during smooth muscle differentiation. DOI: 10.1101/2025.05.05.652186'
   - 'Mechanosensitive interactions between Jag1 and Myo1C control Jag1 trafficking in endothelial cells. DOI: 10.1101/2025.03.27.645426'
   - '2.5D Model for Ex Vivo Mechanical Characterization of Sprouting Angiogenesis in Living Tissue. J Vis Exp. 2025. DOI: 10.3791/67641'
-  - 'Directing cellular responses in a nanocomposite 3D matrix for tissue regeneration with nanoparticle mediated drug delivery. Materials Today Bio 2023. DOI: 10.1016/j.mtbio.2023.100865'
+  - 'Directing cellular responses in a nanocomposite 3D matrix for tissue regeneration with nanoparticle-mediated drug delivery. Materials Today Bio 2023. DOI: 10.1016/j.mtbio.2023.100865'
   - 'Engineered patterns of Notch ligands Jag1 and Dll4 elicit differential spatial control of endothelial sprouting. iScience 2022. DOI: 10.1016/j.isci.2022.104306'
   keywords: ''
 
