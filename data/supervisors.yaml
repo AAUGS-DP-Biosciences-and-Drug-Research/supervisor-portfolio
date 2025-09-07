@@ -102,6 +102,7 @@
   university: Åbo Akademi University
   cris_profile: https://research.abo.fi/en/persons/riikka-puntila-dodd
   photo: riikka-puntila-dodd.jpg
+  photo_position: bottom
   expertise:
   - Ecosystem modelling
   - Ecopath with Ecosim
@@ -275,6 +276,7 @@
   lab_website: https://pansch-research.com
   cris_profile: https://research.abo.fi/en/persons/christian-pansch-hattich
   photo: christian-pansch-hattich.JPG
+  photo_position: center
   expertise:
   - Climate change impacts on marine systems; environmental variability
      & extreme climatic events, heatwaves, climate change refugia, thermal microclimates
@@ -507,6 +509,7 @@
   lab_website: https://www.abo.fi/en/adaptations-to-challenging-environments-in-common-eiders/
   cris_profile: https://research.abo.fi/en/persons/markus-%C3%B6st
   photo: markus-st.jpg
+  photo_position: center
   expertise:
   - Population- and individual-level responses to increasing predation
   - Fitness consequences of behavioural and physiological variation under predation and climate forcing
@@ -586,6 +589,7 @@
   lab_website: https://www.abo.fi/en/inflammatory-signalling-lab/
   cris_profile: https://research.abo.fi/sv/persons/annika-meinander
   photo: annika-meinander.jpg
+  photo_position: center
   expertise:
   - Post-translational modifications, ubiquitination in particular
   - NF-κB signalling pathways
@@ -837,6 +841,7 @@
   lab_website: https://www.abo.fi/en/structural-immunology-lab/
   cris_profile: https://research.abo.fi/en/persons/tiina-a-salminen
   photo: tiina-salminen.png
+  photo_position: center
   expertise:
   - Protein biochemistry, bioinformatics, and Structural biology
   - Protein-ligand interactions
