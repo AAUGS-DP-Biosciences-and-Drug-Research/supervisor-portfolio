@@ -1,0 +1,40 @@
+name: Center supervisor faces
+
+on:
+  push:
+    paths:
+      - 'public/images/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  autocrop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pillow pyyaml
+
+      - name: Center faces
+        run: |
+          python scripts/center_faces.py public/images --centers data/face_centers.yaml
+
+      - name: Commit changes
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@github.com'
+          if ! git diff --quiet; then
+            git add public/images
+            git commit -m "chore: center supervisor images"
+            git push
+          fi

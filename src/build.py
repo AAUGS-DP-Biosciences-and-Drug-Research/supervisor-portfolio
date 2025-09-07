@@ -3,71 +3,15 @@ import yaml
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
-    """Center the most "interesting" part of an image in a square crop.
-
-    This uses a lightweight edge-based heuristic when Pillow and NumPy are
-    available.  If the optional dependencies are missing or no edges are
-    detected, the image is left unchanged.
-    """
-    if Image is None or np is None:
-        return
-
-    with Image.open(image_path) as img:
-        size = min(img.size)
-        gray = img.convert("L")
-        edges = gray.filter(ImageFilter.FIND_EDGES)
-        arr = np.array(edges)
-        ys, xs = np.nonzero(arr)
-        if len(xs) == 0:
-            # No strong edges detected – keep as-is
-            return
-        cx = xs.mean() / arr.shape[1]
-        cy = ys.mean() / arr.shape[0]
-        cropped = ImageOps.fit(img, (size, size), centering=(cx, cy))
-        cropped.save(image_path)
-
-    """Detect a face and center it in a square crop in-place.
-
-    If face-detection libraries are unavailable or no face is found,
-    the image is left untouched.
-    """
-    if cv2 is None or Image is None:
-        return
-
-    img = cv2.imread(image_path)
-    if img is None:
-        return
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cascade = cv2.CascadeClassifier(
-        cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
-    )
-    faces = cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
-    if len(faces) == 0:
-        return
-
-    # Pick the largest detected face
-    x, y, w, h = max(faces, key=lambda f: f[2] * f[3])
-    cx, cy = x + w // 2, y + h // 2
-    side = int(max(w, h) * 1.5)
-
-    img_pil = Image.open(image_path)
-    width, height = img_pil.size
-
-    left = max(cx - side // 2, 0)
-    top = max(cy - side // 2, 0)
-    right = min(left + side, width)
-    bottom = min(top + side, height)
-
-    # Adjust if we hit borders to keep square
-    if right - left != side:
-        left = max(width - side, 0)
-        right = width
-    if bottom - top != side:
-        top = max(height - side, 0)
-        bottom = height
-
-    cropped = img_pil.crop((left, top, right, bottom))
-    cropped.save(image_path)
+# ---------- Config ----------
+YAML_INPUT = "data/supervisors.yaml"
+PUBLIC_FOLDER = "public"
+IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
+SOURCE_IMAGES = "static/images"
+SITE_BASE_PATH = "/supervisor-portfolio"
+DEFAULT_LOGO_FILENAME = "AboAkademiUniversity.png"
+DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/{DEFAULT_LOGO_FILENAME}"
+DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, DEFAULT_LOGO_FILENAME))
 
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
@@ -89,8 +33,6 @@ for supervisor in supervisors:
         candidate = slug + ext
         full_path = os.path.join(IMAGES_FOLDER, candidate)
         if os.path.isfile(full_path):
-            # Attempt to center the face in the image before using it
-            center_face(full_path)
             supervisor["photo_url"] = f"{SITE_BASE_PATH}/images/{candidate}"
             supervisor["photo_pdf_path"] = os.path.abspath(full_path)
             found = True
