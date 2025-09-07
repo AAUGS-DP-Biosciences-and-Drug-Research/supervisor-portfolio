@@ -1,3 +1,5 @@
+Please provide the full fix
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,67 +45,38 @@
       font-size: 9px;
       text-align: center;
     }
-
-    /* --- FULL-IMAGE THUMBNAILS (no crop) --- */
-    .unit-grid .thumb {
+    .unit-grid img {
       width: 60px;
       height: 60px;
+      object-fit: cover;
+      object-position: top;
       border-radius: 4px;
       border: 1px solid #ccc;
       background: #f4f4f4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden; /* safe for huge images */
     }
-    .unit-grid .thumb img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;           /* preserves aspect ratio */
-      image-orientation: from-image; /* respects EXIF rotation in many renderers */
-      display: block;
-    }
-
     .unit-grid span {
       display: block;
       margin-top: 2px;
     }
-
     .supervisor {
       margin-top: 20px;
       page-break-before: always;
     }
-
     .profile-header {
       display: flex;
       align-items: flex-start;
       gap: 16px;
       margin-bottom: 10px;
     }
-
-    /* --- FULL-IMAGE HEADER PORTRAIT (no crop) --- */
-    .profile-header .photo {
+    .profile-header img {
       width: 75px;
       height: 75px;
+      object-fit: cover;
+      object-position: top;
       border-radius: 4px;
       background: #f4f4f4;
-      border: 1px solid #ccc;
       flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
     }
-    .profile-header .photo img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;           /* preserves aspect ratio */
-      image-orientation: from-image;
-      display: block;
-    }
-
     .profile-info h1 {
       font-size: 18px;
       margin: 0;
@@ -206,26 +179,17 @@
       <div class="unit-grid">
         
           <a href="#k-the-dahlstr-m">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Käthe Dahlström">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Käthe Dahlström">
             <span>Käthe Dahlström</span>
           </a>
         
           <a href="#peter-mattjus">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/peter-mattjus.jpeg" alt="Peter Mattjus">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/peter-mattjus.jpeg" alt="Peter Mattjus">
             <span>Peter Mattjus</span>
           </a>
         
           <a href="#tiina-salminen">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tiina-salminen.png" alt="Tiina Salminen">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tiina-salminen.png" alt="Tiina Salminen" style="object-position: center;">
             <span>Tiina Salminen</span>
           </a>
         
@@ -237,66 +201,42 @@
       <div class="unit-grid">
         
           <a href="#annika-meinander">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/annika-meinander.jpg" alt="Annika Meinander">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/annika-meinander.jpg" alt="Annika Meinander" style="object-position: center;">
             <span>Annika Meinander</span>
           </a>
         
           <a href="#cecilia-sahlgren">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/cecilia-sahlgren.jpg" alt="Cecilia Sahlgren">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/cecilia-sahlgren.jpg" alt="Cecilia Sahlgren">
             <span>Cecilia Sahlgren</span>
           </a>
         
           <a href="#diana-toivola">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Diana Toivola">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Diana Toivola">
             <span>Diana Toivola</span>
           </a>
         
           <a href="#eleanor-coffey">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/eleanor-coffey.jpg" alt="Eleanor Coffey">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/eleanor-coffey.jpg" alt="Eleanor Coffey">
             <span>Eleanor Coffey</span>
           </a>
         
           <a href="#guillaume-jacquemet">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/guillaume-jacquemet.jpg" alt="Guillaume Jacquemet">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/guillaume-jacquemet.jpg" alt="Guillaume Jacquemet" style="object-position: center;">
             <span>Guillaume Jacquemet</span>
           </a>
         
           <a href="#john-eriksson">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="John Eriksson">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="John Eriksson">
             <span>John Eriksson</span>
           </a>
         
           <a href="#lea-sistonen">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/lea-sistonen.jpg" alt="Lea Sistonen">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/lea-sistonen.jpg" alt="Lea Sistonen">
             <span>Lea Sistonen</span>
           </a>
         
           <a href="#silvia-gramolelli">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Silvia Gramolelli">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Silvia Gramolelli">
             <span>Silvia Gramolelli</span>
           </a>
         
@@ -308,90 +248,57 @@
       <div class="unit-grid">
         
           <a href="#anna-t-rnroos-remes">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/anna-t-rnroos-remes.png" alt="Anna Törnroos-Remes">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/anna-t-rnroos-remes.png" alt="Anna Törnroos-Remes">
             <span>Anna Törnroos-Remes</span>
           </a>
         
           <a href="#christian-pansch-hattich">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/christian-pansch-hattich.jpg" alt="Christian Pansch-Hattich">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/christian-pansch-hattich.jpg" alt="Christian Pansch-Hattich" style="object-position: center;">
             <span>Christian Pansch-Hattich</span>
           </a>
         
           <a href="#christoffer-bostr-m">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Christoffer Boström">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Christoffer Boström">
             <span>Christoffer Boström</span>
           </a>
         
           <a href="#conny-sj-qvist">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/conny-sj-qvist.jpg" alt="Conny Sjöqvist">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/conny-sj-qvist.jpg" alt="Conny Sjöqvist">
             <span>Conny Sjöqvist</span>
           </a>
         
           <a href="#kai-lindstr-m">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Kai Lindström">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Kai Lindström">
             <span>Kai Lindström</span>
           </a>
         
           <a href="#katri-aarnio">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Katri Aarnio">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Katri Aarnio">
             <span>Katri Aarnio</span>
           </a>
         
           <a href="#markus-st">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/markus-st.jpg" alt="Markus Öst">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/markus-st.jpg" alt="Markus Öst" style="object-position: center;">
             <span>Markus Öst</span>
           </a>
         
           <a href="#martin-snickars">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Martin Snickars">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Martin Snickars">
             <span>Martin Snickars</span>
           </a>
         
           <a href="#mikael-von-numers">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/mikael-von-numers.jpg" alt="Mikael von Numers">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/mikael-von-numers.jpg" alt="Mikael von Numers">
             <span>Mikael von Numers</span>
           </a>
         
           <a href="#riikka-puntila-dodd">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/riikka-puntila-dodd.jpg" alt="Riikka Puntila-Dodd">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/riikka-puntila-dodd.jpg" alt="Riikka Puntila-Dodd" style="object-position: center;">
             <span>Riikka Puntila-Dodd</span>
           </a>
         
           <a href="#sonja-salovius-lauren">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Sonja Salovius-Lauren">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Sonja Salovius-Lauren">
             <span>Sonja Salovius-Lauren</span>
           </a>
         
@@ -403,58 +310,37 @@
       <div class="unit-grid">
         
           <a href="#anne-filppula">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Anne Filppula">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Anne Filppula">
             <span>Anne Filppula</span>
           </a>
         
           <a href="#jessica-rosenholm">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/jessica-rosenholm.jpg" alt="Jessica Rosenholm">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/jessica-rosenholm.jpg" alt="Jessica Rosenholm">
             <span>Jessica Rosenholm</span>
           </a>
         
           <a href="#kuldeep-bansal">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/kuldeep-bansal.png" alt="Kuldeep Bansal">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/kuldeep-bansal.png" alt="Kuldeep Bansal">
             <span>Kuldeep Bansal</span>
           </a>
         
           <a href="#outi-salo-ahen">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/outi-salo-ahen.jpg" alt="Outi Salo-Ahen">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/outi-salo-ahen.jpg" alt="Outi Salo-Ahen" style="object-position: center;">
             <span>Outi Salo-Ahen</span>
           </a>
         
           <a href="#tapani-viitala">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tapani-viitala.jpg" alt="Tapani Viitala">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tapani-viitala.jpg" alt="Tapani Viitala">
             <span>Tapani Viitala</span>
           </a>
         
           <a href="#xiaoju-wang">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/xiaoju-wang.png" alt="Xiaoju Wang">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/xiaoju-wang.png" alt="Xiaoju Wang">
             <span>Xiaoju Wang</span>
           </a>
         
           <a href="#zhang-hongbo">
-            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
-            <div class="thumb">
-              <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/zhang-hongbo.jpg" alt="Zhang Hongbo">
-            </div>
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/zhang-hongbo.jpg" alt="Zhang Hongbo">
             <span>Zhang Hongbo</span>
           </a>
         
@@ -466,11 +352,7 @@
     <div class="supervisor" id="k-the-dahlstr-m">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Käthe Dahlström">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Käthe Dahlström</h1>
           
@@ -502,11 +384,7 @@
     <div class="supervisor" id="peter-mattjus">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/peter-mattjus.jpeg" alt="Profile Photo of Peter Mattjus">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/peter-mattjus.jpeg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Peter Mattjus</h1>
           
@@ -637,11 +515,7 @@
     <div class="supervisor" id="tiina-salminen">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tiina-salminen.png" alt="Profile Photo of Tiina Salminen">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tiina-salminen.png" alt="Profile Photo" style="object-position: center;">
         <div class="profile-info">
           <h1>Tiina Salminen</h1>
           
@@ -788,11 +662,7 @@
     <div class="supervisor" id="annika-meinander">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/annika-meinander.jpg" alt="Profile Photo of Annika Meinander">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/annika-meinander.jpg" alt="Profile Photo" style="object-position: center;">
         <div class="profile-info">
           <h1>Annika Meinander</h1>
           
@@ -927,11 +797,7 @@
     <div class="supervisor" id="cecilia-sahlgren">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/cecilia-sahlgren.jpg" alt="Profile Photo of Cecilia Sahlgren">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/cecilia-sahlgren.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Cecilia Sahlgren</h1>
           
@@ -1076,11 +942,7 @@
     <div class="supervisor" id="diana-toivola">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Diana Toivola">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Diana Toivola</h1>
           
@@ -1219,11 +1081,7 @@
     <div class="supervisor" id="eleanor-coffey">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/eleanor-coffey.jpg" alt="Profile Photo of Eleanor Coffey">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/eleanor-coffey.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Eleanor Coffey</h1>
           
@@ -1332,11 +1190,7 @@
     <div class="supervisor" id="guillaume-jacquemet">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/guillaume-jacquemet.jpg" alt="Profile Photo of Guillaume Jacquemet">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/guillaume-jacquemet.jpg" alt="Profile Photo" style="object-position: center;">
         <div class="profile-info">
           <h1>Guillaume Jacquemet</h1>
           
@@ -1481,11 +1335,7 @@
     <div class="supervisor" id="john-eriksson">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of John Eriksson">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>John Eriksson</h1>
           
@@ -1517,11 +1367,7 @@
     <div class="supervisor" id="lea-sistonen">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/lea-sistonen.jpg" alt="Profile Photo of Lea Sistonen">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/lea-sistonen.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Lea Sistonen</h1>
           
@@ -1656,11 +1502,7 @@
     <div class="supervisor" id="silvia-gramolelli">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Silvia Gramolelli">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Silvia Gramolelli</h1>
           
@@ -1795,11 +1637,7 @@
     <div class="supervisor" id="anna-t-rnroos-remes">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/anna-t-rnroos-remes.png" alt="Profile Photo of Anna Törnroos-Remes">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/anna-t-rnroos-remes.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Anna Törnroos-Remes</h1>
           
@@ -1929,11 +1767,7 @@
     <div class="supervisor" id="christian-pansch-hattich">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/christian-pansch-hattich.jpg" alt="Profile Photo of Christian Pansch-Hattich">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/christian-pansch-hattich.jpg" alt="Profile Photo" style="object-position: center;">
         <div class="profile-info">
           <h1>Christian Pansch-Hattich</h1>
           
@@ -2061,11 +1895,7 @@
     <div class="supervisor" id="christoffer-bostr-m">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Christoffer Boström">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Christoffer Boström</h1>
           
@@ -2177,11 +2007,7 @@
     <div class="supervisor" id="conny-sj-qvist">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/conny-sj-qvist.jpg" alt="Profile Photo of Conny Sjöqvist">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/conny-sj-qvist.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Conny Sjöqvist</h1>
           
@@ -2320,11 +2146,7 @@
     <div class="supervisor" id="kai-lindstr-m">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Kai Lindström">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Kai Lindström</h1>
           
@@ -2356,11 +2178,7 @@
     <div class="supervisor" id="katri-aarnio">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Katri Aarnio">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Katri Aarnio</h1>
           
@@ -2392,11 +2210,7 @@
     <div class="supervisor" id="markus-st">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/markus-st.jpg" alt="Profile Photo of Markus Öst">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/markus-st.jpg" alt="Profile Photo" style="object-position: center;">
         <div class="profile-info">
           <h1>Markus Öst</h1>
           
@@ -2539,11 +2353,7 @@
     <div class="supervisor" id="martin-snickars">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Martin Snickars">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Martin Snickars</h1>
           
@@ -2654,11 +2464,7 @@
     <div class="supervisor" id="mikael-von-numers">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/mikael-von-numers.jpg" alt="Profile Photo of Mikael von Numers">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/mikael-von-numers.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Mikael von Numers</h1>
           
@@ -2771,11 +2577,7 @@
     <div class="supervisor" id="riikka-puntila-dodd">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/riikka-puntila-dodd.jpg" alt="Profile Photo of Riikka Puntila-Dodd">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/riikka-puntila-dodd.jpg" alt="Profile Photo" style="object-position: center;">
         <div class="profile-info">
           <h1>Riikka Puntila-Dodd</h1>
           
@@ -2916,11 +2718,7 @@
     <div class="supervisor" id="sonja-salovius-lauren">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Sonja Salovius-Lauren">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Sonja Salovius-Lauren</h1>
           
@@ -3061,11 +2859,7 @@
     <div class="supervisor" id="anne-filppula">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo of Anne Filppula">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Anne Filppula</h1>
           
@@ -3174,11 +2968,7 @@
     <div class="supervisor" id="jessica-rosenholm">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/jessica-rosenholm.jpg" alt="Profile Photo of Jessica Rosenholm">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/jessica-rosenholm.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Jessica Rosenholm</h1>
           
@@ -3299,11 +3089,7 @@
     <div class="supervisor" id="kuldeep-bansal">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/kuldeep-bansal.png" alt="Profile Photo of Kuldeep Bansal">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/kuldeep-bansal.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Kuldeep Bansal</h1>
           
@@ -3438,11 +3224,7 @@
     <div class="supervisor" id="outi-salo-ahen">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/outi-salo-ahen.jpg" alt="Profile Photo of Outi Salo-Ahen">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/outi-salo-ahen.jpg" alt="Profile Photo" style="object-position: center;">
         <div class="profile-info">
           <h1>Outi Salo-Ahen</h1>
           
@@ -3577,11 +3359,7 @@
     <div class="supervisor" id="tapani-viitala">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tapani-viitala.jpg" alt="Profile Photo of Tapani Viitala">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tapani-viitala.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Tapani Viitala</h1>
           
@@ -3718,11 +3496,7 @@
     <div class="supervisor" id="xiaoju-wang">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/xiaoju-wang.png" alt="Profile Photo of Xiaoju Wang">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/xiaoju-wang.png" alt="Profile Photo">
         <div class="profile-info">
           <h1>Xiaoju Wang</h1>
           
@@ -3841,11 +3615,7 @@
     <div class="supervisor" id="zhang-hongbo">
 
       <div class="profile-header">
-        <!-- Header portrait wrapper ensures full image is visible without cropping -->
-        <div class="photo">
-          <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/zhang-hongbo.jpg" alt="Profile Photo of Zhang Hongbo">
-        </div>
-
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/zhang-hongbo.jpg" alt="Profile Photo">
         <div class="profile-info">
           <h1>Zhang Hongbo</h1>
           
