@@ -121,7 +121,7 @@
       <div class="unit-grid">
         {% for supervisor in supervisors_in_unit | sort(attribute='name') %}
           <a href="#{{ supervisor.slug }}">
-            <img src="file://{{ supervisor.photo_pdf_path }}" alt="{{ supervisor.name }}">
+            <img src="file://{{ supervisor.photo_pdf_path }}" alt="{{ supervisor.name }}"{% if supervisor.photo_position == 'center' %} style="object-position: center;"{% endif %}>
             <span>{{ supervisor.name }}</span>
           </a>
         {% endfor %}
@@ -133,7 +133,7 @@
     <div class="supervisor" id="{{ supervisor.slug }}">
 
       <div class="profile-header">
-        <img src="file://{{ supervisor.photo_pdf_path }}" alt="Profile Photo">
+        <img src="file://{{ supervisor.photo_pdf_path }}" alt="Profile Photo"{% if supervisor.photo_position == 'center' %} style="object-position: center;"{% endif %}>
         <div class="profile-info">
           <h1>{{ supervisor.name }}</h1>
           {% if supervisor.group %}
