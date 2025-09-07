@@ -75,7 +75,7 @@
       width: 120px;
       aspect-ratio: 1 / 1;
       object-fit: cover;
-      object-position: center;
+      object-position: top;
       border-radius: 8px;
       border: 2px solid #ccc;
       background-color: #f9f9f9;
@@ -135,7 +135,7 @@
       <div class="supervisor-grid">
         {% for supervisor in supervisors_in_subject | sort(attribute='name') %}
           <a href="./supervisors/{{ supervisor.slug }}.html" class="supervisor-card">
-            <img src="{{ supervisor.photo_url }}" alt="{{ supervisor.name }}">
+            <img src="{{ supervisor.photo_url }}" alt="{{ supervisor.name }}"{% if supervisor.photo_position == 'center' %} style="object-position: center;"{% endif %}>
             <span>{{ supervisor.name }}</span>
           </a>
         {% endfor %}

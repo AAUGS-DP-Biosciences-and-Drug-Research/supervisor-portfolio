@@ -29,7 +29,7 @@ The website and PDF are continuously updated and hosted via **GitHub Pages**.
 
 ## 🧾 Notes
 
-- **YAML Editing:** You can manually edit the `supervisors.yaml` file for fine-grained control.
+- **YAML Editing:** You can manually edit the `supervisors.yaml` file for fine-grained control. Use the optional `photo_position: center` field to crop a thumbnail from the center instead of the default top.
 - **Image Matching:** Images must match the `slug` of each supervisor (e.g. `guillaume-jacquemet.jpg`) and be placed in `public/images/`.
 
 ---

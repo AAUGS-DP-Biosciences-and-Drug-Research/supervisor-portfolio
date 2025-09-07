@@ -7,6 +7,7 @@
   lab_website: https://cellmig.org/
   cris_profile: https://research.abo.fi/en/persons/guillaume-jacquemet
   photo: guillaume-jacquemet.jpg
+  photo_position: center
   expertise:
   - Cancer cell biology
   - Cell adhesion and migration
@@ -55,6 +56,7 @@
   lab_website: https://www.pharmscilab.fi/computer-aided-drug-design
   cris_profile: https://research.abo.fi/sv/persons/outi-salo-ahen
   photo: outi-salo-ahen.jpg
+  photo_position: center
   expertise:
   - Computer-aided drug design
   - Molecular modeling
