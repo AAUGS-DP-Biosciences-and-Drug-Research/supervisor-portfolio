@@ -3,26 +3,29 @@ import yaml
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
-# Optional dependencies for image face centering
-try:
-    import cv2
-    from PIL import Image
-except Exception:  # pragma: no cover - if unavailable we skip face centering
-    cv2 = None
-    Image = None
+    """Center the most "interesting" part of an image in a square crop.
 
-# ---------- Config ----------
-YAML_INPUT = "data/supervisors.yaml"
-PUBLIC_FOLDER = "public"
-IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
-SOURCE_IMAGES = "static/images"
-SITE_BASE_PATH = "/supervisor-portfolio"
-DEFAULT_LOGO_FILENAME = "AboAkademiUniversity.png"
-DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/{DEFAULT_LOGO_FILENAME}"
-DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, DEFAULT_LOGO_FILENAME))
+    This uses a lightweight edge-based heuristic when Pillow and NumPy are
+    available.  If the optional dependencies are missing or no edges are
+    detected, the image is left unchanged.
+    """
+    if Image is None or np is None:
+        return
 
+    with Image.open(image_path) as img:
+        size = min(img.size)
+        gray = img.convert("L")
+        edges = gray.filter(ImageFilter.FIND_EDGES)
+        arr = np.array(edges)
+        ys, xs = np.nonzero(arr)
+        if len(xs) == 0:
+            # No strong edges detected – keep as-is
+            return
+        cx = xs.mean() / arr.shape[1]
+        cy = ys.mean() / arr.shape[0]
+        cropped = ImageOps.fit(img, (size, size), centering=(cx, cy))
+        cropped.save(image_path)
 
-def center_face(image_path: str) -> None:
     """Detect a face and center it in a square crop in-place.
 
     If face-detection libraries are unavailable or no face is found,
