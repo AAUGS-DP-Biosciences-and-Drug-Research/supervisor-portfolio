@@ -5,6 +5,7 @@ Welcome to the Supervisor Portfolio repository!
 This project collects supervisor profiles and automatically generates:
 - 🌐 A public website showcasing each supervisor
 - 📄 A downloadable master PDF portfolio
+- 🖼️ An index page that displays supervisor photos in a responsive, topic‑grouped grid
 
 The website and PDF are continuously updated and hosted via **GitHub Pages**.
 

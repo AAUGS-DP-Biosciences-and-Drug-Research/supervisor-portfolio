@@ -30,21 +30,30 @@
       border-bottom: 1px solid #ccc;
       padding-bottom: 3px;
     }
-    .unit-section ul {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 0;
+    .unit-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      justify-items: center;
+      margin-top: 10px;
     }
-    .unit-section li {
-      margin-bottom: 2px;
-      font-size: 13px;
-    }
-    .unit-section a {
-      color: #0077cc;
+    .unit-grid a {
       text-decoration: none;
+      color: #0077cc;
+      font-size: 11px;
+      text-align: center;
     }
-    .unit-section a:hover {
-      text-decoration: underline;
+    .unit-grid img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+    }
+    .unit-grid span {
+      display: block;
+      margin-top: 4px;
     }
     .supervisor {
       margin-top: 20px;
@@ -103,16 +112,19 @@
     {% set _ = units.setdefault(supervisor.unit, []).append(supervisor) %}
   {% endfor %}
 
+  {% for unit, supervisors_in_unit in units | dictsort %}
   <div class="unit-section">
-    {% for unit, supervisors_in_unit in units.items() %}
       <h2>{{ unit }}</h2>
-      <ul>
-        {% for supervisor in supervisors_in_unit %}
-          <li><a href="#{{ supervisor.slug }}">{{ supervisor.name }}</a></li>
+      <div class="unit-grid">
+        {% for supervisor in supervisors_in_unit | sort(attribute='name') %}
+          <a href="#{{ supervisor.slug }}">
+            <img src="file://{{ supervisor.photo_pdf_path }}" alt="{{ supervisor.name }}">
+            <span>{{ supervisor.name }}</span>
+          </a>
         {% endfor %}
-      </ul>
-    {% endfor %}
+      </div>
   </div>
+  {% endfor %}
 
   {% for supervisor in supervisors %}
     <div class="supervisor" id="{{ supervisor.slug }}">
