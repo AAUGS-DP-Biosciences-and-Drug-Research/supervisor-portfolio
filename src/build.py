@@ -45,6 +45,9 @@ for supervisor in supervisors:
 
 print(f"✅ Loaded {len(supervisors)} supervisors.")
 
+# Ensure deterministic ordering: first by unit, then by name
+supervisors.sort(key=lambda s: (s.get("unit", ""), s["name"]))
+
 # ---------- Generate supervisor pages ----------
 os.makedirs(os.path.join(PUBLIC_FOLDER, "supervisors"), exist_ok=True)
 

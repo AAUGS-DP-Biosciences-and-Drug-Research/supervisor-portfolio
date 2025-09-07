@@ -56,23 +56,33 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 20px;
+    .supervisor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
       margin-top: 10px;
+      justify-items: center;
     }
 
-    li {
-      margin-bottom: 8px;
-      font-size: 16px;
-    }
-
-    li a {
+    .supervisor-card {
+      text-align: center;
       text-decoration: none;
       color: #0077cc;
+      font-size: 14px;
     }
 
-    li a:hover {
-      text-decoration: underline;
+    .supervisor-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    .supervisor-card span {
+      display: block;
+      margin-top: 8px;
     }
 
     .back-button {
@@ -102,10 +112,6 @@
       h2 {
         font-size: 24px;
       }
-
-      li {
-        font-size: 18px;
-      }
     }
   </style>
 </head>
@@ -123,17 +129,16 @@
       {% set _ = subjects.setdefault(supervisor.unit, []).append(supervisor) %}
     {% endfor %}
 
-    {% for subject, supervisors_in_subject in subjects.items() %}
+    {% for subject, supervisors_in_subject in subjects | dictsort %}
       <h2>{{ subject }}</h2>
-      <ul>
-        {% for supervisor in supervisors_in_subject %}
-          <li>
-            <a href="./supervisors/{{ supervisor.slug }}.html">
-              {{ supervisor.name }}
-            </a> — {{ supervisor.group }}
-          </li>
+      <div class="supervisor-grid">
+        {% for supervisor in supervisors_in_subject | sort(attribute='name') %}
+          <a href="./supervisors/{{ supervisor.slug }}.html" class="supervisor-card">
+            <img src="{{ supervisor.photo_url }}" alt="{{ supervisor.name }}">
+            <span>{{ supervisor.name }}</span>
+          </a>
         {% endfor %}
-      </ul>
+      </div>
     {% endfor %}
 
     <div class="back-button">
