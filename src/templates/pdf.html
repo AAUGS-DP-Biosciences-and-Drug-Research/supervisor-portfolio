@@ -43,38 +43,67 @@
       font-size: 9px;
       text-align: center;
     }
-    .unit-grid img {
+
+    /* --- FULL-IMAGE THUMBNAILS (no crop) --- */
+    .unit-grid .thumb {
       width: 60px;
       height: 60px;
-      object-fit: cover;
-      object-position: top;
       border-radius: 4px;
       border: 1px solid #ccc;
       background: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; /* safe for huge images */
     }
+    .unit-grid .thumb img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;           /* preserves aspect ratio */
+      image-orientation: from-image; /* respects EXIF rotation in many renderers */
+      display: block;
+    }
+
     .unit-grid span {
       display: block;
       margin-top: 2px;
     }
+
     .supervisor {
       margin-top: 20px;
       page-break-before: always;
     }
+
     .profile-header {
       display: flex;
       align-items: flex-start;
       gap: 16px;
       margin-bottom: 10px;
     }
-    .profile-header img {
+
+    /* --- FULL-IMAGE HEADER PORTRAIT (no crop) --- */
+    .profile-header .photo {
       width: 75px;
       height: 75px;
-      object-fit: cover;
-      object-position: top;
       border-radius: 4px;
       background: #f4f4f4;
+      border: 1px solid #ccc;
       flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
+    .profile-header .photo img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;           /* preserves aspect ratio */
+      image-orientation: from-image;
+      display: block;
+    }
+
     .profile-info h1 {
       font-size: 18px;
       margin: 0;
@@ -121,7 +150,10 @@
       <div class="unit-grid">
         {% for supervisor in supervisors_in_unit | sort(attribute='name') %}
           <a href="#{{ supervisor.slug }}">
-            <img src="file://{{ supervisor.photo_pdf_path }}" alt="{{ supervisor.name }}"{% if supervisor.photo_position == 'center' %} style="object-position: center;"{% endif %}>
+            <!-- Thumbnail wrapper ensures full image is visible without cropping -->
+            <div class="thumb">
+              <img src="file://{{ supervisor.photo_pdf_path }}" alt="{{ supervisor.name }}">
+            </div>
             <span>{{ supervisor.name }}</span>
           </a>
         {% endfor %}
@@ -133,7 +165,11 @@
     <div class="supervisor" id="{{ supervisor.slug }}">
 
       <div class="profile-header">
-        <img src="file://{{ supervisor.photo_pdf_path }}" alt="Profile Photo"{% if supervisor.photo_position == 'center' %} style="object-position: center;"{% endif %}>
+        <!-- Header portrait wrapper ensures full image is visible without cropping -->
+        <div class="photo">
+          <img src="file://{{ supervisor.photo_pdf_path }}" alt="Profile Photo of {{ supervisor.name }}">
+        </div>
+
         <div class="profile-info">
           <h1>{{ supervisor.name }}</h1>
           {% if supervisor.group %}
