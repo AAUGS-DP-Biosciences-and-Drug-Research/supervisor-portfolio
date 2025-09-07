@@ -30,21 +30,30 @@
       border-bottom: 1px solid #ccc;
       padding-bottom: 3px;
     }
-    .unit-section ul {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 0;
+    .unit-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      justify-items: center;
+      margin-top: 10px;
     }
-    .unit-section li {
-      margin-bottom: 2px;
-      font-size: 13px;
-    }
-    .unit-section a {
-      color: #0077cc;
+    .unit-grid a {
       text-decoration: none;
+      color: #0077cc;
+      font-size: 11px;
+      text-align: center;
     }
-    .unit-section a:hover {
-      text-decoration: underline;
+    .unit-grid img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+    }
+    .unit-grid span {
+      display: block;
+      margin-top: 4px;
     }
     .supervisor {
       margin-top: 20px;
@@ -159,88 +168,1019 @@
     
   
 
+  
   <div class="unit-section">
-    
-      <h2>Cell Biology</h2>
-      <ul>
-        
-          <li><a href="#guillaume-jacquemet">Guillaume Jacquemet</a></li>
-        
-          <li><a href="#silvia-gramolelli">Silvia Gramolelli</a></li>
-        
-          <li><a href="#eleanor-coffey">Eleanor Coffey</a></li>
-        
-          <li><a href="#annika-meinander">Annika Meinander</a></li>
-        
-          <li><a href="#lea-sistonen">Lea Sistonen</a></li>
-        
-          <li><a href="#diana-toivola">Diana Toivola</a></li>
-        
-          <li><a href="#cecilia-sahlgren">Cecilia Sahlgren</a></li>
-        
-          <li><a href="#john-eriksson">John Eriksson</a></li>
-        
-      </ul>
-    
-      <h2>Pharmacy</h2>
-      <ul>
-        
-          <li><a href="#outi-salo-ahen">Outi Salo-Ahen</a></li>
-        
-          <li><a href="#tapani-viitala">Tapani Viitala</a></li>
-        
-          <li><a href="#kuldeep-bansal">Kuldeep Bansal</a></li>
-        
-          <li><a href="#zhang-hongbo">Zhang Hongbo</a></li>
-        
-          <li><a href="#xiaoju-wang">Xiaoju Wang</a></li>
-        
-          <li><a href="#anne-filppula">Anne Filppula</a></li>
-        
-          <li><a href="#jessica-rosenholm">Jessica Rosenholm</a></li>
-        
-      </ul>
-    
-      <h2>Marine Biology</h2>
-      <ul>
-        
-          <li><a href="#riikka-puntila-dodd">Riikka Puntila-Dodd</a></li>
-        
-          <li><a href="#conny-sj-qvist">Conny Sjöqvist</a></li>
-        
-          <li><a href="#christian-pansch-hattich">Christian Pansch-Hattich</a></li>
-        
-          <li><a href="#christoffer-bostr-m">Christoffer Boström</a></li>
-        
-          <li><a href="#markus-st">Markus Öst</a></li>
-        
-          <li><a href="#martin-snickars">Martin Snickars</a></li>
-        
-          <li><a href="#sonja-salovius-lauren">Sonja Salovius-Lauren</a></li>
-        
-          <li><a href="#mikael-von-numers">Mikael von Numers</a></li>
-        
-          <li><a href="#anna-t-rnroos-remes">Anna Törnroos-Remes</a></li>
-        
-          <li><a href="#katri-aarnio">Katri Aarnio</a></li>
-        
-          <li><a href="#kai-lindstr-m">Kai Lindström</a></li>
-        
-      </ul>
-    
       <h2>Biochemistry</h2>
+      <div class="unit-grid">
+        
+          <a href="#k-the-dahlstr-m">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Käthe Dahlström">
+            <span>Käthe Dahlström</span>
+          </a>
+        
+          <a href="#peter-mattjus">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/peter-mattjus.jpeg" alt="Peter Mattjus">
+            <span>Peter Mattjus</span>
+          </a>
+        
+          <a href="#tiina-salminen">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tiina-salminen.png" alt="Tiina Salminen">
+            <span>Tiina Salminen</span>
+          </a>
+        
+      </div>
+  </div>
+  
+  <div class="unit-section">
+      <h2>Cell Biology</h2>
+      <div class="unit-grid">
+        
+          <a href="#annika-meinander">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/annika-meinander.jpg" alt="Annika Meinander">
+            <span>Annika Meinander</span>
+          </a>
+        
+          <a href="#cecilia-sahlgren">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/cecilia-sahlgren.jpg" alt="Cecilia Sahlgren">
+            <span>Cecilia Sahlgren</span>
+          </a>
+        
+          <a href="#diana-toivola">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Diana Toivola">
+            <span>Diana Toivola</span>
+          </a>
+        
+          <a href="#eleanor-coffey">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/eleanor-coffey.jpg" alt="Eleanor Coffey">
+            <span>Eleanor Coffey</span>
+          </a>
+        
+          <a href="#guillaume-jacquemet">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/guillaume-jacquemet.jpg" alt="Guillaume Jacquemet">
+            <span>Guillaume Jacquemet</span>
+          </a>
+        
+          <a href="#john-eriksson">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="John Eriksson">
+            <span>John Eriksson</span>
+          </a>
+        
+          <a href="#lea-sistonen">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/lea-sistonen.jpg" alt="Lea Sistonen">
+            <span>Lea Sistonen</span>
+          </a>
+        
+          <a href="#silvia-gramolelli">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Silvia Gramolelli">
+            <span>Silvia Gramolelli</span>
+          </a>
+        
+      </div>
+  </div>
+  
+  <div class="unit-section">
+      <h2>Marine Biology</h2>
+      <div class="unit-grid">
+        
+          <a href="#anna-t-rnroos-remes">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/anna-t-rnroos-remes.png" alt="Anna Törnroos-Remes">
+            <span>Anna Törnroos-Remes</span>
+          </a>
+        
+          <a href="#christian-pansch-hattich">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/christian-pansch-hattich.jpg" alt="Christian Pansch-Hattich">
+            <span>Christian Pansch-Hattich</span>
+          </a>
+        
+          <a href="#christoffer-bostr-m">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Christoffer Boström">
+            <span>Christoffer Boström</span>
+          </a>
+        
+          <a href="#conny-sj-qvist">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/conny-sj-qvist.jpg" alt="Conny Sjöqvist">
+            <span>Conny Sjöqvist</span>
+          </a>
+        
+          <a href="#kai-lindstr-m">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Kai Lindström">
+            <span>Kai Lindström</span>
+          </a>
+        
+          <a href="#katri-aarnio">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Katri Aarnio">
+            <span>Katri Aarnio</span>
+          </a>
+        
+          <a href="#markus-st">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/markus-st.jpg" alt="Markus Öst">
+            <span>Markus Öst</span>
+          </a>
+        
+          <a href="#martin-snickars">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Martin Snickars">
+            <span>Martin Snickars</span>
+          </a>
+        
+          <a href="#mikael-von-numers">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/mikael-von-numers.jpg" alt="Mikael von Numers">
+            <span>Mikael von Numers</span>
+          </a>
+        
+          <a href="#riikka-puntila-dodd">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/riikka-puntila-dodd.jpg" alt="Riikka Puntila-Dodd">
+            <span>Riikka Puntila-Dodd</span>
+          </a>
+        
+          <a href="#sonja-salovius-lauren">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Sonja Salovius-Lauren">
+            <span>Sonja Salovius-Lauren</span>
+          </a>
+        
+      </div>
+  </div>
+  
+  <div class="unit-section">
+      <h2>Pharmacy</h2>
+      <div class="unit-grid">
+        
+          <a href="#anne-filppula">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Anne Filppula">
+            <span>Anne Filppula</span>
+          </a>
+        
+          <a href="#jessica-rosenholm">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/jessica-rosenholm.jpg" alt="Jessica Rosenholm">
+            <span>Jessica Rosenholm</span>
+          </a>
+        
+          <a href="#kuldeep-bansal">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/kuldeep-bansal.png" alt="Kuldeep Bansal">
+            <span>Kuldeep Bansal</span>
+          </a>
+        
+          <a href="#outi-salo-ahen">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/outi-salo-ahen.jpg" alt="Outi Salo-Ahen">
+            <span>Outi Salo-Ahen</span>
+          </a>
+        
+          <a href="#tapani-viitala">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tapani-viitala.jpg" alt="Tapani Viitala">
+            <span>Tapani Viitala</span>
+          </a>
+        
+          <a href="#xiaoju-wang">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/xiaoju-wang.png" alt="Xiaoju Wang">
+            <span>Xiaoju Wang</span>
+          </a>
+        
+          <a href="#zhang-hongbo">
+            <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/zhang-hongbo.jpg" alt="Zhang Hongbo">
+            <span>Zhang Hongbo</span>
+          </a>
+        
+      </div>
+  </div>
+  
+
+  
+    <div class="supervisor" id="k-the-dahlstr-m">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Käthe Dahlström</h1>
+          
+          
+          <p><strong>Subject:</strong> Biochemistry</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/fi/persons/k%C3%A4the-dahlstr%C3%B6m">https://research.abo.fi/fi/persons/k%C3%A4the-dahlstr%C3%B6m</a></p>
+          
+        </div>
+      </div>
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="peter-mattjus">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/peter-mattjus.jpeg" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Peter Mattjus</h1>
+          
+          <p><strong>Group:</strong> Lipid Transfer Protein Research</p>
+          
+          
+          <p><strong>Subject:</strong> Biochemistry</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://users.abo.fi/pmattjus/">https://users.abo.fi/pmattjus/</a></p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/peter-mattjus">https://research.abo.fi/sv/persons/peter-mattjus</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
       <ul>
         
-          <li><a href="#peter-mattjus">Peter Mattjus</a></li>
+        <li>The role of glycolipid transfer proteins in cells</li>
         
-          <li><a href="#tiina-salminen">Tiina Salminen</a></li>
+        <li>Glycosphingolipid biosynthesis</li>
         
-          <li><a href="#k-the-dahlstr-m">Käthe Dahlström</a></li>
+        <li>Intracellular glycosphingolipid transport events</li>
         
       </ul>
-    
-  </div>
+      
 
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>Glycolipid transfer protein, GLTP interaction with VAP-proteins in the ER exit sites</li>
+        
+        <li>The role of GLTP in demyelination</li>
+        
+        <li>Intracellular localization of GLTP</li>
+        
+        <li>Inhibitors for glycolipid binding proteins</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Lipid biochemistry</li>
+        
+        <li>Quantitative and qualitative glycosphingo- and phospholipid analysis by high-performance TLC</li>
+        
+        <li>Cell and molecular biology</li>
+        
+        <li>Fluorescence spectroscopy, steady-state and lifetime</li>
+        
+        <li>Radioisotope labeling and lipid metabolism techniques</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>Medicinska understödsföreningen Liv och hälsa</li>
+        
+        <li>Borgs stiftelse</li>
+        
+        <li>COST action SPHINX member</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Glycolipid transfer protein knockout disrupts vesicle trafficking to the plasma membrane. Journal of Biological Chemistry. 2023.  DOI:
+            <a href="https://doi.org/10.1016/j.jbc.2023.104607">10.1016/j.jbc.2023.104607</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Who moves the sphinx? An overview of intracellular sphingolipid transport. BBA Molecular and Cell Biology of Lipids. 2021.  DOI:
+            <a href="https://doi.org/10.1016/j.bbalip.2021.159021">10.1016/j.bbalip.2021.159021</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Glucosylceramide acyl chain length is sensed by the glycolipid transfer protein. PLoS ONE. 2018.  DOI:
+            <a href="https://doi.org/10.1371/journal.pone.0209230">10.1371/journal.pone.0209230</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Alternation in the Glycolipid Transfer Protein Expression Causes Changes in the Cellular Lipidome. PLoS ONE. 2014.  DOI:
+            <a href="https://doi.org/10.1371/journal.pone.0097263">10.1371/journal.pone.0097263</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Vesicular and non-vesicular transport feed distinct glycosylation pathways in the Golgi. Nature. 2013.  DOI:
+            <a href="https://doi.org/10.1038/nature12423">10.1038/nature12423</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="tiina-salminen">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tiina-salminen.png" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Tiina Salminen</h1>
+          
+          <p><strong>Group:</strong> Structural Immunology Lab</p>
+          
+          
+          <p><strong>Subject:</strong> Biochemistry</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://www.abo.fi/en/structural-immunology-lab/">https://www.abo.fi/en/structural-immunology-lab/</a></p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/tiina-a-salminen">https://research.abo.fi/en/persons/tiina-a-salminen</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Protein biochemistry, bioinformatics, and Structural biology</li>
+        
+        <li>Protein-ligand interactions</li>
+        
+        <li>Molecular interaction mechanisms in inflammation, infection, and cancer</li>
+        
+        <li>Disease-causing genetic variation</li>
+        
+        <li>Structure-based drug design</li>
+        
+        <li>Targeted diagnostics</li>
+        
+      </ul>
+      
+
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>Selective treatments against Borrelia infections</li>
+        
+        <li>Immunosuppressive SEFIR protein asa  target against Klebsiella infections</li>
+        
+        <li>Expanding toolbox for Clever-1-targeted oncotherapy</li>
+        
+        <li>Intercepting Siglec-9 interactions in cancer and inflammation</li>
+        
+        <li>Molecular mechanism of collagen-binding integrin activation</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Modern facilities for protein purification and sample quality control</li>
+        
+        <li>State-of-the-art infrastructure for protein crystallization</li>
+        
+        <li>Automated imaging of protein crystallization trials</li>
+        
+        <li>In-situ diffraction testing</li>
+        
+        <li>Infrastructure for Cryo-electron microscopy sample preparation</li>
+        
+        <li>Up-to-date infrastructure for computational biology and Scientific IT Support</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>Research Council Finland</li>
+        
+        <li>InFLAMES Flagship</li>
+        
+        <li>Medicinska Understödsföreningen Liv och Hälsa rf</li>
+        
+        <li>Tor, Joe och Pentti Borg Foundation</li>
+        
+        <li>3D-BioInfo Community of ELIXIR</li>
+        
+        <li>International Network of Protein Engineering Centres (INPEC)</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Secreted Clever-1 modulates T cell responses and impacts cancer immunotherapy efficacy. Theranostics. 2025.  DOI:
+            <a href="https://doi.org/10.7150/thno.110544">10.7150/thno.110544</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Apprehensions and emerging solutions in ML-based protein structure prediction. Curr. Opin. Struct. Biol. 2024.  DOI:
+            <a href="https://doi.org/10.1016/j.sbi.2024.102819">10.1016/j.sbi.2024.102819</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Vascular adhesion protein-1-targeted PET imaging in autoimmune myocarditis. J. Nucl. Cardiol. 2023.  DOI:
+            <a href="https://doi.org/10.1007/s12350-023-03371-8">10.1007/s12350-023-03371-8</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Klebsiella pneumoniae type VI secretion system-mediated microbial competition is PhoPQ controlled and reactive oxygen species dependent. PloS Pathog. 2020.  DOI:
+            <a href="https://doi.org/10.1371/journal.ppat.1007969">10.1371/journal.ppat.1007969</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Structural and Biomolecular Analyses of Borrelia burgdorferi BmpD Reveal a Substrate-Binding Protein of an ABC-Type Nucleoside Transporter Family. Infect. Immun. 2020.  DOI:
+            <a href="https://doi.org/10.1128/IAI.00962-19">10.1128/IAI.00962-19</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="annika-meinander">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/annika-meinander.jpg" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Annika Meinander</h1>
+          
+          <p><strong>Group:</strong> Inflammatory Signalling Group</p>
+          
+          
+          <p><strong>Subject:</strong> Cell Biology</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://www.abo.fi/en/inflammatory-signalling-lab/">https://www.abo.fi/en/inflammatory-signalling-lab/</a></p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/annika-meinander">https://research.abo.fi/sv/persons/annika-meinander</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Post-translational modifications, ubiquitination in particular</li>
+        
+        <li>NF-κB signalling pathways</li>
+        
+        <li>Apoptotic and non-apoptotic roles of caspases</li>
+        
+        <li>Drosophila melanogaster as a model system</li>
+        
+      </ul>
+      
+
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>Ubiquitination-mediated regulation of inflammation during cell stress and infection</li>
+        
+        <li>Targeting ubiquitin signalling in chronic inflammation and inflammation-induced cancer</li>
+        
+        <li>Ubiquitin-mediated control of starvation-induced intestinal inflammatory responses</li>
+        
+        <li>Caspase-mediated regulation of autophagy in inflammatory signalling</li>
+        
+        <li>Modulating caspase activation and immune signalling in intestinal inflammation</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Analysis of ubiquitin modifications in vitro and in vivo</li>
+        
+        <li>Drosophila melanogaster as a model system to study cell signalling and immune responses</li>
+        
+        <li>Imaging caspase activation in vivo</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>InFLAMES Flagship</li>
+        
+        <li>Sigrid Jusélius Foundation</li>
+        
+        <li>Swedish Cultural Foundation</li>
+        
+        <li>COST Action CA20113/ProteoCure</li>
+        
+        <li>International Society of Protein Termini</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Ubiquitin signalling in Drosophila innate immune responses. FEBS J. 2024.  DOI:
+            <a href="https://doi.org/10.1111/febs.17028">10.1111/febs.17028</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Drosophila caspases as guardians of host-microbe interactions. Cell Death Differ. 2023.  DOI:
+            <a href="https://doi.org/10.1038/s41418-022-01038-4">10.1038/s41418-022-01038-4</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Core@shell structured ceria@mesoporous silica nanoantibiotics restrain bacterial growth in vitro and in vivo. Biomater. Adv. 2022.  DOI:
+            <a href="https://doi.org/10.1016/j.msec.2021.112607">10.1016/j.msec.2021.112607</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            A M1-ubiquitination facilitates NF-kappaB activation and survival during sterile inflammation. FEBS J. 2022.  DOI:
+            <a href="https://doi.org/10.1111/febs.16425">10.1111/febs.16425</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Drice restrains Diap2-mediated inflammatory signalling and intestinal inflammation. Cell Death Differ. 2022.  DOI:
+            <a href="https://doi.org/10.1038/s41418-021-00832-w">10.1038/s41418-021-00832-w</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="cecilia-sahlgren">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/cecilia-sahlgren.jpg" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Cecilia Sahlgren</h1>
+          
+          <p><strong>Group:</strong> Cellfate lab</p>
+          
+          
+          <p><strong>Subject:</strong> Cell Biology</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://cellfatelab.github.io">https://cellfatelab.github.io</a></p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/cecilia-sahlgren">https://research.abo.fi/en/persons/cecilia-sahlgren</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Cell biology of soft tissue (muscle, cardiovascular)</li>
+        
+        <li>Cell Signaling and Mechanobiology</li>
+        
+        <li>Microtissue engineering</li>
+        
+      </ul>
+      
+
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>Hematopoietic stem cell engineering (Making blood)</li>
+        
+        <li>Mechanobiology of hematopoietic stem cell niches and the endothelium</li>
+        
+        <li>Deciphering mechanisms of soft tissue development and regeneration</li>
+        
+        <li>Nanoparticle interactions with biological barriers</li>
+        
+        <li>Deciphering mechanisms of tumor-endothelial crosstalk</li>
+        
+        <li>Protein-protein crosstalk in cell fate decisions</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Microtissue engineering and biomaterials</li>
+        
+        <li>Organ on Chips, flow and perfusion chambers, micropatterning, functionalized materials</li>
+        
+        <li>Cell and molecular biology</li>
+        
+        <li>Mass spectrometry (identification of protein-protein interactions)</li>
+        
+        <li>Optogenetic tools and synthetic biology tools</li>
+        
+        <li>Zebrafish to study soft tissue development (muscle, cardiovascular)</li>
+        
+        <li>Computational simulations of mechanochemical regulation of tissue architecture</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>Sigrid Juselius Foundation</li>
+        
+        <li>European Research Council and European Commission (H2024, Marie Curie Training Network)</li>
+        
+        <li>Academy of Finland and Inflames</li>
+        
+        <li>Turku Bioscience</li>
+        
+        <li>Materials-driven regeneration (https://mdrresearch.nl)</li>
+        
+        <li>Institute for complex molecular systems (https://www.tue.nl/en/research/institutes/institute-for-complexmolecular-systems)</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Receptor stoichiometry predicts artery-typical vulnerability to altered Notch signaling during smooth muscle differentiation.  DOI:
+            <a href="https://doi.org/10.1101/2025.05.05.652186">10.1101/2025.05.05.652186</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Mechanosensitive interactions between Jag1 and Myo1C control Jag1 trafficking in endothelial cells.  DOI:
+            <a href="https://doi.org/10.1101/2025.03.27.645426">10.1101/2025.03.27.645426</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            2.5D Model for Ex Vivo Mechanical Characterization of Sprouting Angiogenesis in Living Tissue. J Vis Exp. 2025.  DOI:
+            <a href="https://doi.org/10.3791/67641">10.3791/67641</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Directing cellular responses in a nanocomposite 3D matrix for tissue regeneration with nanoparticle-mediated drug delivery. Materials Today Bio 2023.  DOI:
+            <a href="https://doi.org/10.1016/j.mtbio.2023.100865">10.1016/j.mtbio.2023.100865</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Engineered patterns of Notch ligands Jag1 and Dll4 elicit differential spatial control of endothelial sprouting. iScience 2022.  DOI:
+            <a href="https://doi.org/10.1016/j.isci.2022.104306">10.1016/j.isci.2022.104306</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="diana-toivola">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Diana Toivola</h1>
+          
+          <p><strong>Group:</strong> Epithelial Biology Lab</p>
+          
+          
+          <p><strong>Subject:</strong> Cell Biology</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://toivola-lab.org/">https://toivola-lab.org/</a></p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/diana-toivola">https://research.abo.fi/sv/persons/diana-toivola</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Epithelial cell biology of gastrointestinal organs and related glands including the endocrine pancreas</li>
+        
+        <li>Cytoskeletal intermediate filaments protein regulation and function and molecular roles in health and disease, especially simple epithelial keratins and nuclear lamins</li>
+        
+        <li>Auto-immune diseases, Inflammatory bowel diseases, type I diabetes, and colorectal cancer</li>
+        
+        <li>Mouse disease modelling</li>
+        
+        <li>Non-invasive diagnostics development of intestinal diseases</li>
+        
+      </ul>
+      
+
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>Dysregulation of keratins in intestinal inflammation with biomarker potential</li>
+        
+        <li>Noninvasive in vitro assays to detect and monitor inflammatory bowel diseases</li>
+        
+        <li>A colon-specific mouse model for colorectal cancer</li>
+        
+        <li>Keratins as tumor suppressors and guardians of intestinal health</li>
+        
+        <li>Beta-cell cytoskeletal keratin 18 and its putative type 1 diabetes-associated variant in beta-cell function</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Mouse disease modelling, especially models of colitis, colorectal cancer and diabetes</li>
+        
+        <li>Intestinal crypt isolation and organoid culture (mini-gut)</li>
+        
+        <li>Isolation of islets of Langerhans and 3D culture</li>
+        
+        <li>Beta-cell and colon cancer cell lines</li>
+        
+        <li>Microscopy, digital histopathology and fluorescence-based imaging methods</li>
+        
+        <li>Cell, molecular, biochemical methods</li>
+        
+        <li>Immunoassay and non-invasive imaging methods development</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>Current funding: InFLAMES flagship, Business Finland, Novo Nordisk Fonden, Medicinska understödsföreningen Liv och Hälsa, Diabetes Research Foundation Finland</li>
+        
+        <li>Networks: Intermediate filament community, American Society for Cell Biology, Gut Research Community in Finland, Gastroenterology organizations in Finland, and USA</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Defining a timeline of colon pathologies after keratin 8 loss: rapid crypt elongation and diarrhea are followed by epithelial erosion and cell exfoliation. Am. J. Physiol., Gastro. Liver Physiol. 2024.  DOI:
+            <a href="https://doi.org/10.1152/ajpgi.00140.2023">10.1152/ajpgi.00140.2023</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            β-cell keratin 8 maintains islet mechanical integrity, mitochondrial ultrastructure and β-cell glucose transporter 2 plasma membrane targeting. 2024. Am. J. Physiol.-Cell Physiol.  DOI:
+            <a href="https://doi.org/10.1152/ajpcell.00123.2024">10.1152/ajpcell.00123.2024</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Colonocyte keratins stabilize mitochondria and contribute to mitochondrial energy metabolism. 2024. Am. J. Physiol.- Gastrointestinal Liver Physiol.  DOI:
+            <a href="https://doi.org/10.1152/ajpgi.00220.2023">10.1152/ajpgi.00220.2023</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Colonocyte keratin 7 expression is expressed  de novo in inflammatory bowel diseases and associated with pathological changes and drug-resistance. Sci. Rep. 2022.  DOI:
+            <a href="https://doi.org/10.1038/s41598-022-26603-2">10.1038/s41598-022-26603-2</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Targeted deletion of keratin 8 in intestinal epithelial cells disrupts tissue integrity and predisposes to tumorigenesis in the colon. Cell. Mol. Life. Sci. 2022.  DOI:
+            <a href="https://doi.org/10.1007/s00018-021-04081-5">10.1007/s00018-021-04081-5</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="eleanor-coffey">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/eleanor-coffey.jpg" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Eleanor Coffey</h1>
+          
+          <p><strong>Group:</strong> Protein Kinase Function in the Brain</p>
+          
+          
+          <p><strong>Subject:</strong> Cell Biology</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://bioscience.fi/research/kinase-function-in-brain/">https://bioscience.fi/research/kinase-function-in-brain/</a></p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/eleanor-coffey">https://research.abo.fi/en/persons/eleanor-coffey</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Our lab investigates the molecular mechanisms underlying brain disorders, with specialized expertise in the signaling pathways regulated by the protein kinases JNK and LRRK2. We have uncovered novel insights into how these kinases influence anxiety-like behaviors and neuronal death in Parkinson’s disease. By integrating animal and cellular models with clinical proteomics, we aim to deepen our understanding of the biology behind these conditions.</li>
+        
+      </ul>
+      
+
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>We focus on Parkinson’s disease, using deep proteomic profiling of blood cells to detect pre-symptomatic changes. This includes developing new informatics to decode the “dark proteome” of cohorts like PPMI to identify early biomarkers. We also study depression cohorts to find markers predicting treatment response. Together, this work offers insight into immune cell roles in brain disorders.</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Our lab combines fluorescence imaging and proteomics methods with neurobiology, biochemistry, and data science to reach our goals.</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>These projects are funded by the Michael J Fox Foundation, the Research Council of Finland, EU ERANET, Immudocs, and Inflames. We participate in international networks in the field of neuroscience, including informatics for neuroscience.</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            PhosPiR: an automated phosphoproteomic pipeline in R. Briefings in Bioinformatics. 2022.  DOI:
+            <a href="https://doi.org/10.1093/bib/bbab510">10.1093/bib/bbab510</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Protein synthesis is suppressed in sporadic and familial Parkinson’s disease by LRRK2. FASEB Journal. 2020.  DOI:
+            <a href="https://doi.org/10.1096/fj.202001046R">10.1096/fj.202001046R</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            JNK1 controls adult hippocampal neurogenesis and imposes cell-autonomous control of anxiety behaviour from the neurogenic niche. Molecular Psychiatry. 2018.  DOI:
+            <a href="https://doi.org/10.1038/mp.2016.203">10.1038/mp.2016.203</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Nuclear and cytosolic JNK signalling in neurons. Nature Reviews Neuroscience. 2014.  DOI:
+            <a href="https://doi.org/10.1038/nrn3729">10.1038/nrn3729</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Phosphorylation of SCG10/stathmin-2 determines multipolar stage exit and neuronal migration rate. Nature Neuroscience. 2011.  DOI:
+            <a href="https://doi.org/10.1038/nn.2755">10.1038/nn.2755</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
   
     <div class="supervisor" id="guillaume-jacquemet">
 
@@ -387,157 +1327,56 @@
 
     </div>
   
-    <div class="supervisor" id="outi-salo-ahen">
+    <div class="supervisor" id="john-eriksson">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/outi-salo-ahen.jpg" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Outi Salo-Ahen</h1>
-          
-          <p><strong>Group:</strong> Computer-aided drug design (CADD) group</p>
+          <h1>John Eriksson</h1>
           
           
-          <p><strong>Subject:</strong> Pharmacy</p>
+          <p><strong>Subject:</strong> Cell Biology</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
-          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/computer-aided-drug-design">https://www.pharmscilab.fi/computer-aided-drug-design</a></p>
           
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/outi-salo-ahen">https://research.abo.fi/sv/persons/outi-salo-ahen</a></p>
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/john-eriksson">https://research.abo.fi/sv/persons/john-eriksson</a></p>
           
         </div>
       </div>
 
       
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Computer-aided drug design</li>
-        
-        <li>Molecular modeling</li>
-        
-        <li>Biomolecular simulations</li>
-        
-        <li>Computational chemistry/biology and computational pharmaceutics</li>
-        
-        <li>Structural bioinformatics</li>
-        
-        <li>Immunoinformatics</li>
-        
-      </ul>
+
       
 
       
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>Discovery and design of novel antivirulence agents / antimicrobial compounds / anticancer drugs</li>
-        
-        <li>Computational analysis of pharmaceutical materials (e.g., nanoparticles, polymers)</li>
-        
-      </ul>
-      
 
       
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Comparative protein modeling</li>
-        
-        <li>Molecular docking</li>
-        
-        <li>Molecular dynamics simulations</li>
-        
-        <li>Molecular interaction analysis</li>
-        
-        <li>Materials science modeling</li>
-        
-      </ul>
-      
 
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>Tor, Joe & Pentti Memorial Fund</li>
-        
-        <li>Svenska Kulturfonden</li>
-        
-        <li>Research Council of Finland</li>
-        
-        <li>EU-OPENSCREEN</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Microfluidics-Enabled Core/Shell Nanostructure Assembly: Understanding Encapsulation Processes via Particle Characterization and Molecular Dynamics. Adv Colloid Interface Sci. 2025.  DOI:
-            <a href="https://doi.org/10.1016/j.cis.2025.103400">10.1016/j.cis.2025.103400</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Insights Into Molecular Interactions and Biological Effect of Natural Stilbenoids at the TRPA1 ion channel. ChemMedChem. 2024.  DOI:
-            <a href="https://doi.org/10.1002/cmdc.202400501">10.1002/cmdc.202400501</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Development of Aptamer-DNAzyme based metal-nucleic acid frameworks for gastric cancer therapy. Nat Commun. 2024.  DOI:
-            <a href="https://doi.org/10.1038/s41467-024-48149-9.">10.1038/s41467-024-48149-9.</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Isolation and functional analysis of phage-displayed antibody fragments targeting the staphylococcal superantigen-like proteins. MicrobiologyOpen. 2023.  DOI:
-            <a href="https://doi.org/doi.org/10.1002/mbo3.1371">doi.org/10.1002/mbo3.1371</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            The discovery of Zika virus NS2B-NS3 inhibitors with antiviral activity via an integrated virtual screening approach. Eur J Pharm Sci. 2022.  DOI:
-            <a href="https://doi.org/10.1016/j.ejps.2022.106220">10.1016/j.ejps.2022.106220</a>
-          
-        </li>
-        
-      </ul>
       
 
       
 
     </div>
   
-    <div class="supervisor" id="riikka-puntila-dodd">
+    <div class="supervisor" id="lea-sistonen">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/riikka-puntila-dodd.jpg" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/lea-sistonen.jpg" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Riikka Puntila-Dodd</h1>
+          <h1>Lea Sistonen</h1>
           
-          <p><strong>Group:</strong> Marine ecosystem ecology</p>
+          <p><strong>Group:</strong> Sistonen Lab</p>
           
           
-          <p><strong>Subject:</strong> Marine Biology</p>
+          <p><strong>Subject:</strong> Cell Biology</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
+          <p><strong>Lab Website:</strong> <a href="https://sistonenlab.com/">https://sistonenlab.com/</a></p>
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/riikka-puntila-dodd">https://research.abo.fi/en/persons/riikka-puntila-dodd</a></p>
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/lea-sistonen">https://research.abo.fi/sv/persons/lea-sistonen</a></p>
           
         </div>
       </div>
@@ -546,17 +1385,15 @@
       <h2>Areas of Expertise</h2>
       <ul>
         
-        <li>Ecosystem modelling</li>
+        <li>Cell Differentiation</li>
         
-        <li>Ecopath with Ecosim</li>
+        <li>Cell Stress</li>
         
-        <li>Species distribution modelling</li>
+        <li>Post-translational Modifications</li>
         
-        <li>Future scenarios</li>
+        <li>Proteostasis</li>
         
-        <li>Baltic Sea</li>
-        
-        <li>Cumulative pressures</li>
+        <li>Transcriptional Gene Regulation</li>
         
       </ul>
       
@@ -565,15 +1402,13 @@
       <h2>Research Projects</h2>
       <ul>
         
-        <li>GES4SEAS</li>
+        <li>HSF-NET: Functional networks regulated by heat shock factors in cell plasticity, Research Council of Finland 2023-27</li>
         
-        <li>MIMOSA</li>
+        <li>Proteostasis driven by HSFs in cell plasticity programs and cancer”, Sigrid Jusélius Foundation 2025-28</li>
         
-        <li>Identifying changes in coastal ecosystems – implications to</li>
+        <li>Re-programming of gene and enhancer expression in cell differentiation and stress, Liv och Hälsa 2023-26</li>
         
-        <li>Recovery trajectories (RCoF)</li>
-        
-        <li>SEADITO</li>
+        <li>Pharmacologic strategy for targeting the main oncoproteins and defense systems of HPV-driven cancers, Cancer Foundation Finland 2024-26, together with John E. Eriksson</li>
         
       </ul>
       
@@ -582,15 +1417,13 @@
       <h2>Special Methodologies & Techniques</h2>
       <ul>
         
-        <li>Ecopath with Ecosim</li>
+        <li>ChIP-seq</li>
         
-        <li>Bayesian networks</li>
+        <li>DNA-protein interaction in vivo and in vitro</li>
         
-        <li>Species distribution modelling</li>
+        <li>Proteomics</li>
         
-        <li>Integrated trend analysis</li>
-        
-        <li>Multivariate analyses</li>
+        <li>PRO-seq and RNA-seq, including data analysis</li>
         
       </ul>
       
@@ -599,15 +1432,13 @@
       <h2>Funding & Networks</h2>
       <ul>
         
-        <li>RCoF</li>
+        <li>HSF-NET: Functional networks regulated by heat shock factors in cell plasticity, Research Council of Finland 2023-27</li>
         
-        <li>Horizon Europe ICES WGIAB</li>
+        <li>Proteostasis driven by HSFs in cell plasticity programs and cancer”, Sigrid Jusélius Foundation 2025-28</li>
         
-        <li>Marine modelling network</li>
+        <li>Re-programming of gene and enhancer expression in cell differentiation and stress, Liv och Hälsa 2023-26</li>
         
-        <li>Ecopath Consortium</li>
-        
-        <li>Beyond shifting baselines-consortium</li>
+        <li>Pharmacologic strategy for targeting the main oncoproteins and defense systems of HPV-driven cancers, Cancer Foundation Finland 2024-26, together with John E. Eriksson</li>
         
       </ul>
       
@@ -619,310 +1450,40 @@
         <li>
           
           
-            Novelty, variability, and resilience: exploring adaptive cycles in a marine ecosystem under pressure. Ambio. 2025.  DOI:
-            <a href="https://doi.org/10.1007/s13280-025-02181-1">10.1007/s13280-025-02181-1</a>
+            Nuclear talin-1 provides a bridge between cell adhesion and gene expression. iScience. 2025.  DOI:
+            <a href="https://doi.org/10.1016/j.isci.2025.111745">10.1016/j.isci.2025.111745</a>
           
         </li>
         
         <li>
           
           
-            Food web robustness depends on the network type and threshold for extinction. Oikos. 2025.  DOI:
-            <a href="https://doi.org/10.1111/oik.11139.">10.1111/oik.11139.</a>
+            CBP-HSF2 structural and functional interplay in Rubinstein-Taybi neurodevelopmental disorder. Nat Commun.  2022.  DOI:
+            <a href="https://doi.org/10.1038/s41467-022-34476-2">10.1038/s41467-022-34476-2</a>
           
         </li>
         
         <li>
           
           
-            Modelling Framework to Evaluate Societal Effects of Ecosystem Management. Sci Total Environ. 2023.  DOI:
-            <a href="https://doi.org/10.1016/j.scitotenv.2023.165508">10.1016/j.scitotenv.2023.165508</a>
+            HSFs drive transcription of distinct genes and enhancers during oxidative stress and heat shock. Nucleic Acids Res. 2022.  DOI:
+            <a href="https://doi.org/10.1093/nar/gkac493">10.1093/nar/gkac493</a>
           
         </li>
         
         <li>
           
           
-            Integrating diverse model results into decision support for good environmental status and blue growth. Sci Total Environ. 2022.  DOI:
-            <a href="https://doi.org/10.1016/j.scitotenv.2021.150450.">10.1016/j.scitotenv.2021.150450.</a>
+            Stress-induced transcriptional memory accelerates promoter-proximal pause release and decelerates termination over mitotic divisions. Mol Cell. 2021.  DOI:
+            <a href="https://doi.org/10.1016/j.molcel.2021.03.007">10.1016/j.molcel.2021.03.007</a>
           
         </li>
         
         <li>
           
           
-            Food-web modeling in the Maritime Spatial Planning Challenge Simulation Platform: Results from the Baltic Sea. Proc Int Simulation and Gaming Ass Conf. 2021.  DOI:
-            <a href="https://doi.org/10.1007/978-3-030-72132-9_25">10.1007/978-3-030-72132-9_25</a>
-          
-        </li>
-        
-      </ul>
-      
-
-      
-
-    </div>
-  
-    <div class="supervisor" id="peter-mattjus">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/peter-mattjus.jpeg" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Peter Mattjus</h1>
-          
-          <p><strong>Group:</strong> Lipid Transfer Protein Research</p>
-          
-          
-          <p><strong>Subject:</strong> Biochemistry</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          <p><strong>Lab Website:</strong> <a href="https://users.abo.fi/pmattjus/">https://users.abo.fi/pmattjus/</a></p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/peter-mattjus">https://research.abo.fi/sv/persons/peter-mattjus</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>The role of glycolipid transfer proteins in cells</li>
-        
-        <li>Glycosphingolipid biosynthesis</li>
-        
-        <li>Intracellular glycosphingolipid transport events</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>Glycolipid transfer protein, GLTP interaction with VAP-proteins in the ER exit sites</li>
-        
-        <li>The role of GLTP in demyelination</li>
-        
-        <li>Intracellular localization of GLTP</li>
-        
-        <li>Inhibitors for glycolipid binding proteins</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Lipid biochemistry</li>
-        
-        <li>Quantitative and qualitative glycosphingo- and phospholipid analysis by high-performance TLC</li>
-        
-        <li>Cell and molecular biology</li>
-        
-        <li>Fluorescence spectroscopy, steady-state and lifetime</li>
-        
-        <li>Radioisotope labeling and lipid metabolism techniques</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>Medicinska understödsföreningen Liv och hälsa</li>
-        
-        <li>Borgs stiftelse</li>
-        
-        <li>COST action SPHINX member</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Glycolipid transfer protein knockout disrupts vesicle trafficking to the plasma membrane. Journal of Biological Chemistry. 2023.  DOI:
-            <a href="https://doi.org/10.1016/j.jbc.2023.104607">10.1016/j.jbc.2023.104607</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Who moves the sphinx? An overview of intracellular sphingolipid transport. BBA Molecular and Cell Biology of Lipids. 2021.  DOI:
-            <a href="https://doi.org/10.1016/j.bbalip.2021.159021">10.1016/j.bbalip.2021.159021</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Glucosylceramide acyl chain length is sensed by the glycolipid transfer protein. PLoS ONE. 2018.  DOI:
-            <a href="https://doi.org/10.1371/journal.pone.0209230">10.1371/journal.pone.0209230</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Alternation in the Glycolipid Transfer Protein Expression Causes Changes in the Cellular Lipidome. PLoS ONE. 2014.  DOI:
-            <a href="https://doi.org/10.1371/journal.pone.0097263">10.1371/journal.pone.0097263</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Vesicular and non-vesicular transport feed distinct glycosylation pathways in the Golgi. Nature. 2013.  DOI:
-            <a href="https://doi.org/10.1038/nature12423">10.1038/nature12423</a>
-          
-        </li>
-        
-      </ul>
-      
-
-      
-
-    </div>
-  
-    <div class="supervisor" id="conny-sj-qvist">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/conny-sj-qvist.jpg" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Conny Sjöqvist</h1>
-          
-          <p><strong>Group:</strong> Molecular Ecology Lab</p>
-          
-          
-          <p><strong>Subject:</strong> Marine Biology</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          <p><strong>Lab Website:</strong> <a href="www.connysjoqvist.com">www.connysjoqvist.com</a></p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/conny-sj%C3%B6qvist">https://research.abo.fi/en/persons/conny-sj%C3%B6qvist</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Plankton ecology and evolution</li>
-        
-        <li>Experimental and molecular ecology</li>
-        
-        <li>Paleo- and resurrection biology</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>Temperature adaptation in European diatom populations - AWARE</li>
-        
-        <li>Hotspots for biodiversity shifts in the Archipelago Sea - BIOSHIFT</li>
-        
-        <li>Modeling advanced primary production scenarios in coastal seas - MIMOSA</li>
-        
-        <li>Geochemical Dynamics of Seawater-Submarine Aquifer Interactions: Impacts on Coastal Sediments and Ecosystems</li>
-        
-        <li>Switching the functional roles of gene expression of feeding trait plasticity in a marine key species - GeneMac</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Cell cultivation</li>
-        
-        <li>Microscopical analyses</li>
-        
-        <li>DNA and RNA sequencing</li>
-        
-        <li>Population genomics</li>
-        
-        <li>Transcriptomics</li>
-        
-        <li>Bioinformatics</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>Centre for Sustainable Ocean Science</li>
-        
-        <li>Swedish Cultural Foundation</li>
-        
-        <li>European Molecular Biology Laboratory (EMBL)</li>
-        
-        <li>Traversing European Coastlines (TREC)</li>
-        
-        <li>Estonian Research Council</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Biodiversity of microorganisms in the Baltic Sea: The power of novel methods in the identification of marine microbes. FEMS Microbiology Reviews. 2024.  DOI:
-            <a href="https://doi.org/10.1093/femsre/fuae024">10.1093/femsre/fuae024</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Temperature optima of a natural diatom population increases as global warming proceeds. Nature Climate Change. 2024.  DOI:
-            <a href="https://doi.org/10.1038/s41558-024-01981-9">10.1038/s41558-024-01981-9</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Toward phytoplankton parasite detection using autoencoders. Machine Vision and Applications. 2023.  DOI:
-            <a href="https://doi.org/10.1007/s00138-023-01450-x">10.1007/s00138-023-01450-x</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Strain-specific transcriptional responses overshadow salinity effects in a marine diatom sampled along the Baltic Sea salinity cline. ISME Journal. 2022.  DOI:
-            <a href="https://doi.org/10.1038/s41396-022-01230-x">10.1038/s41396-022-01230-x</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Ecologically coherent population structure of uncultivated bacterioplankton. ISME Journal. 2021.  DOI:
-            <a href="https://doi.org/10.1038/s41396-021-00985-z">10.1038/s41396-021-00985-z</a>
+            Heat shock factor 2 protects against proteotoxicity by maintaining cell-cell adhesion. Cell Rep. 2020.  DOI:
+            <a href="https://doi.org/10.1016/j.celrep.2019.12.037">10.1016/j.celrep.2019.12.037</a>
           
         </li>
         
@@ -1058,6 +1619,136 @@
           
             High tissue MMP14 expression predicts worse survival in gastric cancer, particularly with a low PROX1. Cancer Medicine. 2019.  DOI:
             <a href="https://doi.org/10.1002/cam4.2576">10.1002/cam4.2576</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="anna-t-rnroos-remes">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/anna-t-rnroos-remes.png" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Anna Törnroos-Remes</h1>
+          
+          <p><strong>Group:</strong> Environmental and Marine Biology</p>
+          
+          
+          <p><strong>Subject:</strong> Marine Biology</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          <p><strong>Lab Website:</strong> <a href="https://sites.abo.fi/centre-for-sustainable-ocean-science/">https://sites.abo.fi/centre-for-sustainable-ocean-science/</a></p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/anna-törnroos-remes">https://research.abo.fi/sv/persons/anna-törnroos-remes</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Marine community ecology</li>
+        
+        <li>Benthic ecology</li>
+        
+        <li>Marine biodiversity and ecosystem functioning</li>
+        
+        <li>Arctic benthic ecology, Interdisciplinary marine science</li>
+        
+      </ul>
+      
+
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>Centre for Sustainable Ocean Science (www.abo.fi/sos) - an ÅAU internal Centre of Excellence (Center Lead)</li>
+        
+        <li>The Sea (www.abo.fi/sea) - an ÅAU research profile (PI, steering group)</li>
+        
+        <li>SEA-Quester (www.https://sea-quester.eu) - an EU Horizon Europe project (ÅAU PI, Task lead, WP co-task lead)</li>
+        
+        <li>PROTECT BALTIC (https://protectbaltic.eu)- an EU Horizon Europe project (ÅAU PI, Task lead)</li>
+        
+        <li>MARBEFES (https://marbefes.eu)- an EU Horizon Europe project (ÅAU PI, sub-task lead)</li>
+        
+        <li>Meyer Biodiversity project (ÅAU PI)</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Trait-based approaches</li>
+        
+        <li>Ecological field experiments</li>
+        
+        <li>Reflexive learning</li>
+        
+        <li>Art-science approaches</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>Major funding sources: EU Horizon Europe, Research Council of Finland, Åbo Akademi University Foundation</li>
+        
+        <li>International networks: ICES WGIAB and WGBENT</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Diverging benthic trait diversity and drivers across fjord to slope habitats of the high Arctic, Est., Coast. Shelf. Sci.,  DOI:
+            <a href="https://doi.org/10.1016/j.ecss.2024.109086">10.1016/j.ecss.2024.109086</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Introduction: towards holistic knowledge of marine environmental changes. in Understanding Marine Changes: Environmental knowledge and methods of research, Edward Elgar, Cheltenham
+          
+        </li>
+        
+        <li>
+          
+          
+            The Anatomy of Complex Marine Problems: A Case Study of Decision-making on Archipelagic Aquaculture, in Understanding Marine Changes: Environmental knowledge and methods of research, Edward Elgar, Cheltenham
+          
+        </li>
+        
+        <li>
+          
+          
+            Biological traits approaches in benthic marine ecology: Dead ends and new paths. Ecology and Evolution, e9001
+          
+        </li>
+        
+        <li>
+          
+          
+            Four decades of functional community change reveal gradual trends and low interlinkage across trophic groups in a large marine ecosystem. Global Change Biology,  DOI:
+            <a href="https://doi.org/10.1111/gcb.14532">10.1111/gcb.14532</a>
           
         </li>
         
@@ -1308,22 +1999,24 @@
 
     </div>
   
-    <div class="supervisor" id="tapani-viitala">
+    <div class="supervisor" id="conny-sj-qvist">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tapani-viitala.jpg" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/conny-sj-qvist.jpg" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Tapani Viitala</h1>
+          <h1>Conny Sjöqvist</h1>
           
-          <p><strong>Group:</strong> Pharmaceutical Biophysics</p>
+          <p><strong>Group:</strong> Molecular Ecology Lab</p>
           
           
-          <p><strong>Subject:</strong> Pharmacy</p>
+          <p><strong>Subject:</strong> Marine Biology</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
+          <p><strong>Lab Website:</strong> <a href="www.connysjoqvist.com">www.connysjoqvist.com</a></p>
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/fi/persons/tapani-viitala">https://research.abo.fi/fi/persons/tapani-viitala</a></p>
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/conny-sj%C3%B6qvist">https://research.abo.fi/en/persons/conny-sj%C3%B6qvist</a></p>
           
         </div>
       </div>
@@ -1332,19 +2025,11 @@
       <h2>Areas of Expertise</h2>
       <ul>
         
-        <li>Pharmaceutical nanotechnology</li>
+        <li>Plankton ecology and evolution</li>
         
-        <li>Surface and colloid chemistry</li>
+        <li>Experimental and molecular ecology</li>
         
-        <li>Physico-chemical characterization</li>
-        
-        <li>Drug delivery and targeting</li>
-        
-        <li>Biomolecular interactions</li>
-        
-        <li>Real-time label-free living cell sensing</li>
-        
-        <li>3D printing</li>
+        <li>Paleo- and resurrection biology</li>
         
       </ul>
       
@@ -1353,13 +2038,15 @@
       <h2>Research Projects</h2>
       <ul>
         
-        <li>NAP4DIVE: Non-Animal Platform for Nanoparticle-Based Delivery Across the Blood-Brain Barrier Interface with Vehicle Evolution - EU Horizon RIA</li>
+        <li>Temperature adaptation in European diatom populations - AWARE</li>
         
-        <li>Nordic Pharmaceutical Translation and Innovation - Nordforsk</li>
+        <li>Hotspots for biodiversity shifts in the Archipelago Sea - BIOSHIFT</li>
         
-        <li>MADNESS: Centre of Excellence in Materials-driven solutions for combating antimicrobial resistance - Åbo Akademi Foundation</li>
+        <li>Modeling advanced primary production scenarios in coastal seas - MIMOSA</li>
         
-        <li>Data integrated platforms for the design, production, and testing of therapeutics (project in Helsinki) - Business Finland</li>
+        <li>Geochemical Dynamics of Seawater-Submarine Aquifer Interactions: Impacts on Coastal Sediments and Ecosystems</li>
+        
+        <li>Switching the functional roles of gene expression of feeding trait plasticity in a marine key species - GeneMac</li>
         
       </ul>
       
@@ -1368,13 +2055,17 @@
       <h2>Special Methodologies & Techniques</h2>
       <ul>
         
-        <li>Multi-Parametric Surface Plasmon Resonance</li>
+        <li>Cell cultivation</li>
         
-        <li>Impedance-based Quartz Crystal Microbalance</li>
+        <li>Microscopical analyses</li>
         
-        <li>LigandTracer</li>
+        <li>DNA and RNA sequencing</li>
         
-        <li>Waveguide scattering microscopy</li>
+        <li>Population genomics</li>
+        
+        <li>Transcriptomics</li>
+        
+        <li>Bioinformatics</li>
         
       </ul>
       
@@ -1383,13 +2074,15 @@
       <h2>Funding & Networks</h2>
       <ul>
         
-        <li>EU Horizon RIA</li>
+        <li>Centre for Sustainable Ocean Science</li>
         
-        <li>NordForsk</li>
+        <li>Swedish Cultural Foundation</li>
         
-        <li>Åbo Akademi Foundation</li>
+        <li>European Molecular Biology Laboratory (EMBL)</li>
         
-        <li>Business Finland</li>
+        <li>Traversing European Coastlines (TREC)</li>
+        
+        <li>Estonian Research Council</li>
         
       </ul>
       
@@ -1401,40 +2094,40 @@
         <li>
           
           
-            Semi-solid extruded tablets for personalized pediatric use: Development, Quality control and In-Vitro Assessment of Enteral Tube Administration. European Journal of Pharmaceutical Sciences. 2025.  DOI:
-            <a href="https://doi.org/10.1016/j.ejps.2025.107122">10.1016/j.ejps.2025.107122</a>
+            Biodiversity of microorganisms in the Baltic Sea: The power of novel methods in the identification of marine microbes. FEMS Microbiology Reviews. 2024.  DOI:
+            <a href="https://doi.org/10.1093/femsre/fuae024">10.1093/femsre/fuae024</a>
           
         </li>
         
         <li>
           
           
-            Monitoring silica core@shell nanoparticle-bacterial film interactions using the multi-parametric surface plasmon resonance technique. Smart Medicine 2. 2023.  DOI:
-            <a href="https://doi.org/10.1002/SMMD.20230012">10.1002/SMMD.20230012</a>
+            Temperature optima of a natural diatom population increases as global warming proceeds. Nature Climate Change. 2024.  DOI:
+            <a href="https://doi.org/10.1038/s41558-024-01981-9">10.1038/s41558-024-01981-9</a>
           
         </li>
         
         <li>
           
           
-            In Vitro Characterization and Real-Time Label-Free Assessment of the Interaction of Chitosan-Coated Niosomes with Intestinal Cellular Monolayers. Langmuir. 2023.  DOI:
-            <a href="https://doi.org/10.1021/acs.langmuir.3c00728">10.1021/acs.langmuir.3c00728</a>
+            Toward phytoplankton parasite detection using autoencoders. Machine Vision and Applications. 2023.  DOI:
+            <a href="https://doi.org/10.1007/s00138-023-01450-x">10.1007/s00138-023-01450-x</a>
           
         </li>
         
         <li>
           
           
-            Protein A/G-based surface plasmon resonance biosensor for regenerable antibody-mediated capture and analysis of nanoparticles. Colloids and Surfaces A: Physicochemical and Engineering Aspects. 2022.  DOI:
-            <a href="https://doi.org/10.1016/j.colsurfa.2022.130015">10.1016/j.colsurfa.2022.130015</a>
+            Strain-specific transcriptional responses overshadow salinity effects in a marine diatom sampled along the Baltic Sea salinity cline. ISME Journal. 2022.  DOI:
+            <a href="https://doi.org/10.1038/s41396-022-01230-x">10.1038/s41396-022-01230-x</a>
           
         </li>
         
         <li>
           
           
-            In situ analysis of liposome hard and soft protein corona structure and composition in a single label-free workflow. Nanoscale. 2020.  DOI:
-            <a href="https://doi.org/10.1039/C9NR08186K">10.1039/C9NR08186K</a>
+            Ecologically coherent population structure of uncultivated bacterioplankton. ISME Journal. 2021.  DOI:
+            <a href="https://doi.org/10.1038/s41396-021-00985-z">10.1038/s41396-021-00985-z</a>
           
         </li>
         
@@ -1445,359 +2138,64 @@
 
     </div>
   
-    <div class="supervisor" id="kuldeep-bansal">
+    <div class="supervisor" id="kai-lindstr-m">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/kuldeep-bansal.png" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Kuldeep Bansal</h1>
-          
-          <p><strong>Group:</strong> Polymeric drug delivery</p>
+          <h1>Kai Lindström</h1>
           
           
-          <p><strong>Subject:</strong> Pharmacy</p>
+          <p><strong>Subject:</strong> Marine Biology</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
-          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/">https://www.pharmscilab.fi/</a></p>
           
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/fi/persons/kuldeep-bansal">https://research.abo.fi/fi/persons/kuldeep-bansal</a></p>
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/kai-lindstr%C3%B6m">https://research.abo.fi/sv/persons/kai-lindstr%C3%B6m</a></p>
           
         </div>
       </div>
 
       
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Functional Polymers</li>
-        
-        <li>Stimuli-Sensitive Polymers</li>
-        
-        <li>Targeted and Controlled Drug Delivery</li>
-        
-        <li>Polymeric Micelles</li>
-        
-        <li>Polymer-Drug Conjugates</li>
-        
-        <li>Microparticles</li>
-        
-        <li>Amorphous Solid Dispersions</li>
-        
-        <li>Polymeric Nanoemulsion</li>
-        
-      </ul>
+
       
 
       
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>Centre of Excellence in Materials-driven Solutions for Combatting Antimicrobial Resistance (MADNESS)</li>
-        
-        <li>Jasmine PRO: A versatile platform for drug delivery</li>
-        
-        <li>Non-Animal Platform for Nanoparticle-Based Delivery across the blood-brain barrier Interface with Vehicle Evolution</li>
-        
-      </ul>
-      
 
       
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Polymer Synthesis and Characterization (NMR, FTIR, GPC, DSC),</li>
-        
-        <li>Nanoparticle Synthesis and Characterization (nanoprecipitation, microfluidics, DLS, HPLC, TEM),</li>
-        
-        <li>Cell Culture,</li>
-        
-        <li>Design of Stimuli-Sensitive Drug Delivery Platforms</li>
-        
-      </ul>
-      
 
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>Funding Sources: Stiftelsen för Åbo Akademi, Business Finland, Academy of Finland</li>
-        
-        <li>International Networks: Copenhagen University, NIPER (India), UiT The Arctic University of Norway, University College London</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Reactive Oxygen Species-Regulated Conjugates Based on Poly (jasmine) Lactone for Simultaneous Delivery of Doxorubicin and Docetaxel, Pharmaceutics. 2024.  DOI:
-            <a href="https://doi.org/10.3390/pharmaceutics16091164">10.3390/pharmaceutics16091164</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Poly-δ-decalactone (PDL) based nanoemulgel for topical delivery of ketoconazole and eugenol against Candida albicans, Nanoscale Advances. 2024.  DOI:
-            <a href="https://doi.org/10.1039/D4NA00176A">10.1039/D4NA00176A</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Utilizing the allyl-terminated copolymer methoxy (poly(ethylene glycol))-block-poly (jasmine lactone) in the development of amorphous solid dispersions: A comparative study of functionalized and nonfunctionalized polymer, International Journal of Pharmaceutics. 2024.  DOI:
-            <a href="https://doi.org/10.1016/j.ijpharm.2024.124175">10.1016/j.ijpharm.2024.124175</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Functional block copolymer micelles based on poly (jasmine lactone) for improving the loading efficiency of weakly basic drugs, RSC advances. 2022.  DOI:
-            <a href="https://doi.org/10.1039/D2RA03962A">10.1039/D2RA03962A</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Synthesis and evaluation of novel functional polymers derived from renewable jasmine lactone for stimuli‐responsive drug delivery, Advanced Functional Materials. 2021.  DOI:
-            <a href="https://doi.org/10.1002/adfm.202101998">10.1002/adfm.202101998</a>
-          
-        </li>
-        
-      </ul>
       
 
       
 
     </div>
   
-    <div class="supervisor" id="zhang-hongbo">
+    <div class="supervisor" id="katri-aarnio">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/zhang-hongbo.jpg" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Zhang Hongbo</h1>
-          
-          <p><strong>Group:</strong> Functional Materials for Medicine</p>
+          <h1>Katri Aarnio</h1>
           
           
-          <p><strong>Subject:</strong> Pharmacy</p>
+          <p><strong>Subject:</strong> Marine Biology</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
-          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/nanoprecisionmed">https://www.pharmscilab.fi/nanoprecisionmed</a></p>
           
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/hongbo-zhang">https://research.abo.fi/en/persons/hongbo-zhang</a></p>
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/katri-aarnio">https://research.abo.fi/sv/persons/katri-aarnio</a></p>
           
         </div>
       </div>
 
       
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Nanomedicine</li>
-        
-        <li>Biomedical Engineering</li>
-        
-        <li>Drug Delivery</li>
-        
-        <li>Gene Therapy</li>
-        
-      </ul>
-      
 
       
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>Functional Materials have played a more and more critical role in developing novel treatment methods for different diseases. Our group focuses on designing all kinds of functional materials, at different scales, to solve clinical and biological problems.</li>
-        
-      </ul>
-      
 
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>We have broad collaborations with hospitals, and most of our projects have clinical doctors involved, and initially, from a real-life clinical question. Our group is multidisciplinary,  which involves an  interplay between physics, materials science, synthetic organic chemistry, engineering, biology, and medicine. We aim that many of our designs could be clinically applicable in the future, and have a tremendous social impact in treating diseases.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>I am coordinating many projects from the Research Council of Finland, Business Finland, and different foundations. I am also part of many consortium projects, including the InFlame flagship, NAP4DIVE (EU Horizon), Nordic POP, NordicPharmTrain, PII: Printed Intelligence Infrastructure, MADNESS (ÅAU Center of Excellence). As well as the collaboration project with companies, e.g., the joint project with Bayer Oy. I collaborate broadly with Harvard University, USA, and Chinese hospitals.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Development of Aptamer-DNAzyme Based Metal-Nucleic Acid Frameworks for Gastric Cancer therapy. Nature Communications. 2024.  DOI:
-            <a href="https://doi.org/10.1038/s41467-024-48149-9">10.1038/s41467-024-48149-9</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            An autocatalytic multicomponent DNAzyme nanomachine for tumor-specific photothermal therapy sensitization in pancreatic cancer. Nature Communications. 2023.  DOI:
-            <a href="https://doi.org/10.1038/s41467-023-42740-2">10.1038/s41467-023-42740-2</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Therapeutic DNAzymes: From Structure Design to Clinical Applications. Advanced Materials. 2023.  DOI:
-            <a href="https://doi.org/10.1002/adma.202300374">10.1002/adma.202300374</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Photothermal Responsive Nanosized Hybrid Polymersome as Versatile Therapeutics Co-Delivery Nanovehicle for Effective Tumor Suppression. Proc. Natl. Acad. Sci. U.S.A. 2019.  DOI:
-            <a href="https://doi.org/10.1073/pnas.1817251116">10.1073/pnas.1817251116</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Programmable and Multifunctional DNA-Based Materials for Biomedical Applications. Advanced Materials. 2018.  DOI:
-            <a href="https://doi.org/10.1002/adma.201703658">10.1002/adma.201703658</a>
-          
-        </li>
-        
-      </ul>
       
 
       
 
-    </div>
-  
-    <div class="supervisor" id="eleanor-coffey">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/eleanor-coffey.jpg" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Eleanor Coffey</h1>
-          
-          <p><strong>Group:</strong> Protein Kinase Function in the Brain</p>
-          
-          
-          <p><strong>Subject:</strong> Cell Biology</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          <p><strong>Lab Website:</strong> <a href="https://bioscience.fi/research/kinase-function-in-brain/">https://bioscience.fi/research/kinase-function-in-brain/</a></p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/eleanor-coffey">https://research.abo.fi/en/persons/eleanor-coffey</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Our lab investigates the molecular mechanisms underlying brain disorders, with specialized expertise in the signaling pathways regulated by the protein kinases JNK and LRRK2. We have uncovered novel insights into how these kinases influence anxiety-like behaviors and neuronal death in Parkinson’s disease. By integrating animal and cellular models with clinical proteomics, we aim to deepen our understanding of the biology behind these conditions.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>We focus on Parkinson’s disease, using deep proteomic profiling of blood cells to detect pre-symptomatic changes. This includes developing new informatics to decode the “dark proteome” of cohorts like PPMI to identify early biomarkers. We also study depression cohorts to find markers predicting treatment response. Together, this work offers insight into immune cell roles in brain disorders.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Our lab combines fluorescence imaging and proteomics methods with neurobiology, biochemistry, and data science to reach our goals.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>These projects are funded by the Michael J Fox Foundation, the Research Council of Finland, EU ERANET, Immudocs, and Inflames. We participate in international networks in the field of neuroscience, including informatics for neuroscience.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            PhosPiR: an automated phosphoproteomic pipeline in R. Briefings in Bioinformatics. 2022.  DOI:
-            <a href="https://doi.org/10.1093/bib/bbab510">10.1093/bib/bbab510</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Protein synthesis is suppressed in sporadic and familial Parkinson’s disease by LRRK2. FASEB Journal. 2020.  DOI:
-            <a href="https://doi.org/10.1096/fj.202001046R">10.1096/fj.202001046R</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            JNK1 controls adult hippocampal neurogenesis and imposes cell-autonomous control of anxiety behaviour from the neurogenic niche. Molecular Psychiatry. 2018.  DOI:
-            <a href="https://doi.org/10.1038/mp.2016.203">10.1038/mp.2016.203</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Nuclear and cytosolic JNK signalling in neurons. Nature Reviews Neuroscience. 2014.  DOI:
-            <a href="https://doi.org/10.1038/nrn3729">10.1038/nrn3729</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Phosphorylation of SCG10/stathmin-2 determines multipolar stage exit and neuronal migration rate. Nature Neuroscience. 2011.  DOI:
-            <a href="https://doi.org/10.1038/nn.2755">10.1038/nn.2755</a>
-          
-        </li>
-        
-      </ul>
       
 
       
@@ -2058,24 +2456,22 @@
 
     </div>
   
-    <div class="supervisor" id="annika-meinander">
+    <div class="supervisor" id="mikael-von-numers">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/annika-meinander.jpg" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/mikael-von-numers.jpg" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Annika Meinander</h1>
+          <h1>Mikael von Numers</h1>
           
-          <p><strong>Group:</strong> Inflammatory Signalling Group</p>
+          <p><strong>Group:</strong> Mikael von Numers</p>
           
           
-          <p><strong>Subject:</strong> Cell Biology</p>
+          <p><strong>Subject:</strong> Marine Biology</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
-          <p><strong>Lab Website:</strong> <a href="https://www.abo.fi/en/inflammatory-signalling-lab/">https://www.abo.fi/en/inflammatory-signalling-lab/</a></p>
           
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/annika-meinander">https://research.abo.fi/sv/persons/annika-meinander</a></p>
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/mikael-von-numers">https://research.abo.fi/sv/persons/mikael-von-numers</a></p>
           
         </div>
       </div>
@@ -2084,13 +2480,13 @@
       <h2>Areas of Expertise</h2>
       <ul>
         
-        <li>Post-translational modifications, ubiquitination in particular</li>
+        <li>Island biogeography</li>
         
-        <li>NF-κB signalling pathways</li>
+        <li>Long-term changes</li>
         
-        <li>Apoptotic and non-apoptotic roles of caspases</li>
+        <li>Distribution patterns among plants and birds</li>
         
-        <li>Drosophila melanogaster as a model system</li>
+        <li>Species-environment interactions</li>
         
       </ul>
       
@@ -2099,15 +2495,7 @@
       <h2>Research Projects</h2>
       <ul>
         
-        <li>Ubiquitination-mediated regulation of inflammation during cell stress and infection</li>
-        
-        <li>Targeting ubiquitin signalling in chronic inflammation and inflammation-induced cancer</li>
-        
-        <li>Ubiquitin-mediated control of starvation-induced intestinal inflammatory responses</li>
-        
-        <li>Caspase-mediated regulation of autophagy in inflammatory signalling</li>
-        
-        <li>Modulating caspase activation and immune signalling in intestinal inflammation</li>
+        <li>My main research interests include long-term changes (among both plants and birds) and biogeographical questions concerning species distribution patterns in relation to the environment.</li>
         
       </ul>
       
@@ -2116,11 +2504,7 @@
       <h2>Special Methodologies & Techniques</h2>
       <ul>
         
-        <li>Analysis of ubiquitin modifications in vitro and in vivo</li>
-        
-        <li>Drosophila melanogaster as a model system to study cell signalling and immune responses</li>
-        
-        <li>Imaging caspase activation in vivo</li>
+        <li>Fieldwork, GIS</li>
         
       </ul>
       
@@ -2129,15 +2513,7 @@
       <h2>Funding & Networks</h2>
       <ul>
         
-        <li>InFLAMES Flagship</li>
-        
-        <li>Sigrid Jusélius Foundation</li>
-        
-        <li>Swedish Cultural Foundation</li>
-        
-        <li>COST Action CA20113/ProteoCure</li>
-        
-        <li>International Society of Protein Termini</li>
+        <li>mainly domestic sources such as SKF</li>
         
       </ul>
       
@@ -2149,40 +2525,181 @@
         <li>
           
           
-            Ubiquitin signalling in Drosophila innate immune responses. FEBS J. 2024.  DOI:
-            <a href="https://doi.org/10.1111/febs.17028">10.1111/febs.17028</a>
+            Predation risk and landscape context shape reproductive output of an endangered sea duck from two subpopulations with contrasting predation risk. J. of Ornithology. 2023.  DOI:
+            <a href="https://doi.org/10.1007/s10336-022-02036-6">10.1007/s10336-022-02036-6</a>
           
         </li>
         
         <li>
           
           
-            Drosophila caspases as guardians of host-microbe interactions. Cell Death Differ. 2023.  DOI:
-            <a href="https://doi.org/10.1038/s41418-022-01038-4">10.1038/s41418-022-01038-4</a>
+            Island properties dominate species traits in determining plant colonizations in an archipelago system. Ecography. 2020.  DOI:
+            <a href="https://doi.org/10.1111/ecog.05013">10.1111/ecog.05013</a>
           
         </li>
         
         <li>
           
           
-            Core@shell structured ceria@mesoporous silica nanoantibiotics restrain bacterial growth in vitro and in vivo. Biomater. Adv. 2022.  DOI:
-            <a href="https://doi.org/10.1016/j.msec.2021.112607">10.1016/j.msec.2021.112607</a>
+            Population changes in the declining Turnstone (Arenaria interpres) and other waders in the northern Baltic Sea based on past and current breeding observations. Ornis Fenn. 2020.  DOI:
+            <a href="https://doi.org/10.51812/of.133973">10.51812/of.133973</a>
           
         </li>
         
         <li>
           
           
-            A M1-ubiquitination facilitates NF-kappaB activation and survival during sterile inflammation. FEBS J. 2022.  DOI:
-            <a href="https://doi.org/10.1111/febs.16425">10.1111/febs.16425</a>
+            Refining predictions of metacommunity dynamics by modelling species non-independence. Ecology. 2020.  DOI:
+            <a href="https://doi.org/10.1002/ecy.3067">10.1002/ecy.3067</a>
           
         </li>
         
         <li>
           
           
-            Drice restrains Diap2-mediated inflammatory signalling and intestinal inflammation. Cell Death Differ. 2022.  DOI:
-            <a href="https://doi.org/10.1038/s41418-021-00832-w">10.1038/s41418-021-00832-w</a>
+            Distribution patterns and long-term changes in vascular plants of non-littoral areas in the SW archipelago of Finland. Part VII. Poaceae and synthesis. 2017.  DOI:
+            <a href="https://doi.org/10.5735/085.054.0607">10.5735/085.054.0607</a>
+          
+        </li>
+        
+      </ul>
+      
+
+      
+
+    </div>
+  
+    <div class="supervisor" id="riikka-puntila-dodd">
+
+      <div class="profile-header">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/riikka-puntila-dodd.jpg" alt="Profile Photo">
+        <div class="profile-info">
+          <h1>Riikka Puntila-Dodd</h1>
+          
+          <p><strong>Group:</strong> Marine ecosystem ecology</p>
+          
+          
+          <p><strong>Subject:</strong> Marine Biology</p>
+          
+          <p><strong>University:</strong> Åbo Akademi University</p>
+          
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/riikka-puntila-dodd">https://research.abo.fi/en/persons/riikka-puntila-dodd</a></p>
+          
+        </div>
+      </div>
+
+      
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Ecosystem modelling</li>
+        
+        <li>Ecopath with Ecosim</li>
+        
+        <li>Species distribution modelling</li>
+        
+        <li>Future scenarios</li>
+        
+        <li>Baltic Sea</li>
+        
+        <li>Cumulative pressures</li>
+        
+      </ul>
+      
+
+      
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>GES4SEAS</li>
+        
+        <li>MIMOSA</li>
+        
+        <li>Identifying changes in coastal ecosystems – implications to</li>
+        
+        <li>Recovery trajectories (RCoF)</li>
+        
+        <li>SEADITO</li>
+        
+      </ul>
+      
+
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Ecopath with Ecosim</li>
+        
+        <li>Bayesian networks</li>
+        
+        <li>Species distribution modelling</li>
+        
+        <li>Integrated trend analysis</li>
+        
+        <li>Multivariate analyses</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>RCoF</li>
+        
+        <li>Horizon Europe ICES WGIAB</li>
+        
+        <li>Marine modelling network</li>
+        
+        <li>Ecopath Consortium</li>
+        
+        <li>Beyond shifting baselines-consortium</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Novelty, variability, and resilience: exploring adaptive cycles in a marine ecosystem under pressure. Ambio. 2025.  DOI:
+            <a href="https://doi.org/10.1007/s13280-025-02181-1">10.1007/s13280-025-02181-1</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Food web robustness depends on the network type and threshold for extinction. Oikos. 2025.  DOI:
+            <a href="https://doi.org/10.1111/oik.11139.">10.1111/oik.11139.</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Modelling Framework to Evaluate Societal Effects of Ecosystem Management. Sci Total Environ. 2023.  DOI:
+            <a href="https://doi.org/10.1016/j.scitotenv.2023.165508">10.1016/j.scitotenv.2023.165508</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Integrating diverse model results into decision support for good environmental status and blue growth. Sci Total Environ. 2022.  DOI:
+            <a href="https://doi.org/10.1016/j.scitotenv.2021.150450.">10.1016/j.scitotenv.2021.150450.</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Food-web modeling in the Maritime Spatial Planning Challenge Simulation Platform: Results from the Baltic Sea. Proc Int Simulation and Gaming Ass Conf. 2021.  DOI:
+            <a href="https://doi.org/10.1007/978-3-030-72132-9_25">10.1007/978-3-030-72132-9_25</a>
           
         </li>
         
@@ -2324,650 +2841,6 @@
           
             Variation in Fucus vesiculosus associated fauna along a eutrophication gradient. Estuarine Coastal and Shelf Science. 2022.  DOI:
             <a href="https://doi.org/10.1016/j.ecss.2022.107976">10.1016/j.ecss.2022.107976</a>
-          
-        </li>
-        
-      </ul>
-      
-
-      
-
-    </div>
-  
-    <div class="supervisor" id="lea-sistonen">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/lea-sistonen.jpg" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Lea Sistonen</h1>
-          
-          <p><strong>Group:</strong> Sistonen Lab</p>
-          
-          
-          <p><strong>Subject:</strong> Cell Biology</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          <p><strong>Lab Website:</strong> <a href="https://sistonenlab.com/">https://sistonenlab.com/</a></p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/lea-sistonen">https://research.abo.fi/sv/persons/lea-sistonen</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Cell Differentiation</li>
-        
-        <li>Cell Stress</li>
-        
-        <li>Post-translational Modifications</li>
-        
-        <li>Proteostasis</li>
-        
-        <li>Transcriptional Gene Regulation</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>HSF-NET: Functional networks regulated by heat shock factors in cell plasticity, Research Council of Finland 2023-27</li>
-        
-        <li>Proteostasis driven by HSFs in cell plasticity programs and cancer”, Sigrid Jusélius Foundation 2025-28</li>
-        
-        <li>Re-programming of gene and enhancer expression in cell differentiation and stress, Liv och Hälsa 2023-26</li>
-        
-        <li>Pharmacologic strategy for targeting the main oncoproteins and defense systems of HPV-driven cancers, Cancer Foundation Finland 2024-26, together with John E. Eriksson</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>ChIP-seq</li>
-        
-        <li>DNA-protein interaction in vivo and in vitro</li>
-        
-        <li>Proteomics</li>
-        
-        <li>PRO-seq and RNA-seq, including data analysis</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>HSF-NET: Functional networks regulated by heat shock factors in cell plasticity, Research Council of Finland 2023-27</li>
-        
-        <li>Proteostasis driven by HSFs in cell plasticity programs and cancer”, Sigrid Jusélius Foundation 2025-28</li>
-        
-        <li>Re-programming of gene and enhancer expression in cell differentiation and stress, Liv och Hälsa 2023-26</li>
-        
-        <li>Pharmacologic strategy for targeting the main oncoproteins and defense systems of HPV-driven cancers, Cancer Foundation Finland 2024-26, together with John E. Eriksson</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Nuclear talin-1 provides a bridge between cell adhesion and gene expression. iScience. 2025.  DOI:
-            <a href="https://doi.org/10.1016/j.isci.2025.111745">10.1016/j.isci.2025.111745</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            CBP-HSF2 structural and functional interplay in Rubinstein-Taybi neurodevelopmental disorder. Nat Commun.  2022.  DOI:
-            <a href="https://doi.org/10.1038/s41467-022-34476-2">10.1038/s41467-022-34476-2</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            HSFs drive transcription of distinct genes and enhancers during oxidative stress and heat shock. Nucleic Acids Res. 2022.  DOI:
-            <a href="https://doi.org/10.1093/nar/gkac493">10.1093/nar/gkac493</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Stress-induced transcriptional memory accelerates promoter-proximal pause release and decelerates termination over mitotic divisions. Mol Cell. 2021.  DOI:
-            <a href="https://doi.org/10.1016/j.molcel.2021.03.007">10.1016/j.molcel.2021.03.007</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Heat shock factor 2 protects against proteotoxicity by maintaining cell-cell adhesion. Cell Rep. 2020.  DOI:
-            <a href="https://doi.org/10.1016/j.celrep.2019.12.037">10.1016/j.celrep.2019.12.037</a>
-          
-        </li>
-        
-      </ul>
-      
-
-      
-
-    </div>
-  
-    <div class="supervisor" id="mikael-von-numers">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/mikael-von-numers.jpg" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Mikael von Numers</h1>
-          
-          <p><strong>Group:</strong> Mikael von Numers</p>
-          
-          
-          <p><strong>Subject:</strong> Marine Biology</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/mikael-von-numers">https://research.abo.fi/sv/persons/mikael-von-numers</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Island biogeography</li>
-        
-        <li>Long-term changes</li>
-        
-        <li>Distribution patterns among plants and birds</li>
-        
-        <li>Species-environment interactions</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>My main research interests include long-term changes (among both plants and birds) and biogeographical questions concerning species distribution patterns in relation to the environment.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Fieldwork, GIS</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>mainly domestic sources such as SKF</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Predation risk and landscape context shape reproductive output of an endangered sea duck from two subpopulations with contrasting predation risk. J. of Ornithology. 2023.  DOI:
-            <a href="https://doi.org/10.1007/s10336-022-02036-6">10.1007/s10336-022-02036-6</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Island properties dominate species traits in determining plant colonizations in an archipelago system. Ecography. 2020.  DOI:
-            <a href="https://doi.org/10.1111/ecog.05013">10.1111/ecog.05013</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Population changes in the declining Turnstone (Arenaria interpres) and other waders in the northern Baltic Sea based on past and current breeding observations. Ornis Fenn. 2020.  DOI:
-            <a href="https://doi.org/10.51812/of.133973">10.51812/of.133973</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Refining predictions of metacommunity dynamics by modelling species non-independence. Ecology. 2020.  DOI:
-            <a href="https://doi.org/10.1002/ecy.3067">10.1002/ecy.3067</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Distribution patterns and long-term changes in vascular plants of non-littoral areas in the SW archipelago of Finland. Part VII. Poaceae and synthesis. 2017.  DOI:
-            <a href="https://doi.org/10.5735/085.054.0607">10.5735/085.054.0607</a>
-          
-        </li>
-        
-      </ul>
-      
-
-      
-
-    </div>
-  
-    <div class="supervisor" id="xiaoju-wang">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/xiaoju-wang.png" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Xiaoju Wang</h1>
-          
-          <p><strong>Group:</strong> Biomaterials and Drug Fabrication</p>
-          
-          
-          <p><strong>Subject:</strong> Pharmacy</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/biomaterials-and-drug-fabrication">https://www.pharmscilab.fi/biomaterials-and-drug-fabrication</a></p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/xiaoju-wang">https://research.abo.fi/sv/persons/xiaoju-wang</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>My research focuses on harnessing the benign properties of bio-enabled plant biopolymers to design sustainable and functional biomaterials for better interfacing with living cells or microbes. To create effective bionanomaterials and soft matter biomaterials, my research applies core methodologies such as biopolymer chemical modifications, nanostructured biopolymer synthesis, and self-assembled biocolloidal networks from nano- to macro-scale.</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>MADNESS CoE-Center of Excellence in Materials-driven solutions for combating antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028 (Co-PI; Center director: Prof. Jessica Rosenholm)</li>
-        
-        <li>SusCellInk-Sustainable nanocellulose-based bioinks towards diverse material functionalities and therapeutic delivery of bioactive cues, Research Council of Finland (333158),  01.09.2020-31.08.2025, (PI)</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Chemical synthesis of nanostructured polysaccharides and polyphenols</li>
-        
-        <li>Rheology</li>
-        
-        <li>Various additive manufacturing techniques</li>
-        
-        <li>Cell-laden 3D bioprinting for fabrication of in vitro models</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>Independent PI at CoE-MADNESS, Åbo Akademi University Foundation, 01.01.2024-31.12.2028</li>
-        
-        <li>Academy Research Fellow, Research Council of Finland (333158),  01.09.2020-31.08.2025</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Photocurable cellulose nanofibers and their copolymers with polyacrylamide as microgels to support 3D cell cultivation. Nanoscale. 2025,  DOI:
-            <a href="https://doi.org/10.1039/D5NR00583C">10.1039/D5NR00583C</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Bioprinting Macroporous Hydrogel with Aqueous Two-Phase Emulsion-Based Bioink: In Vitro Mineralization and Differentiation Empowered by Phosphorylated Cellulose Nanofibrils. Adv. Funct. Mater. 2024.  DOI:
-            <a href="https://doi.org/10.1002/adfm.202400431">10.1002/adfm.202400431</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Aqueous Two-Phase Emulsion Bioresin for Facile One-Step 3D Microgel-Based Bioprinting. Adv. Healthcare Mater. 2023.  DOI:
-            <a href="https://doi.org/10.1002/adhm.202203243">10.1002/adhm.202203243</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Evolution of Self-Assembled Lignin Nanostructure into Dendritic Fiber in Aqueous Biphasic Photocurable Resin for DLP-Printing. Adv. Funct. Mater. 2024.  DOI:
-            <a href="https://doi.org/10.1002/adfm.202315679">10.1002/adfm.202315679</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Digital light processing (DLP) 3D-fabricated antimicrobial hydrogel with a sustainable resin of methacrylated woody polysaccharides and hybrid silver-lignin nanospheres. Green Chemistry. 2022.  DOI:
-            <a href="https://doi.org/10.1039/D1GC03841A">10.1039/D1GC03841A</a>
-          
-        </li>
-        
-      </ul>
-      
-
-      
-
-    </div>
-  
-    <div class="supervisor" id="anna-t-rnroos-remes">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/anna-t-rnroos-remes.png" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Anna Törnroos-Remes</h1>
-          
-          <p><strong>Group:</strong> Environmental and Marine Biology</p>
-          
-          
-          <p><strong>Subject:</strong> Marine Biology</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          <p><strong>Lab Website:</strong> <a href="https://sites.abo.fi/centre-for-sustainable-ocean-science/">https://sites.abo.fi/centre-for-sustainable-ocean-science/</a></p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/anna-törnroos-remes">https://research.abo.fi/sv/persons/anna-törnroos-remes</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Marine community ecology</li>
-        
-        <li>Benthic ecology</li>
-        
-        <li>Marine biodiversity and ecosystem functioning</li>
-        
-        <li>Arctic benthic ecology, Interdisciplinary marine science</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>Centre for Sustainable Ocean Science (www.abo.fi/sos) - an ÅAU internal Centre of Excellence (Center Lead)</li>
-        
-        <li>The Sea (www.abo.fi/sea) - an ÅAU research profile (PI, steering group)</li>
-        
-        <li>SEA-Quester (www.https://sea-quester.eu) - an EU Horizon Europe project (ÅAU PI, Task lead, WP co-task lead)</li>
-        
-        <li>PROTECT BALTIC (https://protectbaltic.eu)- an EU Horizon Europe project (ÅAU PI, Task lead)</li>
-        
-        <li>MARBEFES (https://marbefes.eu)- an EU Horizon Europe project (ÅAU PI, sub-task lead)</li>
-        
-        <li>Meyer Biodiversity project (ÅAU PI)</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Trait-based approaches</li>
-        
-        <li>Ecological field experiments</li>
-        
-        <li>Reflexive learning</li>
-        
-        <li>Art-science approaches</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>Major funding sources: EU Horizon Europe, Research Council of Finland, Åbo Akademi University Foundation</li>
-        
-        <li>International networks: ICES WGIAB and WGBENT</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Diverging benthic trait diversity and drivers across fjord to slope habitats of the high Arctic, Est., Coast. Shelf. Sci.,  DOI:
-            <a href="https://doi.org/10.1016/j.ecss.2024.109086">10.1016/j.ecss.2024.109086</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Introduction: towards holistic knowledge of marine environmental changes. in Understanding Marine Changes: Environmental knowledge and methods of research, Edward Elgar, Cheltenham
-          
-        </li>
-        
-        <li>
-          
-          
-            The Anatomy of Complex Marine Problems: A Case Study of Decision-making on Archipelagic Aquaculture, in Understanding Marine Changes: Environmental knowledge and methods of research, Edward Elgar, Cheltenham
-          
-        </li>
-        
-        <li>
-          
-          
-            Biological traits approaches in benthic marine ecology: Dead ends and new paths. Ecology and Evolution, e9001
-          
-        </li>
-        
-        <li>
-          
-          
-            Four decades of functional community change reveal gradual trends and low interlinkage across trophic groups in a large marine ecosystem. Global Change Biology,  DOI:
-            <a href="https://doi.org/10.1111/gcb.14532">10.1111/gcb.14532</a>
-          
-        </li>
-        
-      </ul>
-      
-
-      
-
-    </div>
-  
-    <div class="supervisor" id="tiina-salminen">
-
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tiina-salminen.png" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Tiina Salminen</h1>
-          
-          <p><strong>Group:</strong> Structural Immunology Lab</p>
-          
-          
-          <p><strong>Subject:</strong> Biochemistry</p>
-          
-          <p><strong>University:</strong> Åbo Akademi University</p>
-          
-          <p><strong>Lab Website:</strong> <a href="https://www.abo.fi/en/structural-immunology-lab/">https://www.abo.fi/en/structural-immunology-lab/</a></p>
-          
-          
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/tiina-a-salminen">https://research.abo.fi/en/persons/tiina-a-salminen</a></p>
-          
-        </div>
-      </div>
-
-      
-      <h2>Areas of Expertise</h2>
-      <ul>
-        
-        <li>Protein biochemistry, bioinformatics, and Structural biology</li>
-        
-        <li>Protein-ligand interactions</li>
-        
-        <li>Molecular interaction mechanisms in inflammation, infection, and cancer</li>
-        
-        <li>Disease-causing genetic variation</li>
-        
-        <li>Structure-based drug design</li>
-        
-        <li>Targeted diagnostics</li>
-        
-      </ul>
-      
-
-      
-      <h2>Research Projects</h2>
-      <ul>
-        
-        <li>Selective treatments against Borrelia infections</li>
-        
-        <li>Immunosuppressive SEFIR protein asa  target against Klebsiella infections</li>
-        
-        <li>Expanding toolbox for Clever-1-targeted oncotherapy</li>
-        
-        <li>Intercepting Siglec-9 interactions in cancer and inflammation</li>
-        
-        <li>Molecular mechanism of collagen-binding integrin activation</li>
-        
-      </ul>
-      
-
-      
-      <h2>Special Methodologies & Techniques</h2>
-      <ul>
-        
-        <li>Modern facilities for protein purification and sample quality control</li>
-        
-        <li>State-of-the-art infrastructure for protein crystallization</li>
-        
-        <li>Automated imaging of protein crystallization trials</li>
-        
-        <li>In-situ diffraction testing</li>
-        
-        <li>Infrastructure for Cryo-electron microscopy sample preparation</li>
-        
-        <li>Up-to-date infrastructure for computational biology and Scientific IT Support</li>
-        
-      </ul>
-      
-
-      
-      <h2>Funding & Networks</h2>
-      <ul>
-        
-        <li>Research Council Finland</li>
-        
-        <li>InFLAMES Flagship</li>
-        
-        <li>Medicinska Understödsföreningen Liv och Hälsa rf</li>
-        
-        <li>Tor, Joe och Pentti Borg Foundation</li>
-        
-        <li>3D-BioInfo Community of ELIXIR</li>
-        
-        <li>International Network of Protein Engineering Centres (INPEC)</li>
-        
-      </ul>
-      
-
-      
-      <h2>Selected Publications</h2>
-      <ul>
-        
-        <li>
-          
-          
-            Secreted Clever-1 modulates T cell responses and impacts cancer immunotherapy efficacy. Theranostics. 2025.  DOI:
-            <a href="https://doi.org/10.7150/thno.110544">10.7150/thno.110544</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Apprehensions and emerging solutions in ML-based protein structure prediction. Curr. Opin. Struct. Biol. 2024.  DOI:
-            <a href="https://doi.org/10.1016/j.sbi.2024.102819">10.1016/j.sbi.2024.102819</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Vascular adhesion protein-1-targeted PET imaging in autoimmune myocarditis. J. Nucl. Cardiol. 2023.  DOI:
-            <a href="https://doi.org/10.1007/s12350-023-03371-8">10.1007/s12350-023-03371-8</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Klebsiella pneumoniae type VI secretion system-mediated microbial competition is PhoPQ controlled and reactive oxygen species dependent. PloS Pathog. 2020.  DOI:
-            <a href="https://doi.org/10.1371/journal.ppat.1007969">10.1371/journal.ppat.1007969</a>
-          
-        </li>
-        
-        <li>
-          
-          
-            Structural and Biomolecular Analyses of Borrelia burgdorferi BmpD Reveal a Substrate-Binding Protein of an ABC-Type Nucleoside Transporter Family. Infect. Immun. 2020.  DOI:
-            <a href="https://doi.org/10.1128/IAI.00962-19">10.1128/IAI.00962-19</a>
           
         </li>
         
@@ -3208,24 +3081,24 @@
 
     </div>
   
-    <div class="supervisor" id="diana-toivola">
+    <div class="supervisor" id="kuldeep-bansal">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/kuldeep-bansal.png" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Diana Toivola</h1>
+          <h1>Kuldeep Bansal</h1>
           
-          <p><strong>Group:</strong> Epithelial Biology Lab</p>
+          <p><strong>Group:</strong> Polymeric drug delivery</p>
           
           
-          <p><strong>Subject:</strong> Cell Biology</p>
+          <p><strong>Subject:</strong> Pharmacy</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
-          <p><strong>Lab Website:</strong> <a href="https://toivola-lab.org/">https://toivola-lab.org/</a></p>
+          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/">https://www.pharmscilab.fi/</a></p>
           
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/diana-toivola">https://research.abo.fi/sv/persons/diana-toivola</a></p>
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/fi/persons/kuldeep-bansal">https://research.abo.fi/fi/persons/kuldeep-bansal</a></p>
           
         </div>
       </div>
@@ -3234,15 +3107,21 @@
       <h2>Areas of Expertise</h2>
       <ul>
         
-        <li>Epithelial cell biology of gastrointestinal organs and related glands including the endocrine pancreas</li>
+        <li>Functional Polymers</li>
         
-        <li>Cytoskeletal intermediate filaments protein regulation and function and molecular roles in health and disease, especially simple epithelial keratins and nuclear lamins</li>
+        <li>Stimuli-Sensitive Polymers</li>
         
-        <li>Auto-immune diseases, Inflammatory bowel diseases, type I diabetes, and colorectal cancer</li>
+        <li>Targeted and Controlled Drug Delivery</li>
         
-        <li>Mouse disease modelling</li>
+        <li>Polymeric Micelles</li>
         
-        <li>Non-invasive diagnostics development of intestinal diseases</li>
+        <li>Polymer-Drug Conjugates</li>
+        
+        <li>Microparticles</li>
+        
+        <li>Amorphous Solid Dispersions</li>
+        
+        <li>Polymeric Nanoemulsion</li>
         
       </ul>
       
@@ -3251,15 +3130,11 @@
       <h2>Research Projects</h2>
       <ul>
         
-        <li>Dysregulation of keratins in intestinal inflammation with biomarker potential</li>
+        <li>Centre of Excellence in Materials-driven Solutions for Combatting Antimicrobial Resistance (MADNESS)</li>
         
-        <li>Noninvasive in vitro assays to detect and monitor inflammatory bowel diseases</li>
+        <li>Jasmine PRO: A versatile platform for drug delivery</li>
         
-        <li>A colon-specific mouse model for colorectal cancer</li>
-        
-        <li>Keratins as tumor suppressors and guardians of intestinal health</li>
-        
-        <li>Beta-cell cytoskeletal keratin 18 and its putative type 1 diabetes-associated variant in beta-cell function</li>
+        <li>Non-Animal Platform for Nanoparticle-Based Delivery across the blood-brain barrier Interface with Vehicle Evolution</li>
         
       </ul>
       
@@ -3268,19 +3143,13 @@
       <h2>Special Methodologies & Techniques</h2>
       <ul>
         
-        <li>Mouse disease modelling, especially models of colitis, colorectal cancer and diabetes</li>
+        <li>Polymer Synthesis and Characterization (NMR, FTIR, GPC, DSC),</li>
         
-        <li>Intestinal crypt isolation and organoid culture (mini-gut)</li>
+        <li>Nanoparticle Synthesis and Characterization (nanoprecipitation, microfluidics, DLS, HPLC, TEM),</li>
         
-        <li>Isolation of islets of Langerhans and 3D culture</li>
+        <li>Cell Culture,</li>
         
-        <li>Beta-cell and colon cancer cell lines</li>
-        
-        <li>Microscopy, digital histopathology and fluorescence-based imaging methods</li>
-        
-        <li>Cell, molecular, biochemical methods</li>
-        
-        <li>Immunoassay and non-invasive imaging methods development</li>
+        <li>Design of Stimuli-Sensitive Drug Delivery Platforms</li>
         
       </ul>
       
@@ -3289,9 +3158,9 @@
       <h2>Funding & Networks</h2>
       <ul>
         
-        <li>Current funding: InFLAMES flagship, Business Finland, Novo Nordisk Fonden, Medicinska understödsföreningen Liv och Hälsa, Diabetes Research Foundation Finland</li>
+        <li>Funding Sources: Stiftelsen för Åbo Akademi, Business Finland, Academy of Finland</li>
         
-        <li>Networks: Intermediate filament community, American Society for Cell Biology, Gut Research Community in Finland, Gastroenterology organizations in Finland, and USA</li>
+        <li>International Networks: Copenhagen University, NIPER (India), UiT The Arctic University of Norway, University College London</li>
         
       </ul>
       
@@ -3303,40 +3172,40 @@
         <li>
           
           
-            Defining a timeline of colon pathologies after keratin 8 loss: rapid crypt elongation and diarrhea are followed by epithelial erosion and cell exfoliation. Am. J. Physiol., Gastro. Liver Physiol. 2024.  DOI:
-            <a href="https://doi.org/10.1152/ajpgi.00140.2023">10.1152/ajpgi.00140.2023</a>
+            Reactive Oxygen Species-Regulated Conjugates Based on Poly (jasmine) Lactone for Simultaneous Delivery of Doxorubicin and Docetaxel, Pharmaceutics. 2024.  DOI:
+            <a href="https://doi.org/10.3390/pharmaceutics16091164">10.3390/pharmaceutics16091164</a>
           
         </li>
         
         <li>
           
           
-            β-cell keratin 8 maintains islet mechanical integrity, mitochondrial ultrastructure and β-cell glucose transporter 2 plasma membrane targeting. 2024. Am. J. Physiol.-Cell Physiol.  DOI:
-            <a href="https://doi.org/10.1152/ajpcell.00123.2024">10.1152/ajpcell.00123.2024</a>
+            Poly-δ-decalactone (PDL) based nanoemulgel for topical delivery of ketoconazole and eugenol against Candida albicans, Nanoscale Advances. 2024.  DOI:
+            <a href="https://doi.org/10.1039/D4NA00176A">10.1039/D4NA00176A</a>
           
         </li>
         
         <li>
           
           
-            Colonocyte keratins stabilize mitochondria and contribute to mitochondrial energy metabolism. 2024. Am. J. Physiol.- Gastrointestinal Liver Physiol.  DOI:
-            <a href="https://doi.org/10.1152/ajpgi.00220.2023">10.1152/ajpgi.00220.2023</a>
+            Utilizing the allyl-terminated copolymer methoxy (poly(ethylene glycol))-block-poly (jasmine lactone) in the development of amorphous solid dispersions: A comparative study of functionalized and nonfunctionalized polymer, International Journal of Pharmaceutics. 2024.  DOI:
+            <a href="https://doi.org/10.1016/j.ijpharm.2024.124175">10.1016/j.ijpharm.2024.124175</a>
           
         </li>
         
         <li>
           
           
-            Colonocyte keratin 7 expression is expressed  de novo in inflammatory bowel diseases and associated with pathological changes and drug-resistance. Sci. Rep. 2022.  DOI:
-            <a href="https://doi.org/10.1038/s41598-022-26603-2">10.1038/s41598-022-26603-2</a>
+            Functional block copolymer micelles based on poly (jasmine lactone) for improving the loading efficiency of weakly basic drugs, RSC advances. 2022.  DOI:
+            <a href="https://doi.org/10.1039/D2RA03962A">10.1039/D2RA03962A</a>
           
         </li>
         
         <li>
           
           
-            Targeted deletion of keratin 8 in intestinal epithelial cells disrupts tissue integrity and predisposes to tumorigenesis in the colon. Cell. Mol. Life. Sci. 2022.  DOI:
-            <a href="https://doi.org/10.1007/s00018-021-04081-5">10.1007/s00018-021-04081-5</a>
+            Synthesis and evaluation of novel functional polymers derived from renewable jasmine lactone for stimuli‐responsive drug delivery, Advanced Functional Materials. 2021.  DOI:
+            <a href="https://doi.org/10.1002/adfm.202101998">10.1002/adfm.202101998</a>
           
         </li>
         
@@ -3347,24 +3216,24 @@
 
     </div>
   
-    <div class="supervisor" id="cecilia-sahlgren">
+    <div class="supervisor" id="outi-salo-ahen">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/cecilia-sahlgren.jpg" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/outi-salo-ahen.jpg" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Cecilia Sahlgren</h1>
+          <h1>Outi Salo-Ahen</h1>
           
-          <p><strong>Group:</strong> Cellfate lab</p>
+          <p><strong>Group:</strong> Computer-aided drug design (CADD) group</p>
           
           
-          <p><strong>Subject:</strong> Cell Biology</p>
+          <p><strong>Subject:</strong> Pharmacy</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
-          <p><strong>Lab Website:</strong> <a href="https://cellfatelab.github.io">https://cellfatelab.github.io</a></p>
+          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/computer-aided-drug-design">https://www.pharmscilab.fi/computer-aided-drug-design</a></p>
           
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/cecilia-sahlgren">https://research.abo.fi/en/persons/cecilia-sahlgren</a></p>
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/outi-salo-ahen">https://research.abo.fi/sv/persons/outi-salo-ahen</a></p>
           
         </div>
       </div>
@@ -3373,11 +3242,17 @@
       <h2>Areas of Expertise</h2>
       <ul>
         
-        <li>Cell biology of soft tissue (muscle, cardiovascular)</li>
+        <li>Computer-aided drug design</li>
         
-        <li>Cell Signaling and Mechanobiology</li>
+        <li>Molecular modeling</li>
         
-        <li>Microtissue engineering</li>
+        <li>Biomolecular simulations</li>
+        
+        <li>Computational chemistry/biology and computational pharmaceutics</li>
+        
+        <li>Structural bioinformatics</li>
+        
+        <li>Immunoinformatics</li>
         
       </ul>
       
@@ -3386,17 +3261,9 @@
       <h2>Research Projects</h2>
       <ul>
         
-        <li>Hematopoietic stem cell engineering (Making blood)</li>
+        <li>Discovery and design of novel antivirulence agents / antimicrobial compounds / anticancer drugs</li>
         
-        <li>Mechanobiology of hematopoietic stem cell niches and the endothelium</li>
-        
-        <li>Deciphering mechanisms of soft tissue development and regeneration</li>
-        
-        <li>Nanoparticle interactions with biological barriers</li>
-        
-        <li>Deciphering mechanisms of tumor-endothelial crosstalk</li>
-        
-        <li>Protein-protein crosstalk in cell fate decisions</li>
+        <li>Computational analysis of pharmaceutical materials (e.g., nanoparticles, polymers)</li>
         
       </ul>
       
@@ -3405,19 +3272,15 @@
       <h2>Special Methodologies & Techniques</h2>
       <ul>
         
-        <li>Microtissue engineering and biomaterials</li>
+        <li>Comparative protein modeling</li>
         
-        <li>Organ on Chips, flow and perfusion chambers, micropatterning, functionalized materials</li>
+        <li>Molecular docking</li>
         
-        <li>Cell and molecular biology</li>
+        <li>Molecular dynamics simulations</li>
         
-        <li>Mass spectrometry (identification of protein-protein interactions)</li>
+        <li>Molecular interaction analysis</li>
         
-        <li>Optogenetic tools and synthetic biology tools</li>
-        
-        <li>Zebrafish to study soft tissue development (muscle, cardiovascular)</li>
-        
-        <li>Computational simulations of mechanochemical regulation of tissue architecture</li>
+        <li>Materials science modeling</li>
         
       </ul>
       
@@ -3426,17 +3289,13 @@
       <h2>Funding & Networks</h2>
       <ul>
         
-        <li>Sigrid Juselius Foundation</li>
+        <li>Tor, Joe & Pentti Memorial Fund</li>
         
-        <li>European Research Council and European Commission (H2024, Marie Curie Training Network)</li>
+        <li>Svenska Kulturfonden</li>
         
-        <li>Academy of Finland and Inflames</li>
+        <li>Research Council of Finland</li>
         
-        <li>Turku Bioscience</li>
-        
-        <li>Materials-driven regeneration (https://mdrresearch.nl)</li>
-        
-        <li>Institute for complex molecular systems (https://www.tue.nl/en/research/institutes/institute-for-complexmolecular-systems)</li>
+        <li>EU-OPENSCREEN</li>
         
       </ul>
       
@@ -3448,40 +3307,40 @@
         <li>
           
           
-            Receptor stoichiometry predicts artery-typical vulnerability to altered Notch signaling during smooth muscle differentiation.  DOI:
-            <a href="https://doi.org/10.1101/2025.05.05.652186">10.1101/2025.05.05.652186</a>
+            Microfluidics-Enabled Core/Shell Nanostructure Assembly: Understanding Encapsulation Processes via Particle Characterization and Molecular Dynamics. Adv Colloid Interface Sci. 2025.  DOI:
+            <a href="https://doi.org/10.1016/j.cis.2025.103400">10.1016/j.cis.2025.103400</a>
           
         </li>
         
         <li>
           
           
-            Mechanosensitive interactions between Jag1 and Myo1C control Jag1 trafficking in endothelial cells.  DOI:
-            <a href="https://doi.org/10.1101/2025.03.27.645426">10.1101/2025.03.27.645426</a>
+            Insights Into Molecular Interactions and Biological Effect of Natural Stilbenoids at the TRPA1 ion channel. ChemMedChem. 2024.  DOI:
+            <a href="https://doi.org/10.1002/cmdc.202400501">10.1002/cmdc.202400501</a>
           
         </li>
         
         <li>
           
           
-            2.5D Model for Ex Vivo Mechanical Characterization of Sprouting Angiogenesis in Living Tissue. J Vis Exp. 2025.  DOI:
-            <a href="https://doi.org/10.3791/67641">10.3791/67641</a>
+            Development of Aptamer-DNAzyme based metal-nucleic acid frameworks for gastric cancer therapy. Nat Commun. 2024.  DOI:
+            <a href="https://doi.org/10.1038/s41467-024-48149-9.">10.1038/s41467-024-48149-9.</a>
           
         </li>
         
         <li>
           
           
-            Directing cellular responses in a nanocomposite 3D matrix for tissue regeneration with nanoparticle-mediated drug delivery. Materials Today Bio 2023.  DOI:
-            <a href="https://doi.org/10.1016/j.mtbio.2023.100865">10.1016/j.mtbio.2023.100865</a>
+            Isolation and functional analysis of phage-displayed antibody fragments targeting the staphylococcal superantigen-like proteins. MicrobiologyOpen. 2023.  DOI:
+            <a href="https://doi.org/doi.org/10.1002/mbo3.1371">doi.org/10.1002/mbo3.1371</a>
           
         </li>
         
         <li>
           
           
-            Engineered patterns of Notch ligands Jag1 and Dll4 elicit differential spatial control of endothelial sprouting. iScience 2022.  DOI:
-            <a href="https://doi.org/10.1016/j.isci.2022.104306">10.1016/j.isci.2022.104306</a>
+            The discovery of Zika virus NS2B-NS3 inhibitors with antiviral activity via an integrated virtual screening approach. Eur J Pharm Sci. 2022.  DOI:
+            <a href="https://doi.org/10.1016/j.ejps.2022.106220">10.1016/j.ejps.2022.106220</a>
           
         </li>
         
@@ -3492,128 +3351,371 @@
 
     </div>
   
-    <div class="supervisor" id="katri-aarnio">
+    <div class="supervisor" id="tapani-viitala">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/tapani-viitala.jpg" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Katri Aarnio</h1>
+          <h1>Tapani Viitala</h1>
+          
+          <p><strong>Group:</strong> Pharmaceutical Biophysics</p>
           
           
-          <p><strong>Subject:</strong> Marine Biology</p>
+          <p><strong>Subject:</strong> Pharmacy</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/katri-aarnio">https://research.abo.fi/sv/persons/katri-aarnio</a></p>
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/fi/persons/tapani-viitala">https://research.abo.fi/fi/persons/tapani-viitala</a></p>
           
         </div>
       </div>
 
       
-
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Pharmaceutical nanotechnology</li>
+        
+        <li>Surface and colloid chemistry</li>
+        
+        <li>Physico-chemical characterization</li>
+        
+        <li>Drug delivery and targeting</li>
+        
+        <li>Biomolecular interactions</li>
+        
+        <li>Real-time label-free living cell sensing</li>
+        
+        <li>3D printing</li>
+        
+      </ul>
       
 
       
-
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>NAP4DIVE: Non-Animal Platform for Nanoparticle-Based Delivery Across the Blood-Brain Barrier Interface with Vehicle Evolution - EU Horizon RIA</li>
+        
+        <li>Nordic Pharmaceutical Translation and Innovation - Nordforsk</li>
+        
+        <li>MADNESS: Centre of Excellence in Materials-driven solutions for combating antimicrobial resistance - Åbo Akademi Foundation</li>
+        
+        <li>Data integrated platforms for the design, production, and testing of therapeutics (project in Helsinki) - Business Finland</li>
+        
+      </ul>
       
 
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Multi-Parametric Surface Plasmon Resonance</li>
+        
+        <li>Impedance-based Quartz Crystal Microbalance</li>
+        
+        <li>LigandTracer</li>
+        
+        <li>Waveguide scattering microscopy</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>EU Horizon RIA</li>
+        
+        <li>NordForsk</li>
+        
+        <li>Åbo Akademi Foundation</li>
+        
+        <li>Business Finland</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Semi-solid extruded tablets for personalized pediatric use: Development, Quality control and In-Vitro Assessment of Enteral Tube Administration. European Journal of Pharmaceutical Sciences. 2025.  DOI:
+            <a href="https://doi.org/10.1016/j.ejps.2025.107122">10.1016/j.ejps.2025.107122</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Monitoring silica core@shell nanoparticle-bacterial film interactions using the multi-parametric surface plasmon resonance technique. Smart Medicine 2. 2023.  DOI:
+            <a href="https://doi.org/10.1002/SMMD.20230012">10.1002/SMMD.20230012</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            In Vitro Characterization and Real-Time Label-Free Assessment of the Interaction of Chitosan-Coated Niosomes with Intestinal Cellular Monolayers. Langmuir. 2023.  DOI:
+            <a href="https://doi.org/10.1021/acs.langmuir.3c00728">10.1021/acs.langmuir.3c00728</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Protein A/G-based surface plasmon resonance biosensor for regenerable antibody-mediated capture and analysis of nanoparticles. Colloids and Surfaces A: Physicochemical and Engineering Aspects. 2022.  DOI:
+            <a href="https://doi.org/10.1016/j.colsurfa.2022.130015">10.1016/j.colsurfa.2022.130015</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            In situ analysis of liposome hard and soft protein corona structure and composition in a single label-free workflow. Nanoscale. 2020.  DOI:
+            <a href="https://doi.org/10.1039/C9NR08186K">10.1039/C9NR08186K</a>
+          
+        </li>
+        
+      </ul>
       
 
       
 
     </div>
   
-    <div class="supervisor" id="kai-lindstr-m">
+    <div class="supervisor" id="xiaoju-wang">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/xiaoju-wang.png" alt="Profile Photo">
         <div class="profile-info">
-          <h1>Kai Lindström</h1>
+          <h1>Xiaoju Wang</h1>
+          
+          <p><strong>Group:</strong> Biomaterials and Drug Fabrication</p>
           
           
-          <p><strong>Subject:</strong> Marine Biology</p>
+          <p><strong>Subject:</strong> Pharmacy</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
+          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/biomaterials-and-drug-fabrication">https://www.pharmscilab.fi/biomaterials-and-drug-fabrication</a></p>
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/kai-lindstr%C3%B6m">https://research.abo.fi/sv/persons/kai-lindstr%C3%B6m</a></p>
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/xiaoju-wang">https://research.abo.fi/sv/persons/xiaoju-wang</a></p>
           
         </div>
       </div>
 
       
-
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>My research focuses on harnessing the benign properties of bio-enabled plant biopolymers to design sustainable and functional biomaterials for better interfacing with living cells or microbes. To create effective bionanomaterials and soft matter biomaterials, my research applies core methodologies such as biopolymer chemical modifications, nanostructured biopolymer synthesis, and self-assembled biocolloidal networks from nano- to macro-scale.</li>
+        
+      </ul>
       
 
       
-
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>MADNESS CoE-Center of Excellence in Materials-driven solutions for combating antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028 (Co-PI; Center director: Prof. Jessica Rosenholm)</li>
+        
+        <li>SusCellInk-Sustainable nanocellulose-based bioinks towards diverse material functionalities and therapeutic delivery of bioactive cues, Research Council of Finland (333158),  01.09.2020-31.08.2025, (PI)</li>
+        
+      </ul>
       
 
+      
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>Chemical synthesis of nanostructured polysaccharides and polyphenols</li>
+        
+        <li>Rheology</li>
+        
+        <li>Various additive manufacturing techniques</li>
+        
+        <li>Cell-laden 3D bioprinting for fabrication of in vitro models</li>
+        
+      </ul>
+      
+
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>Independent PI at CoE-MADNESS, Åbo Akademi University Foundation, 01.01.2024-31.12.2028</li>
+        
+        <li>Academy Research Fellow, Research Council of Finland (333158),  01.09.2020-31.08.2025</li>
+        
+      </ul>
+      
+
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
+          
+          
+            Photocurable cellulose nanofibers and their copolymers with polyacrylamide as microgels to support 3D cell cultivation. Nanoscale. 2025,  DOI:
+            <a href="https://doi.org/10.1039/D5NR00583C">10.1039/D5NR00583C</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Bioprinting Macroporous Hydrogel with Aqueous Two-Phase Emulsion-Based Bioink: In Vitro Mineralization and Differentiation Empowered by Phosphorylated Cellulose Nanofibrils. Adv. Funct. Mater. 2024.  DOI:
+            <a href="https://doi.org/10.1002/adfm.202400431">10.1002/adfm.202400431</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Aqueous Two-Phase Emulsion Bioresin for Facile One-Step 3D Microgel-Based Bioprinting. Adv. Healthcare Mater. 2023.  DOI:
+            <a href="https://doi.org/10.1002/adhm.202203243">10.1002/adhm.202203243</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Evolution of Self-Assembled Lignin Nanostructure into Dendritic Fiber in Aqueous Biphasic Photocurable Resin for DLP-Printing. Adv. Funct. Mater. 2024.  DOI:
+            <a href="https://doi.org/10.1002/adfm.202315679">10.1002/adfm.202315679</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Digital light processing (DLP) 3D-fabricated antimicrobial hydrogel with a sustainable resin of methacrylated woody polysaccharides and hybrid silver-lignin nanospheres. Green Chemistry. 2022.  DOI:
+            <a href="https://doi.org/10.1039/D1GC03841A">10.1039/D1GC03841A</a>
+          
+        </li>
+        
+      </ul>
       
 
       
 
     </div>
   
-    <div class="supervisor" id="john-eriksson">
+    <div class="supervisor" id="zhang-hongbo">
 
       <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
+        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/zhang-hongbo.jpg" alt="Profile Photo">
         <div class="profile-info">
-          <h1>John Eriksson</h1>
+          <h1>Zhang Hongbo</h1>
+          
+          <p><strong>Group:</strong> Functional Materials for Medicine</p>
           
           
-          <p><strong>Subject:</strong> Cell Biology</p>
+          <p><strong>Subject:</strong> Pharmacy</p>
           
           <p><strong>University:</strong> Åbo Akademi University</p>
           
+          <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/nanoprecisionmed">https://www.pharmscilab.fi/nanoprecisionmed</a></p>
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/sv/persons/john-eriksson">https://research.abo.fi/sv/persons/john-eriksson</a></p>
+          
+          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/en/persons/hongbo-zhang">https://research.abo.fi/en/persons/hongbo-zhang</a></p>
           
         </div>
       </div>
 
       
-
+      <h2>Areas of Expertise</h2>
+      <ul>
+        
+        <li>Nanomedicine</li>
+        
+        <li>Biomedical Engineering</li>
+        
+        <li>Drug Delivery</li>
+        
+        <li>Gene Therapy</li>
+        
+      </ul>
       
 
       
-
+      <h2>Research Projects</h2>
+      <ul>
+        
+        <li>Functional Materials have played a more and more critical role in developing novel treatment methods for different diseases. Our group focuses on designing all kinds of functional materials, at different scales, to solve clinical and biological problems.</li>
+        
+      </ul>
       
 
       
-
+      <h2>Special Methodologies & Techniques</h2>
+      <ul>
+        
+        <li>We have broad collaborations with hospitals, and most of our projects have clinical doctors involved, and initially, from a real-life clinical question. Our group is multidisciplinary,  which involves an  interplay between physics, materials science, synthetic organic chemistry, engineering, biology, and medicine. We aim that many of our designs could be clinically applicable in the future, and have a tremendous social impact in treating diseases.</li>
+        
+      </ul>
       
 
-    </div>
-  
-    <div class="supervisor" id="k-the-dahlstr-m">
+      
+      <h2>Funding & Networks</h2>
+      <ul>
+        
+        <li>I am coordinating many projects from the Research Council of Finland, Business Finland, and different foundations. I am also part of many consortium projects, including the InFlame flagship, NAP4DIVE (EU Horizon), Nordic POP, NordicPharmTrain, PII: Printed Intelligence Infrastructure, MADNESS (ÅAU Center of Excellence). As well as the collaboration project with companies, e.g., the joint project with Bayer Oy. I collaborate broadly with Harvard University, USA, and Chinese hospitals.</li>
+        
+      </ul>
+      
 
-      <div class="profile-header">
-        <img src="file:///home/runner/work/supervisor-portfolio/supervisor-portfolio/public/images/AboAkademiUniversity.png" alt="Profile Photo">
-        <div class="profile-info">
-          <h1>Käthe Dahlström</h1>
+      
+      <h2>Selected Publications</h2>
+      <ul>
+        
+        <li>
           
           
-          <p><strong>Subject:</strong> Biochemistry</p>
+            Development of Aptamer-DNAzyme Based Metal-Nucleic Acid Frameworks for Gastric Cancer therapy. Nature Communications. 2024.  DOI:
+            <a href="https://doi.org/10.1038/s41467-024-48149-9">10.1038/s41467-024-48149-9</a>
           
-          <p><strong>University:</strong> Åbo Akademi University</p>
+        </li>
+        
+        <li>
           
           
-          <p><strong>CRIS profile:</strong> <a href="https://research.abo.fi/fi/persons/k%C3%A4the-dahlstr%C3%B6m">https://research.abo.fi/fi/persons/k%C3%A4the-dahlstr%C3%B6m</a></p>
+            An autocatalytic multicomponent DNAzyme nanomachine for tumor-specific photothermal therapy sensitization in pancreatic cancer. Nature Communications. 2023.  DOI:
+            <a href="https://doi.org/10.1038/s41467-023-42740-2">10.1038/s41467-023-42740-2</a>
           
-        </div>
-      </div>
-
-      
-
-      
-
-      
-
-      
-
+        </li>
+        
+        <li>
+          
+          
+            Therapeutic DNAzymes: From Structure Design to Clinical Applications. Advanced Materials. 2023.  DOI:
+            <a href="https://doi.org/10.1002/adma.202300374">10.1002/adma.202300374</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Photothermal Responsive Nanosized Hybrid Polymersome as Versatile Therapeutics Co-Delivery Nanovehicle for Effective Tumor Suppression. Proc. Natl. Acad. Sci. U.S.A. 2019.  DOI:
+            <a href="https://doi.org/10.1073/pnas.1817251116">10.1073/pnas.1817251116</a>
+          
+        </li>
+        
+        <li>
+          
+          
+            Programmable and Multifunctional DNA-Based Materials for Biomedical Applications. Advanced Materials. 2018.  DOI:
+            <a href="https://doi.org/10.1002/adma.201703658">10.1002/adma.201703658</a>
+          
+        </li>
+        
+      </ul>
       
 
       

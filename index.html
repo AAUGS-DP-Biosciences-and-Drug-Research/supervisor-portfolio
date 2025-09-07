@@ -56,23 +56,33 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 20px;
+    .supervisor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
       margin-top: 10px;
+      justify-items: center;
     }
 
-    li {
-      margin-bottom: 8px;
-      font-size: 16px;
-    }
-
-    li a {
+    .supervisor-card {
+      text-align: center;
       text-decoration: none;
       color: #0077cc;
+      font-size: 14px;
     }
 
-    li a:hover {
-      text-decoration: underline;
+    .supervisor-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    .supervisor-card span {
+      display: block;
+      margin-top: 8px;
     }
 
     .back-button {
@@ -101,10 +111,6 @@
 
       h2 {
         font-size: 24px;
-      }
-
-      li {
-        font-size: 18px;
       }
     }
   </style>
@@ -180,199 +186,170 @@
     
 
     
-      <h2>Cell Biology</h2>
-      <ul>
+      <h2>Biochemistry</h2>
+      <div class="supervisor-grid">
         
-          <li>
-            <a href="./supervisors/guillaume-jacquemet.html">
-              Guillaume Jacquemet
-            </a> — Cell Migration Lab
-          </li>
+          <a href="./supervisors/k-the-dahlstr-m.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Käthe Dahlström">
+            <span>Käthe Dahlström</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/silvia-gramolelli.html">
-              Silvia Gramolelli
-            </a> — Viral Oncogenesis
-          </li>
+          <a href="./supervisors/peter-mattjus.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/peter-mattjus.jpeg" alt="Peter Mattjus">
+            <span>Peter Mattjus</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/eleanor-coffey.html">
-              Eleanor Coffey
-            </a> — Protein Kinase Function in the Brain
-          </li>
+          <a href="./supervisors/tiina-salminen.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/tiina-salminen.png" alt="Tiina Salminen">
+            <span>Tiina Salminen</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/annika-meinander.html">
-              Annika Meinander
-            </a> — Inflammatory Signalling Group
-          </li>
-        
-          <li>
-            <a href="./supervisors/lea-sistonen.html">
-              Lea Sistonen
-            </a> — Sistonen Lab
-          </li>
-        
-          <li>
-            <a href="./supervisors/diana-toivola.html">
-              Diana Toivola
-            </a> — Epithelial Biology Lab
-          </li>
-        
-          <li>
-            <a href="./supervisors/cecilia-sahlgren.html">
-              Cecilia Sahlgren
-            </a> — Cellfate lab
-          </li>
-        
-          <li>
-            <a href="./supervisors/john-eriksson.html">
-              John Eriksson
-            </a> — None
-          </li>
-        
-      </ul>
+      </div>
     
-      <h2>Pharmacy</h2>
-      <ul>
+      <h2>Cell Biology</h2>
+      <div class="supervisor-grid">
         
-          <li>
-            <a href="./supervisors/outi-salo-ahen.html">
-              Outi Salo-Ahen
-            </a> — Computer-aided drug design (CADD) group
-          </li>
+          <a href="./supervisors/annika-meinander.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/annika-meinander.jpg" alt="Annika Meinander">
+            <span>Annika Meinander</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/tapani-viitala.html">
-              Tapani Viitala
-            </a> — Pharmaceutical Biophysics
-          </li>
+          <a href="./supervisors/cecilia-sahlgren.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/cecilia-sahlgren.jpg" alt="Cecilia Sahlgren">
+            <span>Cecilia Sahlgren</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/kuldeep-bansal.html">
-              Kuldeep Bansal
-            </a> — Polymeric drug delivery
-          </li>
+          <a href="./supervisors/diana-toivola.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Diana Toivola">
+            <span>Diana Toivola</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/zhang-hongbo.html">
-              Zhang Hongbo
-            </a> — Functional Materials for Medicine
-          </li>
+          <a href="./supervisors/eleanor-coffey.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/eleanor-coffey.jpg" alt="Eleanor Coffey">
+            <span>Eleanor Coffey</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/xiaoju-wang.html">
-              Xiaoju Wang
-            </a> — Biomaterials and Drug Fabrication
-          </li>
+          <a href="./supervisors/guillaume-jacquemet.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/guillaume-jacquemet.jpg" alt="Guillaume Jacquemet">
+            <span>Guillaume Jacquemet</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/anne-filppula.html">
-              Anne Filppula
-            </a> — Translational Drug Research
-          </li>
+          <a href="./supervisors/john-eriksson.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="John Eriksson">
+            <span>John Eriksson</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/jessica-rosenholm.html">
-              Jessica Rosenholm
-            </a> — BioNanoMaterials group
-          </li>
+          <a href="./supervisors/lea-sistonen.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/lea-sistonen.jpg" alt="Lea Sistonen">
+            <span>Lea Sistonen</span>
+          </a>
         
-      </ul>
+          <a href="./supervisors/silvia-gramolelli.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Silvia Gramolelli">
+            <span>Silvia Gramolelli</span>
+          </a>
+        
+      </div>
     
       <h2>Marine Biology</h2>
-      <ul>
+      <div class="supervisor-grid">
         
-          <li>
-            <a href="./supervisors/riikka-puntila-dodd.html">
-              Riikka Puntila-Dodd
-            </a> — Marine ecosystem ecology
-          </li>
+          <a href="./supervisors/anna-t-rnroos-remes.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/anna-t-rnroos-remes.png" alt="Anna Törnroos-Remes">
+            <span>Anna Törnroos-Remes</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/conny-sj-qvist.html">
-              Conny Sjöqvist
-            </a> — Molecular Ecology Lab
-          </li>
+          <a href="./supervisors/christian-pansch-hattich.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/christian-pansch-hattich.jpg" alt="Christian Pansch-Hattich">
+            <span>Christian Pansch-Hattich</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/christian-pansch-hattich.html">
-              Christian Pansch-Hattich
-            </a> — Experimental Ecology - Stress Ecology & Ecophysiology
-          </li>
+          <a href="./supervisors/christoffer-bostr-m.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Christoffer Boström">
+            <span>Christoffer Boström</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/christoffer-bostr-m.html">
-              Christoffer Boström
-            </a> — Boström's Lab
-          </li>
+          <a href="./supervisors/conny-sj-qvist.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/conny-sj-qvist.jpg" alt="Conny Sjöqvist">
+            <span>Conny Sjöqvist</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/markus-st.html">
-              Markus Öst
-            </a> — Eider Research Team
-          </li>
+          <a href="./supervisors/kai-lindstr-m.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Kai Lindström">
+            <span>Kai Lindström</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/martin-snickars.html">
-              Martin Snickars
-            </a> — Husö
-          </li>
+          <a href="./supervisors/katri-aarnio.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Katri Aarnio">
+            <span>Katri Aarnio</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/sonja-salovius-lauren.html">
-              Sonja Salovius-Lauren
-            </a> — BiodiverSea-group
-          </li>
+          <a href="./supervisors/markus-st.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/markus-st.jpg" alt="Markus Öst">
+            <span>Markus Öst</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/mikael-von-numers.html">
-              Mikael von Numers
-            </a> — Mikael von Numers
-          </li>
+          <a href="./supervisors/martin-snickars.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Martin Snickars">
+            <span>Martin Snickars</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/anna-t-rnroos-remes.html">
-              Anna Törnroos-Remes
-            </a> — Environmental and Marine Biology
-          </li>
+          <a href="./supervisors/mikael-von-numers.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/mikael-von-numers.jpg" alt="Mikael von Numers">
+            <span>Mikael von Numers</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/katri-aarnio.html">
-              Katri Aarnio
-            </a> — None
-          </li>
+          <a href="./supervisors/riikka-puntila-dodd.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/riikka-puntila-dodd.jpg" alt="Riikka Puntila-Dodd">
+            <span>Riikka Puntila-Dodd</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/kai-lindstr-m.html">
-              Kai Lindström
-            </a> — None
-          </li>
+          <a href="./supervisors/sonja-salovius-lauren.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Sonja Salovius-Lauren">
+            <span>Sonja Salovius-Lauren</span>
+          </a>
         
-      </ul>
+      </div>
     
-      <h2>Biochemistry</h2>
-      <ul>
+      <h2>Pharmacy</h2>
+      <div class="supervisor-grid">
         
-          <li>
-            <a href="./supervisors/peter-mattjus.html">
-              Peter Mattjus
-            </a> — Lipid Transfer Protein Research
-          </li>
+          <a href="./supervisors/anne-filppula.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/AboAkademiUniversity.png" alt="Anne Filppula">
+            <span>Anne Filppula</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/tiina-salminen.html">
-              Tiina Salminen
-            </a> — Structural Immunology Lab
-          </li>
+          <a href="./supervisors/jessica-rosenholm.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/jessica-rosenholm.jpg" alt="Jessica Rosenholm">
+            <span>Jessica Rosenholm</span>
+          </a>
         
-          <li>
-            <a href="./supervisors/k-the-dahlstr-m.html">
-              Käthe Dahlström
-            </a> — None
-          </li>
+          <a href="./supervisors/kuldeep-bansal.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/kuldeep-bansal.png" alt="Kuldeep Bansal">
+            <span>Kuldeep Bansal</span>
+          </a>
         
-      </ul>
+          <a href="./supervisors/outi-salo-ahen.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/outi-salo-ahen.jpg" alt="Outi Salo-Ahen">
+            <span>Outi Salo-Ahen</span>
+          </a>
+        
+          <a href="./supervisors/tapani-viitala.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/tapani-viitala.jpg" alt="Tapani Viitala">
+            <span>Tapani Viitala</span>
+          </a>
+        
+          <a href="./supervisors/xiaoju-wang.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/xiaoju-wang.png" alt="Xiaoju Wang">
+            <span>Xiaoju Wang</span>
+          </a>
+        
+          <a href="./supervisors/zhang-hongbo.html" class="supervisor-card">
+            <img src="/supervisor-portfolio/images/zhang-hongbo.jpg" alt="Zhang Hongbo">
+            <span>Zhang Hongbo</span>
+          </a>
+        
+      </div>
     
 
     <div class="back-button">
