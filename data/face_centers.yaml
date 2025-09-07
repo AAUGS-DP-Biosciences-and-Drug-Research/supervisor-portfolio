@@ -1,8 +1,0 @@
-# Manual centers of faces in supervisor images.
-# Coordinates are pixel offsets from the top-left corner.
-guillaume-jacquemet.jpg:
-  x: 400
-  y: 300
-outi-salo-ahen.jpg:
-  x: 350
-  y: 280
