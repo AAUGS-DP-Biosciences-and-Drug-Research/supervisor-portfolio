@@ -1,183 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Zhang Hongbo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    :root {
+      --bg: #f0f2f5;
+      --card: #fafafa;
+      --text: #333;
+      --border: #ccc;
+      --link: #0077cc;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: sans-serif;
-      background-color: #f0f2f5;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      background-color: var(--bg);
       margin: 0;
       padding: 20px;
       display: flex;
       justify-content: center;
     }
+
     .card {
-      background: #fafafa;
+      position: relative; /* allow absolute positioning for the logo */
+      background: var(--card);
       max-width: 1000px;
       width: 100%;
       border-radius: 12px;
       padding: 30px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       margin-top: 20px;
-      box-sizing: border-box;
     }
+
+    /* Header area with image + text side-by-side */
     .profile-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-bottom: 30px;
     }
-    .profile-left {
+
+    .profile-main {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      gap: 24px;
     }
+
     .profile-photo {
+      width: 200px;
       max-width: 200px;
-      width: 100%;
       height: auto;
       border-radius: 10px;
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       background-color: #f9f9f9;
+      flex: 0 0 200px;
+      object-fit: cover;
     }
+
     .profile-info {
-      text-align: center;
+      text-align: left;
+      flex: 1 1 auto;
+      min-width: 0;
     }
+
     .profile-info h1 {
-      margin: 0;
+      margin: 0 0 6px;
       font-size: 26px;
+      line-height: 1.2;
+      word-break: break-word;
     }
+
     .profile-info p {
       margin: 4px 0;
       font-size: 16px;
-      color: #333;
+      color: var(--text);
     }
+
     .profile-info a {
-      color: #0077cc;
+      color: var(--link);
       text-decoration: none;
       font-size: 16px;
     }
-    .profile-info a:hover {
-      text-decoration: underline;
-    }
+
+    .profile-info a:hover { text-decoration: underline; }
+
+    /* AAU logo pinned to the top-right of the card */
     .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       width: 100px;
       height: auto;
-      margin-top: 10px;
     }
+
     h2 {
       margin-top: 30px;
       font-size: 20px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
     .back-button {
       display: inline-block;
       margin-top: 40px;
       font-size: 14px;
-      color: #333;
+      color: var(--text);
       text-decoration: none;
     }
-    .back-button:hover {
-      text-decoration: underline;
+    .back-button:hover { text-decoration: underline; }
+
+    /* Responsive tweaks */
+    @media (max-width: 800px) {
+      .profile-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-info { text-align: center; }
     }
 
     @media (max-width: 600px) {
-      .logo {
-        display: none;
-      }
+      .logo { display: none; }
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <!-- AAU logo fixed top-right -->
+    <img
+      src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png"
+      alt="Åbo Akademi University logo"
+      class="logo"
+    />
+
     <div class="profile-header">
-      <div class="profile-left">
-        <img src="/supervisor-portfolio/images/zhang-hongbo.jpg" alt="Profile Photo" class="profile-photo">
+      <div class="profile-main">
+        <!-- Supervisor photo on the side of the info -->
+        <img
+          src="/supervisor-portfolio/images/zhang-hongbo.jpg"
+          alt="Photo of Zhang Hongbo"
+          class="profile-photo"
+        />
+
         <div class="profile-info">
           <h1>Zhang Hongbo</h1>
           <p><strong>Group Name:</strong> Functional Materials for Medicine</p>
           <p><strong>Subject:</strong> Pharmacy</p>
           <p><strong>University:</strong> Åbo Akademi University</p>
+
           
-            <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/nanoprecisionmed" target="_blank">link</a></p>
+            <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/nanoprecisionmed" target="_blank" rel="noopener">link</a></p>
           
           
-            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/en/persons/hongbo-zhang" target="_blank">link</a></p>
+            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/en/persons/hongbo-zhang" target="_blank" rel="noopener">link</a></p>
           
         </div>
       </div>
-      <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="ÅAU Logo" class="logo">
     </div>
 
     
-    <h2>Areas of Expertise</h2>
-    <ul><li>Nanomedicine</li><li>Biomedical Engineering</li><li>Drug Delivery</li><li>Gene Therapy</li></ul>
+      <h2>Areas of Expertise</h2>
+      <ul><li>Nanomedicine</li><li>Biomedical Engineering</li><li>Drug Delivery</li><li>Gene Therapy</li></ul>
     
 
     
-    <h2>Research Projects</h2>
-    <ul><li>Functional Materials have played a more and more critical role in developing novel treatment methods for different diseases. Our group focuses on designing all kinds of functional materials, at different scales, to solve clinical and biological problems.</li></ul>
+      <h2>Research Projects</h2>
+      <ul><li>Functional Materials have played a more and more critical role in developing novel treatment methods for different diseases. Our group focuses on designing all kinds of functional materials, at different scales, to solve clinical and biological problems.</li></ul>
     
 
     
-    <h2>Special Methodologies & Techniques</h2>
-    <ul><li>We have broad collaborations with hospitals, and most of our projects have clinical doctors involved, and initially, from a real-life clinical question. Our group is multidisciplinary,  which involves an  interplay between physics, materials science, synthetic organic chemistry, engineering, biology, and medicine. We aim that many of our designs could be clinically applicable in the future, and have a tremendous social impact in treating diseases.</li></ul>
+      <h2>Special Methodologies & Techniques</h2>
+      <ul><li>We have broad collaborations with hospitals, and most of our projects have clinical doctors involved, and initially, from a real-life clinical question. Our group is multidisciplinary,  which involves an  interplay between physics, materials science, synthetic organic chemistry, engineering, biology, and medicine. We aim that many of our designs could be clinically applicable in the future, and have a tremendous social impact in treating diseases.</li></ul>
     
 
     
-    <h2>Major Funding & International Networks</h2>
-    <ul><li>I am coordinating many projects from the Research Council of Finland, Business Finland, and different foundations. I am also part of many consortium projects, including the InFlame flagship, NAP4DIVE (EU Horizon), Nordic POP, NordicPharmTrain, PII: Printed Intelligence Infrastructure, MADNESS (ÅAU Center of Excellence). As well as the collaboration project with companies, e.g., the joint project with Bayer Oy. I collaborate broadly with Harvard University, USA, and Chinese hospitals.</li></ul>
+      <h2>Major Funding & International Networks</h2>
+      <ul><li>I am coordinating many projects from the Research Council of Finland, Business Finland, and different foundations. I am also part of many consortium projects, including the InFlame flagship, NAP4DIVE (EU Horizon), Nordic POP, NordicPharmTrain, PII: Printed Intelligence Infrastructure, MADNESS (ÅAU Center of Excellence). As well as the collaboration project with companies, e.g., the joint project with Bayer Oy. I collaborate broadly with Harvard University, USA, and Chinese hospitals.</li></ul>
     
 
     
-    <h2>Selected Publications</h2>
-    <ul>
-      
+      <h2>Selected Publications</h2>
+      <ul>
         
-        <li>
           
-            Development of Aptamer-DNAzyme Based Metal-Nucleic Acid Frameworks for Gastric Cancer therapy. Nature Communications. 2024.  DOI: <a href="https://doi.org/10.1038/s41467-024-48149-9" target="_blank">10.1038/s41467-024-48149-9</a>
-          
-        </li>
-      
+          <li>
+            
+              Development of Aptamer-DNAzyme Based Metal-Nucleic Acid Frameworks for Gastric Cancer therapy. Nature Communications. 2024.  DOI: <a href="https://doi.org/10.1038/s41467-024-48149-9" target="_blank" rel="noopener">10.1038/s41467-024-48149-9</a>
+            
+          </li>
         
-        <li>
           
-            An autocatalytic multicomponent DNAzyme nanomachine for tumor-specific photothermal therapy sensitization in pancreatic cancer. Nature Communications. 2023.  DOI: <a href="https://doi.org/10.1038/s41467-023-42740-2" target="_blank">10.1038/s41467-023-42740-2</a>
-          
-        </li>
-      
+          <li>
+            
+              An autocatalytic multicomponent DNAzyme nanomachine for tumor-specific photothermal therapy sensitization in pancreatic cancer. Nature Communications. 2023.  DOI: <a href="https://doi.org/10.1038/s41467-023-42740-2" target="_blank" rel="noopener">10.1038/s41467-023-42740-2</a>
+            
+          </li>
         
-        <li>
           
-            Therapeutic DNAzymes: From Structure Design to Clinical Applications. Advanced Materials. 2023.  DOI: <a href="https://doi.org/10.1002/adma.202300374" target="_blank">10.1002/adma.202300374</a>
-          
-        </li>
-      
+          <li>
+            
+              Therapeutic DNAzymes: From Structure Design to Clinical Applications. Advanced Materials. 2023.  DOI: <a href="https://doi.org/10.1002/adma.202300374" target="_blank" rel="noopener">10.1002/adma.202300374</a>
+            
+          </li>
         
-        <li>
           
-            Photothermal Responsive Nanosized Hybrid Polymersome as Versatile Therapeutics Co-Delivery Nanovehicle for Effective Tumor Suppression. Proc. Natl. Acad. Sci. U.S.A. 2019.  DOI: <a href="https://doi.org/10.1073/pnas.1817251116" target="_blank">10.1073/pnas.1817251116</a>
-          
-        </li>
-      
+          <li>
+            
+              Photothermal Responsive Nanosized Hybrid Polymersome as Versatile Therapeutics Co-Delivery Nanovehicle for Effective Tumor Suppression. Proc. Natl. Acad. Sci. U.S.A. 2019.  DOI: <a href="https://doi.org/10.1073/pnas.1817251116" target="_blank" rel="noopener">10.1073/pnas.1817251116</a>
+            
+          </li>
         
-        <li>
           
-            Programmable and Multifunctional DNA-Based Materials for Biomedical Applications. Advanced Materials. 2018.  DOI: <a href="https://doi.org/10.1002/adma.201703658" target="_blank">10.1002/adma.201703658</a>
-          
-        </li>
-      
-    </ul>
+          <li>
+            
+              Programmable and Multifunctional DNA-Based Materials for Biomedical Applications. Advanced Materials. 2018.  DOI: <a href="https://doi.org/10.1002/adma.201703658" target="_blank" rel="noopener">10.1002/adma.201703658</a>
+            
+          </li>
+        
+      </ul>
     
 
     

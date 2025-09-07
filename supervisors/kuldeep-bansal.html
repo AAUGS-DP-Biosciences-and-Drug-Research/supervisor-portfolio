@@ -1,183 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Kuldeep Bansal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    :root {
+      --bg: #f0f2f5;
+      --card: #fafafa;
+      --text: #333;
+      --border: #ccc;
+      --link: #0077cc;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: sans-serif;
-      background-color: #f0f2f5;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      background-color: var(--bg);
       margin: 0;
       padding: 20px;
       display: flex;
       justify-content: center;
     }
+
     .card {
-      background: #fafafa;
+      position: relative; /* allow absolute positioning for the logo */
+      background: var(--card);
       max-width: 1000px;
       width: 100%;
       border-radius: 12px;
       padding: 30px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       margin-top: 20px;
-      box-sizing: border-box;
     }
+
+    /* Header area with image + text side-by-side */
     .profile-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-bottom: 30px;
     }
-    .profile-left {
+
+    .profile-main {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      gap: 24px;
     }
+
     .profile-photo {
+      width: 200px;
       max-width: 200px;
-      width: 100%;
       height: auto;
       border-radius: 10px;
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       background-color: #f9f9f9;
+      flex: 0 0 200px;
+      object-fit: cover;
     }
+
     .profile-info {
-      text-align: center;
+      text-align: left;
+      flex: 1 1 auto;
+      min-width: 0;
     }
+
     .profile-info h1 {
-      margin: 0;
+      margin: 0 0 6px;
       font-size: 26px;
+      line-height: 1.2;
+      word-break: break-word;
     }
+
     .profile-info p {
       margin: 4px 0;
       font-size: 16px;
-      color: #333;
+      color: var(--text);
     }
+
     .profile-info a {
-      color: #0077cc;
+      color: var(--link);
       text-decoration: none;
       font-size: 16px;
     }
-    .profile-info a:hover {
-      text-decoration: underline;
-    }
+
+    .profile-info a:hover { text-decoration: underline; }
+
+    /* AAU logo pinned to the top-right of the card */
     .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       width: 100px;
       height: auto;
-      margin-top: 10px;
     }
+
     h2 {
       margin-top: 30px;
       font-size: 20px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
     .back-button {
       display: inline-block;
       margin-top: 40px;
       font-size: 14px;
-      color: #333;
+      color: var(--text);
       text-decoration: none;
     }
-    .back-button:hover {
-      text-decoration: underline;
+    .back-button:hover { text-decoration: underline; }
+
+    /* Responsive tweaks */
+    @media (max-width: 800px) {
+      .profile-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-info { text-align: center; }
     }
 
     @media (max-width: 600px) {
-      .logo {
-        display: none;
-      }
+      .logo { display: none; }
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <!-- AAU logo fixed top-right -->
+    <img
+      src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png"
+      alt="Åbo Akademi University logo"
+      class="logo"
+    />
+
     <div class="profile-header">
-      <div class="profile-left">
-        <img src="/supervisor-portfolio/images/kuldeep-bansal.png" alt="Profile Photo" class="profile-photo">
+      <div class="profile-main">
+        <!-- Supervisor photo on the side of the info -->
+        <img
+          src="/supervisor-portfolio/images/kuldeep-bansal.png"
+          alt="Photo of Kuldeep Bansal"
+          class="profile-photo"
+        />
+
         <div class="profile-info">
           <h1>Kuldeep Bansal</h1>
           <p><strong>Group Name:</strong> Polymeric drug delivery</p>
           <p><strong>Subject:</strong> Pharmacy</p>
           <p><strong>University:</strong> Åbo Akademi University</p>
+
           
-            <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/" target="_blank">link</a></p>
+            <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/" target="_blank" rel="noopener">link</a></p>
           
           
-            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/fi/persons/kuldeep-bansal" target="_blank">link</a></p>
+            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/fi/persons/kuldeep-bansal" target="_blank" rel="noopener">link</a></p>
           
         </div>
       </div>
-      <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="ÅAU Logo" class="logo">
     </div>
 
     
-    <h2>Areas of Expertise</h2>
-    <ul><li>Functional Polymers</li><li>Stimuli-Sensitive Polymers</li><li>Targeted and Controlled Drug Delivery</li><li>Polymeric Micelles</li><li>Polymer-Drug Conjugates</li><li>Microparticles</li><li>Amorphous Solid Dispersions</li><li>Polymeric Nanoemulsion</li></ul>
+      <h2>Areas of Expertise</h2>
+      <ul><li>Functional Polymers</li><li>Stimuli-Sensitive Polymers</li><li>Targeted and Controlled Drug Delivery</li><li>Polymeric Micelles</li><li>Polymer-Drug Conjugates</li><li>Microparticles</li><li>Amorphous Solid Dispersions</li><li>Polymeric Nanoemulsion</li></ul>
     
 
     
-    <h2>Research Projects</h2>
-    <ul><li>Centre of Excellence in Materials-driven Solutions for Combatting Antimicrobial Resistance (MADNESS)</li><li>Jasmine PRO: A versatile platform for drug delivery</li><li>Non-Animal Platform for Nanoparticle-Based Delivery across the blood-brain barrier Interface with Vehicle Evolution</li></ul>
+      <h2>Research Projects</h2>
+      <ul><li>Centre of Excellence in Materials-driven Solutions for Combatting Antimicrobial Resistance (MADNESS)</li><li>Jasmine PRO: A versatile platform for drug delivery</li><li>Non-Animal Platform for Nanoparticle-Based Delivery across the blood-brain barrier Interface with Vehicle Evolution</li></ul>
     
 
     
-    <h2>Special Methodologies & Techniques</h2>
-    <ul><li>Polymer Synthesis and Characterization (NMR, FTIR, GPC, DSC),</li><li>Nanoparticle Synthesis and Characterization (nanoprecipitation, microfluidics, DLS, HPLC, TEM),</li><li>Cell Culture,</li><li>Design of Stimuli-Sensitive Drug Delivery Platforms</li></ul>
+      <h2>Special Methodologies & Techniques</h2>
+      <ul><li>Polymer Synthesis and Characterization (NMR, FTIR, GPC, DSC),</li><li>Nanoparticle Synthesis and Characterization (nanoprecipitation, microfluidics, DLS, HPLC, TEM),</li><li>Cell Culture,</li><li>Design of Stimuli-Sensitive Drug Delivery Platforms</li></ul>
     
 
     
-    <h2>Major Funding & International Networks</h2>
-    <ul><li>Funding Sources: Stiftelsen för Åbo Akademi, Business Finland, Academy of Finland</li><li>International Networks: Copenhagen University, NIPER (India), UiT The Arctic University of Norway, University College London</li></ul>
+      <h2>Major Funding & International Networks</h2>
+      <ul><li>Funding Sources: Stiftelsen för Åbo Akademi, Business Finland, Academy of Finland</li><li>International Networks: Copenhagen University, NIPER (India), UiT The Arctic University of Norway, University College London</li></ul>
     
 
     
-    <h2>Selected Publications</h2>
-    <ul>
-      
+      <h2>Selected Publications</h2>
+      <ul>
         
-        <li>
           
-            Reactive Oxygen Species-Regulated Conjugates Based on Poly (jasmine) Lactone for Simultaneous Delivery of Doxorubicin and Docetaxel, Pharmaceutics. 2024.  DOI: <a href="https://doi.org/10.3390/pharmaceutics16091164" target="_blank">10.3390/pharmaceutics16091164</a>
-          
-        </li>
-      
+          <li>
+            
+              Reactive Oxygen Species-Regulated Conjugates Based on Poly (jasmine) Lactone for Simultaneous Delivery of Doxorubicin and Docetaxel, Pharmaceutics. 2024.  DOI: <a href="https://doi.org/10.3390/pharmaceutics16091164" target="_blank" rel="noopener">10.3390/pharmaceutics16091164</a>
+            
+          </li>
         
-        <li>
           
-            Poly-δ-decalactone (PDL) based nanoemulgel for topical delivery of ketoconazole and eugenol against Candida albicans, Nanoscale Advances. 2024.  DOI: <a href="https://doi.org/10.1039/D4NA00176A" target="_blank">10.1039/D4NA00176A</a>
-          
-        </li>
-      
+          <li>
+            
+              Poly-δ-decalactone (PDL) based nanoemulgel for topical delivery of ketoconazole and eugenol against Candida albicans, Nanoscale Advances. 2024.  DOI: <a href="https://doi.org/10.1039/D4NA00176A" target="_blank" rel="noopener">10.1039/D4NA00176A</a>
+            
+          </li>
         
-        <li>
           
-            Utilizing the allyl-terminated copolymer methoxy (poly(ethylene glycol))-block-poly (jasmine lactone) in the development of amorphous solid dispersions: A comparative study of functionalized and nonfunctionalized polymer, International Journal of Pharmaceutics. 2024.  DOI: <a href="https://doi.org/10.1016/j.ijpharm.2024.124175" target="_blank">10.1016/j.ijpharm.2024.124175</a>
-          
-        </li>
-      
+          <li>
+            
+              Utilizing the allyl-terminated copolymer methoxy (poly(ethylene glycol))-block-poly (jasmine lactone) in the development of amorphous solid dispersions: A comparative study of functionalized and nonfunctionalized polymer, International Journal of Pharmaceutics. 2024.  DOI: <a href="https://doi.org/10.1016/j.ijpharm.2024.124175" target="_blank" rel="noopener">10.1016/j.ijpharm.2024.124175</a>
+            
+          </li>
         
-        <li>
           
-            Functional block copolymer micelles based on poly (jasmine lactone) for improving the loading efficiency of weakly basic drugs, RSC advances. 2022.  DOI: <a href="https://doi.org/10.1039/D2RA03962A" target="_blank">10.1039/D2RA03962A</a>
-          
-        </li>
-      
+          <li>
+            
+              Functional block copolymer micelles based on poly (jasmine lactone) for improving the loading efficiency of weakly basic drugs, RSC advances. 2022.  DOI: <a href="https://doi.org/10.1039/D2RA03962A" target="_blank" rel="noopener">10.1039/D2RA03962A</a>
+            
+          </li>
         
-        <li>
           
-            Synthesis and evaluation of novel functional polymers derived from renewable jasmine lactone for stimuli‐responsive drug delivery, Advanced Functional Materials. 2021.  DOI: <a href="https://doi.org/10.1002/adfm.202101998" target="_blank">10.1002/adfm.202101998</a>
-          
-        </li>
-      
-    </ul>
+          <li>
+            
+              Synthesis and evaluation of novel functional polymers derived from renewable jasmine lactone for stimuli‐responsive drug delivery, Advanced Functional Materials. 2021.  DOI: <a href="https://doi.org/10.1002/adfm.202101998" target="_blank" rel="noopener">10.1002/adfm.202101998</a>
+            
+          </li>
+        
+      </ul>
     
 
     

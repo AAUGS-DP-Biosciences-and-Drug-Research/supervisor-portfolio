@@ -1,183 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Xiaoju Wang</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    :root {
+      --bg: #f0f2f5;
+      --card: #fafafa;
+      --text: #333;
+      --border: #ccc;
+      --link: #0077cc;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: sans-serif;
-      background-color: #f0f2f5;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      background-color: var(--bg);
       margin: 0;
       padding: 20px;
       display: flex;
       justify-content: center;
     }
+
     .card {
-      background: #fafafa;
+      position: relative; /* allow absolute positioning for the logo */
+      background: var(--card);
       max-width: 1000px;
       width: 100%;
       border-radius: 12px;
       padding: 30px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       margin-top: 20px;
-      box-sizing: border-box;
     }
+
+    /* Header area with image + text side-by-side */
     .profile-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-bottom: 30px;
     }
-    .profile-left {
+
+    .profile-main {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      gap: 24px;
     }
+
     .profile-photo {
+      width: 200px;
       max-width: 200px;
-      width: 100%;
       height: auto;
       border-radius: 10px;
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       background-color: #f9f9f9;
+      flex: 0 0 200px;
+      object-fit: cover;
     }
+
     .profile-info {
-      text-align: center;
+      text-align: left;
+      flex: 1 1 auto;
+      min-width: 0;
     }
+
     .profile-info h1 {
-      margin: 0;
+      margin: 0 0 6px;
       font-size: 26px;
+      line-height: 1.2;
+      word-break: break-word;
     }
+
     .profile-info p {
       margin: 4px 0;
       font-size: 16px;
-      color: #333;
+      color: var(--text);
     }
+
     .profile-info a {
-      color: #0077cc;
+      color: var(--link);
       text-decoration: none;
       font-size: 16px;
     }
-    .profile-info a:hover {
-      text-decoration: underline;
-    }
+
+    .profile-info a:hover { text-decoration: underline; }
+
+    /* AAU logo pinned to the top-right of the card */
     .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       width: 100px;
       height: auto;
-      margin-top: 10px;
     }
+
     h2 {
       margin-top: 30px;
       font-size: 20px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
     .back-button {
       display: inline-block;
       margin-top: 40px;
       font-size: 14px;
-      color: #333;
+      color: var(--text);
       text-decoration: none;
     }
-    .back-button:hover {
-      text-decoration: underline;
+    .back-button:hover { text-decoration: underline; }
+
+    /* Responsive tweaks */
+    @media (max-width: 800px) {
+      .profile-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-info { text-align: center; }
     }
 
     @media (max-width: 600px) {
-      .logo {
-        display: none;
-      }
+      .logo { display: none; }
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <!-- AAU logo fixed top-right -->
+    <img
+      src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png"
+      alt="Åbo Akademi University logo"
+      class="logo"
+    />
+
     <div class="profile-header">
-      <div class="profile-left">
-        <img src="/supervisor-portfolio/images/xiaoju-wang.png" alt="Profile Photo" class="profile-photo">
+      <div class="profile-main">
+        <!-- Supervisor photo on the side of the info -->
+        <img
+          src="/supervisor-portfolio/images/xiaoju-wang.png"
+          alt="Photo of Xiaoju Wang"
+          class="profile-photo"
+        />
+
         <div class="profile-info">
           <h1>Xiaoju Wang</h1>
           <p><strong>Group Name:</strong> Biomaterials and Drug Fabrication</p>
           <p><strong>Subject:</strong> Pharmacy</p>
           <p><strong>University:</strong> Åbo Akademi University</p>
+
           
-            <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/biomaterials-and-drug-fabrication" target="_blank">link</a></p>
+            <p><strong>Lab Website:</strong> <a href="https://www.pharmscilab.fi/biomaterials-and-drug-fabrication" target="_blank" rel="noopener">link</a></p>
           
           
-            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/sv/persons/xiaoju-wang" target="_blank">link</a></p>
+            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/sv/persons/xiaoju-wang" target="_blank" rel="noopener">link</a></p>
           
         </div>
       </div>
-      <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="ÅAU Logo" class="logo">
     </div>
 
     
-    <h2>Areas of Expertise</h2>
-    <ul><li>My research focuses on harnessing the benign properties of bio-enabled plant biopolymers to design sustainable and functional biomaterials for better interfacing with living cells or microbes. To create effective bionanomaterials and soft matter biomaterials, my research applies core methodologies such as biopolymer chemical modifications, nanostructured biopolymer synthesis, and self-assembled biocolloidal networks from nano- to macro-scale.</li></ul>
+      <h2>Areas of Expertise</h2>
+      <ul><li>My research focuses on harnessing the benign properties of bio-enabled plant biopolymers to design sustainable and functional biomaterials for better interfacing with living cells or microbes. To create effective bionanomaterials and soft matter biomaterials, my research applies core methodologies such as biopolymer chemical modifications, nanostructured biopolymer synthesis, and self-assembled biocolloidal networks from nano- to macro-scale.</li></ul>
     
 
     
-    <h2>Research Projects</h2>
-    <ul><li>MADNESS CoE-Center of Excellence in Materials-driven solutions for combating antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028 (Co-PI; Center director: Prof. Jessica Rosenholm)</li><li>SusCellInk-Sustainable nanocellulose-based bioinks towards diverse material functionalities and therapeutic delivery of bioactive cues, Research Council of Finland (333158),  01.09.2020-31.08.2025, (PI)</li></ul>
+      <h2>Research Projects</h2>
+      <ul><li>MADNESS CoE-Center of Excellence in Materials-driven solutions for combating antimicrobial resistance, Åbo Akademi University Foundation, 01.01.2024-31.12.2028 (Co-PI; Center director: Prof. Jessica Rosenholm)</li><li>SusCellInk-Sustainable nanocellulose-based bioinks towards diverse material functionalities and therapeutic delivery of bioactive cues, Research Council of Finland (333158),  01.09.2020-31.08.2025, (PI)</li></ul>
     
 
     
-    <h2>Special Methodologies & Techniques</h2>
-    <ul><li>Chemical synthesis of nanostructured polysaccharides and polyphenols</li><li>Rheology</li><li>Various additive manufacturing techniques</li><li>Cell-laden 3D bioprinting for fabrication of in vitro models</li></ul>
+      <h2>Special Methodologies & Techniques</h2>
+      <ul><li>Chemical synthesis of nanostructured polysaccharides and polyphenols</li><li>Rheology</li><li>Various additive manufacturing techniques</li><li>Cell-laden 3D bioprinting for fabrication of in vitro models</li></ul>
     
 
     
-    <h2>Major Funding & International Networks</h2>
-    <ul><li>Independent PI at CoE-MADNESS, Åbo Akademi University Foundation, 01.01.2024-31.12.2028</li><li>Academy Research Fellow, Research Council of Finland (333158),  01.09.2020-31.08.2025</li></ul>
+      <h2>Major Funding & International Networks</h2>
+      <ul><li>Independent PI at CoE-MADNESS, Åbo Akademi University Foundation, 01.01.2024-31.12.2028</li><li>Academy Research Fellow, Research Council of Finland (333158),  01.09.2020-31.08.2025</li></ul>
     
 
     
-    <h2>Selected Publications</h2>
-    <ul>
-      
+      <h2>Selected Publications</h2>
+      <ul>
         
-        <li>
           
-            Photocurable cellulose nanofibers and their copolymers with polyacrylamide as microgels to support 3D cell cultivation. Nanoscale. 2025,  DOI: <a href="https://doi.org/10.1039/D5NR00583C" target="_blank">10.1039/D5NR00583C</a>
-          
-        </li>
-      
+          <li>
+            
+              Photocurable cellulose nanofibers and their copolymers with polyacrylamide as microgels to support 3D cell cultivation. Nanoscale. 2025,  DOI: <a href="https://doi.org/10.1039/D5NR00583C" target="_blank" rel="noopener">10.1039/D5NR00583C</a>
+            
+          </li>
         
-        <li>
           
-            Bioprinting Macroporous Hydrogel with Aqueous Two-Phase Emulsion-Based Bioink: In Vitro Mineralization and Differentiation Empowered by Phosphorylated Cellulose Nanofibrils. Adv. Funct. Mater. 2024.  DOI: <a href="https://doi.org/10.1002/adfm.202400431" target="_blank">10.1002/adfm.202400431</a>
-          
-        </li>
-      
+          <li>
+            
+              Bioprinting Macroporous Hydrogel with Aqueous Two-Phase Emulsion-Based Bioink: In Vitro Mineralization and Differentiation Empowered by Phosphorylated Cellulose Nanofibrils. Adv. Funct. Mater. 2024.  DOI: <a href="https://doi.org/10.1002/adfm.202400431" target="_blank" rel="noopener">10.1002/adfm.202400431</a>
+            
+          </li>
         
-        <li>
           
-            Aqueous Two-Phase Emulsion Bioresin for Facile One-Step 3D Microgel-Based Bioprinting. Adv. Healthcare Mater. 2023.  DOI: <a href="https://doi.org/10.1002/adhm.202203243" target="_blank">10.1002/adhm.202203243</a>
-          
-        </li>
-      
+          <li>
+            
+              Aqueous Two-Phase Emulsion Bioresin for Facile One-Step 3D Microgel-Based Bioprinting. Adv. Healthcare Mater. 2023.  DOI: <a href="https://doi.org/10.1002/adhm.202203243" target="_blank" rel="noopener">10.1002/adhm.202203243</a>
+            
+          </li>
         
-        <li>
           
-            Evolution of Self-Assembled Lignin Nanostructure into Dendritic Fiber in Aqueous Biphasic Photocurable Resin for DLP-Printing. Adv. Funct. Mater. 2024.  DOI: <a href="https://doi.org/10.1002/adfm.202315679" target="_blank">10.1002/adfm.202315679</a>
-          
-        </li>
-      
+          <li>
+            
+              Evolution of Self-Assembled Lignin Nanostructure into Dendritic Fiber in Aqueous Biphasic Photocurable Resin for DLP-Printing. Adv. Funct. Mater. 2024.  DOI: <a href="https://doi.org/10.1002/adfm.202315679" target="_blank" rel="noopener">10.1002/adfm.202315679</a>
+            
+          </li>
         
-        <li>
           
-            Digital light processing (DLP) 3D-fabricated antimicrobial hydrogel with a sustainable resin of methacrylated woody polysaccharides and hybrid silver-lignin nanospheres. Green Chemistry. 2022.  DOI: <a href="https://doi.org/10.1039/D1GC03841A" target="_blank">10.1039/D1GC03841A</a>
-          
-        </li>
-      
-    </ul>
+          <li>
+            
+              Digital light processing (DLP) 3D-fabricated antimicrobial hydrogel with a sustainable resin of methacrylated woody polysaccharides and hybrid silver-lignin nanospheres. Green Chemistry. 2022.  DOI: <a href="https://doi.org/10.1039/D1GC03841A" target="_blank" rel="noopener">10.1039/D1GC03841A</a>
+            
+          </li>
+        
+      </ul>
     
 
     

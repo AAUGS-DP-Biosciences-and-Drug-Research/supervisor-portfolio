@@ -1,183 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Jessica Rosenholm</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    :root {
+      --bg: #f0f2f5;
+      --card: #fafafa;
+      --text: #333;
+      --border: #ccc;
+      --link: #0077cc;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: sans-serif;
-      background-color: #f0f2f5;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+      background-color: var(--bg);
       margin: 0;
       padding: 20px;
       display: flex;
       justify-content: center;
     }
+
     .card {
-      background: #fafafa;
+      position: relative; /* allow absolute positioning for the logo */
+      background: var(--card);
       max-width: 1000px;
       width: 100%;
       border-radius: 12px;
       padding: 30px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       margin-top: 20px;
-      box-sizing: border-box;
     }
+
+    /* Header area with image + text side-by-side */
     .profile-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       margin-bottom: 30px;
     }
-    .profile-left {
+
+    .profile-main {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      align-items: flex-start;
+      gap: 24px;
     }
+
     .profile-photo {
+      width: 200px;
       max-width: 200px;
-      width: 100%;
       height: auto;
       border-radius: 10px;
-      border: 2px solid #ccc;
+      border: 2px solid var(--border);
       background-color: #f9f9f9;
+      flex: 0 0 200px;
+      object-fit: cover;
     }
+
     .profile-info {
-      text-align: center;
+      text-align: left;
+      flex: 1 1 auto;
+      min-width: 0;
     }
+
     .profile-info h1 {
-      margin: 0;
+      margin: 0 0 6px;
       font-size: 26px;
+      line-height: 1.2;
+      word-break: break-word;
     }
+
     .profile-info p {
       margin: 4px 0;
       font-size: 16px;
-      color: #333;
+      color: var(--text);
     }
+
     .profile-info a {
-      color: #0077cc;
+      color: var(--link);
       text-decoration: none;
       font-size: 16px;
     }
-    .profile-info a:hover {
-      text-decoration: underline;
-    }
+
+    .profile-info a:hover { text-decoration: underline; }
+
+    /* AAU logo pinned to the top-right of the card */
     .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       width: 100px;
       height: auto;
-      margin-top: 10px;
     }
+
     h2 {
       margin-top: 30px;
       font-size: 20px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
     .back-button {
       display: inline-block;
       margin-top: 40px;
       font-size: 14px;
-      color: #333;
+      color: var(--text);
       text-decoration: none;
     }
-    .back-button:hover {
-      text-decoration: underline;
+    .back-button:hover { text-decoration: underline; }
+
+    /* Responsive tweaks */
+    @media (max-width: 800px) {
+      .profile-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .profile-info { text-align: center; }
     }
 
     @media (max-width: 600px) {
-      .logo {
-        display: none;
-      }
+      .logo { display: none; }
     }
   </style>
 </head>
 <body>
   <div class="card">
+    <!-- AAU logo fixed top-right -->
+    <img
+      src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png"
+      alt="Åbo Akademi University logo"
+      class="logo"
+    />
+
     <div class="profile-header">
-      <div class="profile-left">
-        <img src="/supervisor-portfolio/images/jessica-rosenholm.jpg" alt="Profile Photo" class="profile-photo">
+      <div class="profile-main">
+        <!-- Supervisor photo on the side of the info -->
+        <img
+          src="/supervisor-portfolio/images/jessica-rosenholm.jpg"
+          alt="Photo of Jessica Rosenholm"
+          class="profile-photo"
+        />
+
         <div class="profile-info">
           <h1>Jessica Rosenholm</h1>
           <p><strong>Group Name:</strong> BioNanoMaterials group</p>
           <p><strong>Subject:</strong> Pharmacy</p>
           <p><strong>University:</strong> Åbo Akademi University</p>
+
           
-            <p><strong>Lab Website:</strong> <a href="www.pharmscilab.fi" target="_blank">link</a></p>
+            <p><strong>Lab Website:</strong> <a href="www.pharmscilab.fi" target="_blank" rel="noopener">link</a></p>
           
           
-            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/en/persons/jessica-rosenholm" target="_blank">link</a></p>
+            <p><strong>AboCRIS Profile:</strong> <a href="https://research.abo.fi/en/persons/jessica-rosenholm" target="_blank" rel="noopener">link</a></p>
           
         </div>
       </div>
-      <img src="https://www.abo.fi/wp-content/uploads/2019/09/AboAkademiUniversity.png" alt="ÅAU Logo" class="logo">
     </div>
 
     
-    <h2>Areas of Expertise</h2>
-    <ul><li>Development of novel drug delivery systems (DDS) based on new carrier materials e.g., naturally derived & synthetic polymers, inorganic materials, hydrogels, nanoparticulate systems​</li><li>Formulation of nanomedicines based on small and large bioactive molecules (small molecule drugs, peptides, proteins, nucleic acids)</li><li>Rational DDS design through physico-chemical characterization linking material attributes to processing and performance (including cellular & bacterial evaluation)</li></ul>
+      <h2>Areas of Expertise</h2>
+      <ul><li>Development of novel drug delivery systems (DDS) based on new carrier materials e.g., naturally derived & synthetic polymers, inorganic materials, hydrogels, nanoparticulate systems​</li><li>Formulation of nanomedicines based on small and large bioactive molecules (small molecule drugs, peptides, proteins, nucleic acids)</li><li>Rational DDS design through physico-chemical characterization linking material attributes to processing and performance (including cellular & bacterial evaluation)</li></ul>
     
 
     
-    <h2>Research Projects</h2>
-    <ul><li>https://research.abo.fi/en/persons/jessica-rosenholm/projects/</li></ul>
+      <h2>Research Projects</h2>
+      <ul><li>https://research.abo.fi/en/persons/jessica-rosenholm/projects/</li></ul>
     
 
     
-    <h2>Special Methodologies & Techniques</h2>
-    <ul><li>Nanotechnologies for drug delivery and imaging</li><li>2D and 3D printing technologies</li><li>Physico-chemical characterization of nanomaterials</li></ul>
+      <h2>Special Methodologies & Techniques</h2>
+      <ul><li>Nanotechnologies for drug delivery and imaging</li><li>2D and 3D printing technologies</li><li>Physico-chemical characterization of nanomaterials</li></ul>
     
 
     
-    <h2>Major Funding & International Networks</h2>
-    <ul><li>Nordic POP (Patient-Oriented Products) University Hub [https://nordicpop.ku.dk/]</li><li>Nordic Pharmaceutical Innovation and Translational (NordicPharmaTrain) network [https://www.uu.se/en/department/medicinal-chemistry/faculty-of-pharmacy/nordicpharmatrain]</li><li>Finnish Platform for Pharmaceutical Research (FinPharma) [https://www.helsinki.fi/fi/verkostot/finpharma]</li></ul>
+      <h2>Major Funding & International Networks</h2>
+      <ul><li>Nordic POP (Patient-Oriented Products) University Hub [https://nordicpop.ku.dk/]</li><li>Nordic Pharmaceutical Innovation and Translational (NordicPharmaTrain) network [https://www.uu.se/en/department/medicinal-chemistry/faculty-of-pharmacy/nordicpharmatrain]</li><li>Finnish Platform for Pharmaceutical Research (FinPharma) [https://www.helsinki.fi/fi/verkostot/finpharma]</li></ul>
     
 
     
-    <h2>Selected Publications</h2>
-    <ul>
-      
+      <h2>Selected Publications</h2>
+      <ul>
         
-        <li>
           
-            Functional enzyme delivery via surface-modified mesoporous silica nanoparticles in 3D printed nanocomposite hydrogels. European Journal of Pharmaceutical Sciences. 2025.  DOI: <a href="https://doi.org/10.1016/j.ejps.2025.107132" target="_blank">10.1016/j.ejps.2025.107132</a>
-          
-        </li>
-      
+          <li>
+            
+              Functional enzyme delivery via surface-modified mesoporous silica nanoparticles in 3D printed nanocomposite hydrogels. European Journal of Pharmaceutical Sciences. 2025.  DOI: <a href="https://doi.org/10.1016/j.ejps.2025.107132" target="_blank" rel="noopener">10.1016/j.ejps.2025.107132</a>
+            
+          </li>
         
-        <li>
           
-            Surface Modification of Mesoporous Silica Nanoparticles as a Means to Introduce Inherent Cancer-Targeting Ability in a 3D Tumor Microenvironment. Small Science. 2024.  DOI: <a href="https://doi.org/10.1002/smsc.202400084" target="_blank">10.1002/smsc.202400084</a>
-          
-        </li>
-      
+          <li>
+            
+              Surface Modification of Mesoporous Silica Nanoparticles as a Means to Introduce Inherent Cancer-Targeting Ability in a 3D Tumor Microenvironment. Small Science. 2024.  DOI: <a href="https://doi.org/10.1002/smsc.202400084" target="_blank" rel="noopener">10.1002/smsc.202400084</a>
+            
+          </li>
         
-        <li>
           
-            Evolving technologies and strategies for combating antibacterial resistance in the advent of the post-antibiotic era. Advanced Functional Materials 2020.  DOI: <a href="https://doi.org/10.1002/adfm.201908783" target="_blank">10.1002/adfm.201908783</a>
-          
-        </li>
-      
+          <li>
+            
+              Evolving technologies and strategies for combating antibacterial resistance in the advent of the post-antibiotic era. Advanced Functional Materials 2020.  DOI: <a href="https://doi.org/10.1002/adfm.201908783" target="_blank" rel="noopener">10.1002/adfm.201908783</a>
+            
+          </li>
         
-        <li>
           
-            Nanodiamonds for advanced optical bioimaging and beyond. Curr. Op. Coll. & Interf. Sci. 2019.  DOI: <a href="https://doi.org/10.1016/j.cocis.2019.02.014" target="_blank">10.1016/j.cocis.2019.02.014</a>
-          
-        </li>
-      
+          <li>
+            
+              Nanodiamonds for advanced optical bioimaging and beyond. Curr. Op. Coll. & Interf. Sci. 2019.  DOI: <a href="https://doi.org/10.1016/j.cocis.2019.02.014" target="_blank" rel="noopener">10.1016/j.cocis.2019.02.014</a>
+            
+          </li>
         
-        <li>
           
-            Multimodality Imaging of Silica and Silicon Materials in Vivo. Advanced Materials. 2018.  DOI: <a href="https://doi.org/10.1002/adma.201703651" target="_blank">10.1002/adma.201703651</a>
-          
-        </li>
-      
-    </ul>
+          <li>
+            
+              Multimodality Imaging of Silica and Silicon Materials in Vivo. Advanced Materials. 2018.  DOI: <a href="https://doi.org/10.1002/adma.201703651" target="_blank" rel="noopener">10.1002/adma.201703651</a>
+            
+          </li>
+        
+      </ul>
     
 
     
