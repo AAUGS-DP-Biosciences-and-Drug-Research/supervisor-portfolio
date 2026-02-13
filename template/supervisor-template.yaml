@@ -1,0 +1,72 @@
+# Supervisor profile YAML template
+#
+# How to use:
+# 1) Copy this file and save it as: data/supervisors/<slug>.yaml
+# 2) Keep the top-level structure as a YAML list with one supervisor object.
+# 3) Replace placeholder values.
+# 4) Ensure the photo exists in public/images/<slug>.(jpg|jpeg|png|webp)
+#
+# Required fields (used directly by the site generator/templates):
+# - name (string)
+# - slug (string; should match filename and photo filename)
+# - university (string)
+#
+# Strongly recommended fields (shown in index/PDF grouping and profile content):
+# - unit (string; used for subject grouping in index + PDF)
+# - group (string)
+# - expertise (list of strings)
+# - projects (list of strings)
+# - techniques (list of strings)
+# - funding (list of strings)
+# - publications (list of strings)
+#
+# Optional fields:
+# - lab_website (URL string)
+# - cris_profile (URL string)
+# - photo (string; informational, actual image matching uses slug)
+# - photo_position (string; set to "center" for centered thumbnail crop)
+# - manual_edit (boolean; metadata only)
+# - keywords (string)
+
+- name: "Supervisor Full Name"
+  slug: "supervisor-full-name"
+
+  # Organizational details
+  group: "Research Group Name"
+  unit: "Subject / Unit"
+  university: "Åbo Akademi University"
+
+  # Links
+  lab_website: "https://example.org/lab"
+  cris_profile: "https://research.abo.fi/en/persons/example"
+
+  # Image metadata
+  # Note: build.py matches image by slug, not by this field.
+  photo: "supervisor-full-name.jpg"
+  # Optional: set to "center" to center-crop profile thumbnails in index/PDF.
+  photo_position: "center"
+
+  # Optional metadata flag used in some existing records.
+  manual_edit: false
+
+  # Content lists
+  expertise:
+    - "Area of expertise 1"
+    - "Area of expertise 2"
+
+  projects:
+    - "Project description 1"
+
+  techniques:
+    - "Technique or methodology 1"
+
+  funding:
+    - "Major grant/funding/network 1"
+
+  # Keep DOI formatting as: "... DOI: 10.xxxx/xxxxx"
+  # The templates auto-convert this DOI segment into a clickable DOI link.
+  publications:
+    - "Publication title. Journal. Year. DOI: 10.0000/example-doi"
+
+  # Optional free-text tags/keywords
+  keywords: "keyword1, keyword2"
