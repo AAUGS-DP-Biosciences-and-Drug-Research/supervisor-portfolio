@@ -18,7 +18,7 @@ The website and PDF are continuously updated and hosted via **GitHub Pages**.
 | Step | Description |
 |:----|:------------|
 | 1 | Supervisors submit their details via Microsoft Forms |
-| 2 | Responses are exported manually and converted to a structured YAML file: [`/data/supervisors.yaml`](data/supervisors.yaml) |
+| 2 | Responses are exported manually and converted to a structured YAML file: [`/data/supervisors/`](data/supervisors/) |
 | 3 | Profile photos are saved manually in [`/public/images/`](public/images/) using the supervisor slug as filename (e.g. `guillaume-jacquemet.jpg`) |
 | 4 | GitHub Actions automatically: |
 |    | ➔ Builds individual HTML pages using Jinja templates |
@@ -29,18 +29,18 @@ The website and PDF are continuously updated and hosted via **GitHub Pages**.
 
 ## 🧾 Notes
 
-- **YAML Editing:** You can manually edit the `supervisors.yaml` file for fine-grained control. Use the optional `photo_position: center` field to crop a thumbnail from the center instead of the default top.
+- **YAML Editing:** You can manually edit the individual YAML files in `data/supervisors/` for fine-grained control. Use the optional `photo_position: center` field to crop a thumbnail from the center instead of the default top.
 - **Image Matching:** Images must match the `slug` of each supervisor (e.g. `guillaume-jacquemet.jpg`) and be placed in `public/images/`.
 
 ---
 
 ## 📊 Convert Excel Form Data to YAML
 
-To generate the `supervisors.yaml` file from your Microsoft Form Excel export, use the following Colab notebook:
+To generate supervisor YAML files from your Microsoft Form Excel export, use the following Colab notebook:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AAUGS-DP-Biosciences-and-Drug-Research/supervisor-portfolio/blob/main/Convert_Excel_Supervisor_Data_to_YAML.ipynb)
 
-> This will generate a clean, editable YAML file compatible with the portfolio builder.
+> This will generate clean, editable YAML files compatible with the portfolio builder.
 
 ---
 

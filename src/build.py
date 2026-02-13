@@ -4,7 +4,8 @@ from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
 
 # ---------- Config ----------
-YAML_INPUT = "data/supervisors.yaml"
+SUPERVISOR_YAML_DIR = "data/supervisors"
+LEGACY_YAML_INPUT = "data/supervisors.yaml"
 PUBLIC_FOLDER = "public"
 IMAGES_FOLDER = os.path.join(PUBLIC_FOLDER, "images")
 SOURCE_IMAGES = "static/images"
@@ -13,15 +14,48 @@ DEFAULT_LOGO_FILENAME = "AboAkademiUniversity.png"
 DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/{DEFAULT_LOGO_FILENAME}"
 DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, DEFAULT_LOGO_FILENAME))
 
+
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
 page_template = env.get_template("supervisor.html")
 index_template = env.get_template("index.html")
 pdf_template = env.get_template("pdf.html")
 
+
 # ---------- Load YAML ----------
-with open(YAML_INPUT, "r", encoding="utf-8") as f:
-    supervisors = yaml.safe_load(f)
+def load_supervisors():
+    supervisors = []
+
+    if os.path.isdir(SUPERVISOR_YAML_DIR):
+        yaml_files = sorted(
+            [
+                os.path.join(SUPERVISOR_YAML_DIR, file_name)
+                for file_name in os.listdir(SUPERVISOR_YAML_DIR)
+                if file_name.endswith((".yml", ".yaml"))
+            ]
+        )
+
+        for yaml_file in yaml_files:
+            with open(yaml_file, "r", encoding="utf-8") as f:
+                entry = yaml.safe_load(f)
+                if isinstance(entry, dict):
+                    supervisors.append(entry)
+                elif isinstance(entry, list):
+                    supervisors.extend(entry)
+
+        if supervisors:
+            return supervisors
+
+    if os.path.isfile(LEGACY_YAML_INPUT):
+        with open(LEGACY_YAML_INPUT, "r", encoding="utf-8") as f:
+            return yaml.safe_load(f)
+
+    raise FileNotFoundError(
+        f"No supervisor YAML files found in '{SUPERVISOR_YAML_DIR}' or '{LEGACY_YAML_INPUT}'."
+    )
+
+
+supervisors = load_supervisors()
 
 # ---------- Match images by slug ----------
 for supervisor in supervisors:
