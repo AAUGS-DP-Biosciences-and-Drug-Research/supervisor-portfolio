@@ -156,28 +156,36 @@
           {% if supervisor.cris_profile %}
             <p><strong>AboCRIS Profile:</strong> <a href="{{ supervisor.cris_profile }}" target="_blank" rel="noopener">link</a></p>
           {% endif %}
+          {% if supervisor.web_pages %}
+            <p>
+              <strong>Web Pages:</strong>
+              {% for page in supervisor.web_pages %}
+                <a href="{{ page.url }}" target="_blank" rel="noopener">{{ page.label }}</a>{% if not loop.last %} · {% endif %}
+              {% endfor %}
+            </p>
+          {% endif %}
         </div>
       </div>
     </div>
 
     {% if supervisor.expertise %}
       <h2>Areas of Expertise</h2>
-      <ul>{% for item in supervisor.expertise %}<li>{{ item }}</li>{% endfor %}</ul>
+      <ul>{% for item in supervisor.expertise %}<li>{{ item | linkify_bracket_urls | safe }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.projects %}
       <h2>Research Projects</h2>
-      <ul>{% for item in supervisor.projects %}<li>{{ item }}</li>{% endfor %}</ul>
+      <ul>{% for item in supervisor.projects %}<li>{{ item | linkify_bracket_urls | safe }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.techniques %}
       <h2>Special Methodologies & Techniques</h2>
-      <ul>{% for item in supervisor.techniques %}<li>{{ item }}</li>{% endfor %}</ul>
+      <ul>{% for item in supervisor.techniques %}<li>{{ item | linkify_bracket_urls | safe }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.funding %}
       <h2>Major Funding & International Networks</h2>
-      <ul>{% for item in supervisor.funding %}<li>{{ item }}</li>{% endfor %}</ul>
+      <ul>{% for item in supervisor.funding %}<li>{{ item | linkify_bracket_urls | safe }}</li>{% endfor %}</ul>
     {% endif %}
 
     {% if supervisor.publications %}

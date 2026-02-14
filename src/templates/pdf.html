@@ -156,7 +156,7 @@
       <h2>Areas of Expertise</h2>
       <ul>
         {% for item in supervisor.expertise %}
-        <li>{{ item }}</li>
+        <li>{{ item | linkify_bracket_urls | safe }}</li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -165,7 +165,7 @@
       <h2>Research Projects</h2>
       <ul>
         {% for item in supervisor.projects %}
-        <li>{{ item }}</li>
+        <li>{{ item | linkify_bracket_urls | safe }}</li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -174,7 +174,7 @@
       <h2>Special Methodologies & Techniques</h2>
       <ul>
         {% for item in supervisor.techniques %}
-        <li>{{ item }}</li>
+        <li>{{ item | linkify_bracket_urls | safe }}</li>
         {% endfor %}
       </ul>
       {% endif %}
@@ -183,7 +183,7 @@
       <h2>Funding & Networks</h2>
       <ul>
         {% for item in supervisor.funding %}
-        <li>{{ item }}</li>
+        <li>{{ item | linkify_bracket_urls | safe }}</li>
         {% endfor %}
       </ul>
       {% endif %}

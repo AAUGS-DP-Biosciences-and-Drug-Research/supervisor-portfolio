@@ -23,6 +23,7 @@
 # Optional fields:
 # - lab_website (URL string)
 # - cris_profile (URL string)
+# - web_pages (list of URL strings or objects with label/url)
 # - photo (string; informational, actual image matching uses slug)
 # - photo_position (string; set to "center" for centered thumbnail crop)
 # - manual_edit (boolean; metadata only)
@@ -39,6 +40,12 @@
   # Links
   lab_website: "https://example.org/lab"
   cris_profile: "https://research.abo.fi/en/persons/example"
+
+  # Optional extra website links shown on the profile page
+  web_pages:
+    - "https://example.org/project-page"
+    - label: "Personal Website"
+      url: "https://example.org"
 
   # Image metadata
   # Note: build.py matches image by slug, not by this field.

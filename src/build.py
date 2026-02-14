@@ -1,4 +1,5 @@
 import os
+import re
 import yaml
 from jinja2 import Environment, FileSystemLoader
 from weasyprint import HTML
@@ -15,8 +16,57 @@ DEFAULT_LOGO = f"{SITE_BASE_PATH}/images/{DEFAULT_LOGO_FILENAME}"
 DEFAULT_LOGO_PDF = os.path.abspath(os.path.join(IMAGES_FOLDER, DEFAULT_LOGO_FILENAME))
 
 
+def linkify_bracket_urls(text):
+    if text is None:
+        return ""
+
+    text = str(text)
+    return re.sub(
+        r"\[(https?://[^\]\s]+)\]",
+        lambda match: f'<a href="{match.group(1)}" target="_blank" rel="noopener">{match.group(1)}</a>',
+        text,
+    )
+
+
+def normalize_url(url):
+    if not url:
+        return ""
+
+    url = str(url).strip()
+    if not url:
+        return ""
+
+    if re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*://", url):
+        return url
+
+    return f"https://{url}"
+
+
+def normalize_web_pages(supervisor):
+    web_pages = supervisor.get("web_pages")
+    if not web_pages:
+        return []
+
+    if not isinstance(web_pages, list):
+        web_pages = [web_pages]
+
+    normalized = []
+    for item in web_pages:
+        if isinstance(item, dict):
+            label = str(item.get("label") or item.get("name") or "Web Page").strip()
+            url = normalize_url(item.get("url") or item.get("link"))
+        else:
+            label = "Web Page"
+            url = normalize_url(item)
+
+        if url:
+            normalized.append({"label": label, "url": url})
+
+    return normalized
+
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
+env.filters["linkify_bracket_urls"] = linkify_bracket_urls
 page_template = env.get_template("supervisor.html")
 index_template = env.get_template("index.html")
 pdf_template = env.get_template("pdf.html")
@@ -59,6 +109,10 @@ supervisors = load_supervisors()
 
 # ---------- Match images by slug ----------
 for supervisor in supervisors:
+    supervisor["lab_website"] = normalize_url(supervisor.get("lab_website", ""))
+    supervisor["cris_profile"] = normalize_url(supervisor.get("cris_profile", ""))
+    supervisor["web_pages"] = normalize_web_pages(supervisor)
+
     slug = supervisor["slug"]
 
     # Try to find an image with any common extension
