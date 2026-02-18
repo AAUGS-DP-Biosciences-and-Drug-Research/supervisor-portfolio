@@ -64,6 +64,14 @@ def normalize_web_pages(supervisor):
 
     return normalized
 
+
+def last_name_sort_key(name):
+    if not name:
+        return ""
+
+    parts = str(name).split()
+    return parts[-1].casefold() if parts else ""
+
 # ---------- Load templates ----------
 env = Environment(loader=FileSystemLoader("src/templates"))
 env.filters["linkify_bracket_urls"] = linkify_bracket_urls
@@ -133,8 +141,10 @@ for supervisor in supervisors:
 
 print(f"✅ Loaded {len(supervisors)} supervisors.")
 
-# Ensure deterministic ordering: first by unit, then by name
-supervisors.sort(key=lambda s: (s.get("unit", ""), s["name"]))
+# Ensure deterministic ordering by last name, then full name
+supervisors.sort(
+    key=lambda s: (last_name_sort_key(s.get("name", "")), s.get("name", "").casefold())
+)
 
 # ---------- Generate supervisor pages ----------
 os.makedirs(os.path.join(PUBLIC_FOLDER, "supervisors"), exist_ok=True)
