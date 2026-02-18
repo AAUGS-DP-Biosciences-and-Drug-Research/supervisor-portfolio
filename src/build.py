@@ -120,6 +120,7 @@ for supervisor in supervisors:
     supervisor["lab_website"] = normalize_url(supervisor.get("lab_website", ""))
     supervisor["cris_profile"] = normalize_url(supervisor.get("cris_profile", ""))
     supervisor["web_pages"] = normalize_web_pages(supervisor)
+    supervisor["last_name_sort_key"] = last_name_sort_key(supervisor.get("name", ""))
 
     slug = supervisor["slug"]
 
@@ -143,7 +144,7 @@ print(f"✅ Loaded {len(supervisors)} supervisors.")
 
 # Ensure deterministic ordering by last name, then full name
 supervisors.sort(
-    key=lambda s: (last_name_sort_key(s.get("name", "")), s.get("name", "").casefold())
+    key=lambda s: (s.get("last_name_sort_key", ""), s.get("name", "").casefold())
 )
 
 # ---------- Generate supervisor pages ----------

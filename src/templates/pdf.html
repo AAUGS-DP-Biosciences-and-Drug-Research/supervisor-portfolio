@@ -119,7 +119,7 @@
   <div class="unit-section">
       <h2>{{ unit }}</h2>
       <div class="unit-grid">
-        {% for supervisor in supervisors_in_unit | sort(attribute='name') %}
+        {% for supervisor in supervisors_in_unit | sort(attribute='last_name_sort_key') %}
           <a href="#{{ supervisor.slug }}">
             <img src="file://{{ supervisor.photo_pdf_path }}" alt="{{ supervisor.name }}"{% if supervisor.photo_position == 'center' %} style="object-position: center;"{% endif %}>
             <span>{{ supervisor.name }}</span>
