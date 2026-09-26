@@ -1,0 +1,23 @@
+name: Publish redirect to the new site
+
+# This repository has moved into
+# https://github.com/AAUGS-DP-Biosciences-and-Drug-Research/Home
+# (supervisor YAML: data/supervisors/, photos: data/photos/).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./redirect
+          publish_branch: gh-pages
